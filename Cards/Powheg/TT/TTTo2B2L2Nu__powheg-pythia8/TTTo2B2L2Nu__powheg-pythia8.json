@@ -1,0 +1,11 @@
+{
+    "powheg_process" : "hvq",
+
+    "user":[
+        "hdamp 237.8775",
+        "qmass 172.5",
+        "tdec/twidth 1.31", 
+        "topdecaymode 22200",
+        "semileptonic 0"
+    ]
+}
