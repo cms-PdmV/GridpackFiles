@@ -80,6 +80,7 @@ def replaceFragmentLines(fragmentLines):
         sys.exit("error : unknown tune, unable to find import path")
 
     with open(os.path.join(cards_path, f'{dataset_name}.json')) as input_file:
+        print(os.path.join(cards_path, f'{dataset_name}.json'))
         dataset_dict = json.load(input_file)
 
     process_parameters = ""
