@@ -8,6 +8,7 @@
     },
 
     "user":[
+        "set run_card htjmin 50"
     ],
 
     "fragment": [
