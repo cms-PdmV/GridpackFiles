@@ -25,3 +25,6 @@ __processParameters__
     pythiaHepMCVerbosity = cms.untracked.bool(False),
     pythiaPylistVerbosity = cms.untracked.int32(1),
 )
+
+
+__fragmentFilter__

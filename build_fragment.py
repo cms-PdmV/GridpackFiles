@@ -30,12 +30,16 @@ parser.add_argument('--concurrent',
 
 args = parser.parse_args()
 
-dataset_name = f'{args.process}_{args.setting}_{args.generator}'
-cards_path = os.path.join('cards', args.directory, args.process, dataset_name)
+dataset_name = f'{args.process}_{args.setting}__{args.generator}'
+cards_path = os.path.join('Cards', args.directory, args.process, dataset_name)
+
+with open(os.path.join(cards_path, f'{dataset_name}.json')) as input_file:
+    print(os.path.join(cards_path, f'{dataset_name}.json'))
+    dataset_dict = json.load(input_file)
 
 def addExternalLheProducer(fragmentLines):
 
-    with open(os.path.join("cards", "fragment", "template", "ExternalLHEProducer.dat")) as f:
+    with open(os.path.join("Fragments", "Hadronizer", "ExternalLHEProducer.dat")) as f:
         ll = f.readlines()
         for l in ll:
             fragmentLines += l
@@ -45,10 +49,11 @@ def addExternalLheProducer(fragmentLines):
     return fragmentLines
 
 
-def addHadronizerLines(fragmentLines):
+def addFragmentLines(fragmentLines):
 
-    if os.path.exists(os.path.join("cards", "fragment", "template", f"{args.generator}.dat")):
-        with open(os.path.join("cards", "fragment", "template", f"{args.generator}.dat")) as f:
+    fragment_hadronizer = dataset_dict["fragment_hadronizer"]
+    if os.path.exists(os.path.join("Fragments", "Hadronizer", f"{fragment_hadronizer}")):
+        with open(os.path.join("Fragments", "Hadronizer", f"{fragment_hadronizer}")) as f:
             ll = f.readlines()
             for l in ll:
                 fragmentLines += l
@@ -72,21 +77,30 @@ def replaceFragmentLines(fragmentLines):
     fragmentLines = fragmentLines.replace("__tuneName__", args.tune)
     fragmentLines = fragmentLines.replace("__comEnergy__", str(int(args.beamEnergy) * 2))
 
-    with open(os.path.join("cards", "fragment", "import.json")) as input_file:
+    with open(os.path.join("Fragments", "imports.json")) as input_file:
         import_dict = json.load(input_file)
     try:
-        fragmentLines = fragmentLines.replace("__tuneImport__", import_dict[args.tune])
+        fragmentLines = fragmentLines.replace("__tuneImport__", import_dict["tune"][args.tune])
     except:
         sys.exit("error : unknown tune, unable to find import path")
-
-    with open(os.path.join(cards_path, f'{dataset_name}.json')) as input_file:
-        print(os.path.join(cards_path, f'{dataset_name}.json'))
-        dataset_dict = json.load(input_file)
 
     process_parameters = ""
     for l in dataset_dict["fragment"]:
         process_parameters += f"            '{l}',\n"
     fragmentLines = fragmentLines.replace("__processParameters__", process_parameters)
+
+    filterLines = ""
+    try:
+        fragment_filter = dataset_dict["fragment_filter"]
+        if os.path.exists(os.path.join("Fragments", "Filter", f"{fragment_filter}")):
+            with open(os.path.join("Fragments", "Filter", f"{fragment_filter}")) as f:
+                ll = f.readlines()
+                for l in ll:
+                    filterLines += l
+    except:
+        pass
+
+    fragmentLines = fragmentLines.replace("__fragmentFilter__", filterLines)
 
     return fragmentLines
 
@@ -98,7 +112,8 @@ def main():
 
     if args.lhe:
         fragmentLines = addExternalLheProducer(fragmentLines)
-    fragmentLines = addHadronizerLines(fragmentLines)
+    fragmentLines = addFragmentLines(fragmentLines)
+
     fragmentLines = replaceFragmentLines(fragmentLines)
 
     print (fragmentLines)

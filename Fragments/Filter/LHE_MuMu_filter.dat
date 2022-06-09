@@ -1,0 +1,9 @@
+mumuFilter = cms.EDFilter("LHEGenericFilter",
+    src = cms.InputTag("source"),
+    NumRequired = cms.int32(2),
+    ParticleID = cms.vint32(13),
+    AcceptLogic = cms.string("EQ") # LT meaning < NumRequired, GT >, EQ =, NE !=
+)                          
+
+ProductionFilterSequence = cms.Sequence(generator+mumuFilter)
+
