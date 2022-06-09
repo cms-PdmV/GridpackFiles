@@ -13,7 +13,7 @@
     ],
 
     "fragment_hadronizer": "madgraphMLM-pythia8.dat",
-    "fragment_filter": "LHE_MuMu_filter.dat",
+    "fragment_filter": "GEN_MuEl_MinPt15_filter.dat",
 
     "fragment": [
         "JetMatching:qCut = 19.",

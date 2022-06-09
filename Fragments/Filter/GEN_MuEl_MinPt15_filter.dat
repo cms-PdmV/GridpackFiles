@@ -1,0 +1,14 @@
+muelegenfilter = cms.EDFilter("MCSmartSingleParticleFilter",
+                           MinPt = cms.untracked.vdouble(15.,15.,15.,15.),
+                           MinEta = cms.untracked.vdouble(-10,-10,-10,-10),
+                           MaxEta = cms.untracked.vdouble(10,10,10,10),
+                           ParticleID = cms.untracked.vint32(13,-13,11,-11),
+                           Status = cms.untracked.vint32(1,1,1,1),
+                           # Decay cuts are in mm
+                           MaxDecayRadius = cms.untracked.vdouble(2000.,2000.,2000.,2000.),
+                           MinDecayZ = cms.untracked.vdouble(-4000.,-4000.,-4000.,-4000.),
+                           MaxDecayZ = cms.untracked.vdouble(4000.,4000.,4000.,4000.)
+)
+
+ProductionFilterSequence = cms.Sequence(generator + muelegenfilter)
+
