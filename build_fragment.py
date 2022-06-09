@@ -34,7 +34,6 @@ dataset_name = f'{args.process}_{args.setting}__{args.generator}'
 cards_path = os.path.join('Cards', args.directory, args.process, dataset_name)
 
 with open(os.path.join(cards_path, f'{dataset_name}.json')) as input_file:
-    print(os.path.join(cards_path, f'{dataset_name}.json'))
     dataset_dict = json.load(input_file)
 
 def addExternalLheProducer(fragmentLines):
