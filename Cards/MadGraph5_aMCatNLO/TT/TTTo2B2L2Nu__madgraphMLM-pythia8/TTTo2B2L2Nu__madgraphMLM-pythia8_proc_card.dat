@@ -9,7 +9,7 @@ define vl~ = ve~ vm~ vt~
 
 generate p p > t t~ @0
 add process p p > t t~ j @1
-add process p p > t t~ j @2
-add process p p > t t~ j @3
+add process p p > t t~ j j @2
+add process p p > t t~ j j j @3
 
 output TTTo2B2L2Nu__madgraphMLM-pythia8 -nojpeg
