@@ -9,9 +9,7 @@ parser = argparse.ArgumentParser()
 
 parser.add_argument('--process', '-p',
                     required=True)
-parser.add_argument('--setting', '-s',
-                    required=True)
-parser.add_argument('--generator', '-g',
+parser.add_argument('--datasetName', '-n',
                     required=True)
 parser.add_argument('--directory', '-d',
                     required=True)
@@ -30,7 +28,7 @@ parser.add_argument('--concurrent',
 
 args = parser.parse_args()
 
-dataset_name = f'{args.process}_{args.setting}__{args.generator}'
+dataset_name = f'{args.datasetName}'
 cards_path = os.path.join('Cards', args.directory, args.process, dataset_name)
 
 with open(os.path.join(cards_path, f'{dataset_name}.json')) as input_file:
