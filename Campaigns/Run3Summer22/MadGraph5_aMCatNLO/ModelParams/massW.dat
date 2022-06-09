@@ -17,6 +17,6 @@ set param_card DECAY 24 2.0904310808144846
 # CMS combined result (Sep 2015)
 
 # top quark
-set param_card mass 6 172.44
+set param_card mass 6 172.5
 set param_card width 6 0.48
-set param_card yukawa 6 172.44
+set param_card yukawa 6 172.5
