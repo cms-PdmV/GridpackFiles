@@ -65,26 +65,26 @@ def addFragmentLines(fragmentLines):
 def replaceFragmentLines(fragmentLines):
 
     if args.concurrent:
-        fragmentLines = fragmentLines.replace("__generateConcurrently__", "generateConcurrently = cms.untracked.bool(True),")
-        fragmentLines = fragmentLines.replace("__concurrent__", "Concurrent")
+        fragmentLines = fragmentLines.replace("$generateConcurrently", "generateConcurrently = cms.untracked.bool(True),")
+        fragmentLines = fragmentLines.replace("$concurrent", "Concurrent")
     else:
-        fragmentLines = fragmentLines.replace("__generateConcurrently__", "")
-        fragmentLines = fragmentLines.replace("__concurrent__", "")
+        fragmentLines = fragmentLines.replace("$generateConcurrently", "")
+        fragmentLines = fragmentLines.replace("$concurrent", "")
 
-    fragmentLines = fragmentLines.replace("__tuneName__", args.tune)
-    fragmentLines = fragmentLines.replace("__comEnergy__", str(int(args.beamEnergy) * 2))
+    fragmentLines = fragmentLines.replace("$tuneName", args.tune)
+    fragmentLines = fragmentLines.replace("$comEnergy", str(int(args.beamEnergy) * 2))
 
     with open(os.path.join("Fragments", "imports.json")) as input_file:
         import_dict = json.load(input_file)
     try:
-        fragmentLines = fragmentLines.replace("__tuneImport__", import_dict["tune"][args.tune])
+        fragmentLines = fragmentLines.replace("$tuneImport", import_dict["tune"][args.tune])
     except:
         sys.exit("error : unknown tune, unable to find import path")
 
     process_parameters = ""
     for l in dataset_dict["fragment"]:
         process_parameters += f"            '{l}',\n"
-    fragmentLines = fragmentLines.replace("__processParameters__", process_parameters)
+    fragmentLines = fragmentLines.replace("$processParameters", process_parameters)
 
     filterLines = ""
     try:
@@ -97,7 +97,7 @@ def replaceFragmentLines(fragmentLines):
     except:
         pass
 
-    fragmentLines = fragmentLines.replace("__fragmentFilter__", filterLines)
+    fragmentLines = fragmentLines.replace("$fragmentFilter", filterLines)
 
     return fragmentLines
 

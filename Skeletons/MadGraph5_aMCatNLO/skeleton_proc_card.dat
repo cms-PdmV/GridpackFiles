@@ -11,4 +11,4 @@ define vl~ = ve~ vm~ vt~
 
 #FIXME generate p p > t t~ [QCD] @0
 
-output __process__ -nojpeg
+output $process -nojpeg

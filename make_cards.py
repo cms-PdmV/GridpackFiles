@@ -18,7 +18,7 @@ if (generator == "MadGraph5_aMCatNLO"):
     os.system("cp " + skeleton_path + "/skeleton.json " + path + "/" + process + ".json")
     os.system("cp " + skeleton_path + "/skeleton_madspin_card.dat " + path + "/" + process + "_madspin_card.dat")
     os.system("cp " + skeleton_path + "/skeleton_proc_card.dat " + path + "/" + process + "_proc_card.dat")
-    os.system("sed -i '' 's|__process__|" + process + "|g' " + path + "/" + process + "_proc_card.dat")
+    os.system("sed -i '' 's|$process|" + process + "|g' " + path + "/" + process + "_proc_card.dat")
 
 if (generator == "Powheg"):
 
