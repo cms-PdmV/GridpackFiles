@@ -8,8 +8,6 @@
     "template": "NLO_run_card.dat",
     "template_user": [],
     "template_vars":{
-        "ebeam1": 6800,
-        "ebeam2": 6800,
         "parton_shower": "pythia8",
         "ickkw": "3",
         "maxjetflavor": "5"
@@ -18,6 +16,4 @@
     "fragment": [],
     "fragment_user": [],
     "fragment_vars": {},
-
-    "chains": []
 }
