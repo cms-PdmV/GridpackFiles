@@ -1,11 +1,18 @@
 {
-    "powheg_process" : "hvq",
-
-    "user":[
+    "fragment": ["Hadronizer/amcatnloFXFX-pythia8.dat", "Filter/GEN_MuEl_MinPt15_filter.dat"],
+    "fragment_user": [],
+    "fragment_vars": {
+        "processParameters": []
+    },
+    "model_params_user": [
         "hdamp 237.8775",
         "qmass 172.5",
-        "tdec/twidth 1.31", 
+        "tdec/twidth 1.31",
         "topdecaymode 22200",
         "semileptonic 0"
-    ]
+    ],
+    "model_params_vars": {},
+    "powheg_process": "hvq",
+    "template": "LO_run_card.dat",
+    "template_user": []
 }

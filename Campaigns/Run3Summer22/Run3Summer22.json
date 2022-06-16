@@ -1,0 +1,13 @@
+{
+    "chain": "",
+    "model_params_vars": {},
+    "template_vars": {
+        "ebeam1": 6800,
+        "ebeam2": 6800
+    },
+    "fragment_vars": {
+        "concurrent": "",
+        "comEnergy": 13600
+    },
+    "tune": "CP5"
+}

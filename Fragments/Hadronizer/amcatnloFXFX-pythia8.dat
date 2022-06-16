@@ -18,7 +18,7 @@ generator = cms.EDFilter("Pythia8$concurrentHadronizerFilter",
             'JetMatching:coneRadius = 1.',
             'JetMatching:slowJetPower = 1',
             'JetMatching:doFxFx = on',
-$processParameters
+            $processParameters
         ),
         parameterSets = cms.vstring(
             'pythia8CommonSettings',
@@ -33,6 +33,3 @@ $processParameters
     pythiaHepMCVerbosity = cms.untracked.bool(False),
     pythiaPylistVerbosity = cms.untracked.int32(1),
 )
-
-
-$fragmentFilter

@@ -1,13 +1,11 @@
 {
-    "scheme": "massW.dat",
-
-    "run_card":{
-        "parton_shower": "pythia8",
-        "ickkw": "0",
-        "maxjetflavor": "4"
+    "fragment": ["Hadronizer/amcatnloFXFX-pythia8.dat", "Filter/GEN_MuEl_MinPt15_filter.dat"],
+    "fragment_user": [],
+    "fragment_vars": {
+        "processParameters": []
     },
-
-    "user":[
+    "model_params": "massW.dat",
+    "model_params_user": [
         "set run_card fixed_ren_scale True",
         "set run_card fixed_fac_scale True",
         "set run_card mur_ref_fixed 172.5",
@@ -15,9 +13,12 @@
         "set run_card muf2_ref_fixed 172.5",
         "set run_card fixed_qes_scale True"
     ],
-
-    "fragment":[
-    ]
-
+    "model_params_vars": {},
+    "template": "NLO_run_card.dat",
+    "template_user": [],
+    "template_vars": {
+        "ickkw": "0",
+        "maxjetflavor": "4",
+        "parton_shower": "pythia8"
+    }
 }
-

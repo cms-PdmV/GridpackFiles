@@ -1,24 +1,24 @@
 {
-    "scheme": "massZ.dat",
-
-    "run_card":{
-        "ickkw": "1",
-        "xqcut": "10",
-        "maxjetflavor": "5"
+    "fragment": ["Hadronizer/amcatnloFXFX-pythia8.dat", "Filter/GEN_MuEl_MinPt15_filter.dat"],
+    "fragment_user": [],
+    "fragment_vars": {
+        "processParameters": [
+            "JetMatching:qCut = 19.",
+            "JetMatching:nQmatch = 5",
+            "JetMatching:nJetMax = 4"
+        ]
     },
-
-    "user":[
+    "model_params": "massZ.dat",
+    "model_params_user": [
         "set run_card mmll 50",
         "set run_card ptj 10"
     ],
-
-    "fragment_hadronizer": "madgraphMLM-pythia8.dat",
-    "fragment_filter": "GEN_MuEl_MinPt15_filter.dat",
-
-    "fragment": [
-        "JetMatching:qCut = 19.",
-        "JetMatching:nQmatch = 5",
-        "JetMatching:nJetMax = 4"
-    ]
+    "model_params_vars": {},
+    "template": "LO_run_card.dat",
+    "template_user": [],
+    "template_vars": {
+        "ickkw": "1",
+        "maxjetflavor": "5",
+        "xqcut": "10"
+    }
 }
-

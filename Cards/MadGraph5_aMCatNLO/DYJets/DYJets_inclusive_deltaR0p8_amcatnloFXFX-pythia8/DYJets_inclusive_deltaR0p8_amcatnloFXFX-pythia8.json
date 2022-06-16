@@ -1,25 +1,27 @@
 {
-    "scheme": "massZ.dat",
-
-    "run_card":{
-        "parton_shower": "pythia8",
-        "ickkw": "3",
-        "maxjetflavor": "5"
+    "fragment": ["Hadronizer/amcatnloFXFX-pythia8.dat", "Filter/GEN_MuEl_MinPt15_filter.dat"],
+    "fragment_user": [],
+    "fragment_vars": {
+        "processParameters": [
+            "'JetMatching:qCut = 30.'",
+            "'JetMatching:qCutME = 10.'",
+            "'JetMatching:nQmatch = 5'",
+            "'JetMatching:nJetMax = 2'",
+            "'TimeShower:mMaxGamma = 4.0'"
+        ]
     },
-
-    "user":[
+    "model_params": "massZ.dat",
+    "model_params_user": [
         "set run_card mll_sf 50",
         "set run_card ptj 10",
         "set run_card jetradius 0.8"
     ],
-
-    "fragment":[
-            "JetMatching:qCut = 30.",
-            "JetMatching:qCutME = 10.",
-            "JetMatching:nQmatch = 5",
-            "JetMatching:nJetMax = 2",
-            "TimeShower:mMaxGamma = 4.0"
-    ]
-
+    "model_params_vars": {},
+    "template": "NLO_run_card.dat",
+    "template_user": [],
+    "template_vars": {
+        "ickkw": "3",
+        "maxjetflavor": "5",
+        "parton_shower": "pythia8"
+    }
 }
-

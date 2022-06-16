@@ -13,12 +13,12 @@
         "maxjetflavor": "5"
     },
 
-    "fragment": ["madgraphMLM-pythia8.dat"],
+    "fragment": ["Hadronizer/madgraphMLM-pythia8.dat"],
     "fragment_user": [
         "JetMatching:qCut = 19.",
         "JetMatching:nQmatch = 5",
         "JetMatching:nJetMax = 4"
     ],
-    "fragment_vars": {},
+    "fragment_vars": {}
 }
 
