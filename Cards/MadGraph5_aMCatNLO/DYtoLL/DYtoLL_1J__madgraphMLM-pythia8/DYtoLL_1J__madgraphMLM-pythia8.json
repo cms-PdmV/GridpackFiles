@@ -1,0 +1,21 @@
+{
+    "scheme": "massZ.dat",
+
+    "run_card":{
+        "ickkw": "1",
+        "xqcut": "10",
+        "maxjetflavor": "5"
+    },
+
+    "user":[
+        "set run_card mmll 50",
+        "set run_card ptj 10"
+    ],
+
+    "fragment": [
+        "JetMatching:qCut = 19.",
+        "JetMatching:nQmatch = 5",
+        "JetMatching:nJetMax = 4"
+    ]
+}
+
