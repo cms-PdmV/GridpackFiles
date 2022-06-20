@@ -4,6 +4,7 @@
     "fragment_vars": {
         "processParameters": []
     },
+    "model_params": "hvq.input",
     "model_params_user": [
         "hdamp 237.8775",
         "qmass 172.5",
@@ -12,7 +13,10 @@
         "semileptonic 0"
     ],
     "model_params_vars": {},
-    "powheg_process": "hvq",
-    "template": "LO_run_card.dat",
-    "template_user": []
+    "template": "hvq.input",
+    "template_user": [],
+    "template_vars": {
+        "pdf1": 325300,
+        "pdf2": 325300
+    }
 }
