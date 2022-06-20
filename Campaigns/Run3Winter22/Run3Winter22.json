@@ -2,9 +2,8 @@
     "chain": "chain_Run3Winter22wmLHEGS_flowRun3Winter22DRPremix_flowRun3Winter22MiniAOD_flowRun3Winter22NanoAOD",
     "model_params_vars": {},
     "template_vars": {
-        "ebeam1": 6800,
-        "ebeam2": 6800
     },
     "fragment_vars": {},
-    "tune": "CP5"
+    "tune": "CP5",
+    "beam": 6800
 }

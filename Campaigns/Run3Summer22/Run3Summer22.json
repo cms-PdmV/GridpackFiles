@@ -1,13 +1,13 @@
 {
-    "chain": "",
+    "chain": "chain_Run3Summer22wmLHEGS_flowRun3Summer22DRPremix_flowRun3Summer22MiniAOD_flowRun3Summer22NanoAOD",
     "model_params_vars": {},
     "template_vars": {
-        "ebeam1": 6800,
-        "ebeam2": 6800
+
     },
     "fragment_vars": {
-        "concurrent": "",
-        "comEnergy": 13600
+        "generateConcurrently": "generateConcurrently = cms.untracked.bool(True),",
+        "concurrent": "Concurrent"
     },
-    "tune": "CP5"
+    "tune": "CP5",
+    "beam": 6800
 }

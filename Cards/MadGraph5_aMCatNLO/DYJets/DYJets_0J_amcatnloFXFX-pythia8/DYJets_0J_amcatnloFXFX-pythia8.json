@@ -1,5 +1,5 @@
 {
-    "fragment": ["Hadronizer/amcatnloFXFX-pythia8.dat", "Filter/GEN_MuEl_MinPt15_filter.dat"],
+    "fragment": ["Hadronizer/ExternalLHEProducer.dat", "Hadronizer/amcatnloFXFX-pythia8.dat"],
     "fragment_user": [],
     "fragment_vars": {
         "processParameters": [

@@ -1,3 +1,5 @@
+import FWCore.ParameterSet.Config as cms
+
 externalLHEProducer = cms.EDProducer('ExternalLHEProducer',
     args = cms.vstring('$pathToProducedGridpack'),
     nEvents = cms.untracked.uint32(5000),
