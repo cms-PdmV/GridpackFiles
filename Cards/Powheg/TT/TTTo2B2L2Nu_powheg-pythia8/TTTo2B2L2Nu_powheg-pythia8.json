@@ -17,7 +17,7 @@
     ],
     "model_params_vars": {},
     
-    "fragment": ["Hadronizer/powheg-emissionveto-pythia8.dat", ],
+    "fragment": ["Hadronizer/powheg-emissionveto-pythia8.dat"],
     "fragment_user": [],
     "fragment_vars": {
         "processParameters": [
