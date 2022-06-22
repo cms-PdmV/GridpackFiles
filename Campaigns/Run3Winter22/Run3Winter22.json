@@ -3,7 +3,10 @@
     "model_params_vars": {},
     "template_vars": {
     },
-    "fragment_vars": {},
+    "fragment_vars": {
+        "generateConcurrently": "generateConcurrently = cms.untracked.bool(True),",
+        "concurrent": "Concurrent"
+    },
     "tune": "CP5",
     "beam": 6800
 }
