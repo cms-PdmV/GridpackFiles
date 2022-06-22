@@ -7,7 +7,7 @@ renscfact 1       ! renormalization scale factor: muren=muref*renscfact
 withnegweights 1  ! default 0
 use-old-grid 1    ! if 1 use old grid if file pwggrids.dat is present (# 1: regenerate)
 use-old-ubound 1  ! if 1 use norm of upper bounding function stored in pwgubound.dat, if present; # 1: regenerate
-ncall1 50000     ! number of calls for initializing the integration grid
+ncall1 50000      ! number of calls for initializing the integration grid
 itmx1 5           ! number of iterations for initializing the integration grid
 ncall2 500000     ! number of calls for computing the integral and finding upper bound
 itmx2 5           ! number of iterations for computing the integral and finding upper bound
