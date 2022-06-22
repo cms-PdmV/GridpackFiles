@@ -1,5 +1,5 @@
 {
-    "fragment": ["Hadronizer/ExternalLHEProducer.dat", "Hadronizer/amcatnloFXFX-pythia8.dat"],
+    "fragment": ["Generator/ExternalLHEProducer.dat", "PartonShower/amcatnloFXFX-pythia8.dat"],
     "fragment_user": [],
     "fragment_vars": {
         "processParameters": [
