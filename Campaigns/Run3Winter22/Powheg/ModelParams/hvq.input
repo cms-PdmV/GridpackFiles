@@ -5,8 +5,8 @@ tdec/elbranching 0.108
 tdec/emass 0.00051
 tdec/mumass 0.1057
 tdec/taumass 1.777
-tdec/dmass   0.100
-tdec/umass   0.100
-tdec/smass   0.200
-tdec/cmass   1.5
+tdec/dmass 0.100
+tdec/umass 0.100
+tdec/smass 0.200
+tdec/cmass 1.5
 tdec/sin2cabibbo 0.051
