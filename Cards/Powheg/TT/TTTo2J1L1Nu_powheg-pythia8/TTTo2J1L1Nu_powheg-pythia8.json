@@ -1,7 +1,7 @@
 {
     "template": "hvq.input",
     "template_user": [
-        "topdecaymode 22222",
+        "topdecaymode 11111",
         "semileptonic 1",
         "hdamp 237.8775"
     ],
