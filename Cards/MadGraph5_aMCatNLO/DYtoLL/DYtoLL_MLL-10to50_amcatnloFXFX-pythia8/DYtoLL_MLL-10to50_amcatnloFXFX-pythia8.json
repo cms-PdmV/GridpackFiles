@@ -1,5 +1,5 @@
 {
-    "fragment": ["Generator/ExternalLHEProducer.dat", "Hadronizer/amcatnloFXFX-pythia8.dat"],
+    "fragment": ["Generator/ExternalLHEProducer.dat", "PartonShower/amcatnloFXFX-pythia8.dat"],
     "fragment_user": [
         "'JetMatching:qCut = 30.',",
         "'JetMatching:qCutME = 10.',",
