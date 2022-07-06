@@ -1,0 +1,27 @@
+{
+    "template": "st_wtch_dr.input",
+    "template_user": [
+        "topdecaymode 11111",
+        "wdecaymode 11111",
+        "hdamp 237.8775"
+    ],
+    "template_vars": {
+        "pdf1": 325300,
+        "pdf2": 325300
+    },
+    
+    "model_params": "st_wtch_dr.input",
+    "model_params_user": [
+        "topmass 172.5",
+        "topwidth 1.31"
+    ],
+    "model_params_vars": {},
+    
+    "fragment": ["Generator/ExternalLHEProducer.dat","PartonShower/PowhegEmissionVetoPythia8.dat","Filter/GEOneLepton.dat"],
+    "fragment_user": [],
+    "fragment_vars": {
+        "processParameters": [
+            "POWHEG:nFinal = 2"
+        ]
+    }
+}
