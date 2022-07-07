@@ -1,5 +1,5 @@
 {
-    "template": "st_wtch_dr.input",
+    "template": "ST_wtch_DR.input",
     "template_user": [
         "topdecaymode 11111",
         "wdecaymode 11111",
@@ -10,7 +10,7 @@
         "pdf2": 325300
     },
     
-    "model_params": "st_wtch_dr.input",
+    "model_params": "ST_wtch_DR.input",
     "model_params_user": [
         "topmass 172.5",
         "topwidth 1.31"
