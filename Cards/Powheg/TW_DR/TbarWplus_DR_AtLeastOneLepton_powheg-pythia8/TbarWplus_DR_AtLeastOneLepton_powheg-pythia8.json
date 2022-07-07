@@ -1,6 +1,7 @@
 {
     "template": "ST_wtch_DR.input",
     "template_user": [
+        "ttype -1",
         "topdecaymode 11111",
         "wdecaymode 11111",
         "hdamp 237.8775"
