@@ -17,7 +17,7 @@
     ],
     "model_params_vars": {},
     
-    "fragment": ["Generator/ExternalLHEProducer.dat","PartonShower/PowhegEmissionVetoPythia8.dat","Filter/GEOneLepton.dat"],
+    "fragment": ["Generator/ExternalLHEProducer.dat","PartonShower/PowhegEmissionVetoPythia8.dat","Filter/AtLeastOneLepton.dat"],
     "fragment_user": [],
     "fragment_vars": {
         "processParameters": [
