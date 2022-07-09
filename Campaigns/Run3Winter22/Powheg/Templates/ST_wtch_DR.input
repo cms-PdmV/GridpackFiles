@@ -10,7 +10,6 @@ facscfact 1
 renscfact 1   
 withnegweights 1  
 withdamp 1
-hdamp 237.8775  
 use-old-grid 1 
 use-old-ubound 1 
 ncall1 50000   
