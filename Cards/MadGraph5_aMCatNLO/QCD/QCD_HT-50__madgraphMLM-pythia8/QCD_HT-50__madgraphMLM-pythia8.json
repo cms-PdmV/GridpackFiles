@@ -1,13 +1,11 @@
 {
-    "fragment": ["Hadronizer/amcatnloFXFX-pythia8.dat", "Filter/GEN_MuEl_MinPt15_filter.dat"],
-    "fragment_user": [],
-    "fragment_vars": {
-        "processParameters": [
-            "JetMatching:qCut = 14.",
-            "JetMatching:nQmatch = 5",
-            "JetMatching:nJetMax = 4"
-        ]
-    },
+    "fragment": ["Generator/ExternalLHEProducer.dat", "PartonShower/madgraphMLM-pythia8.dat"],
+    "fragment_user": [
+        "'JetMatching:qCut = 14.'",
+        "'JetMatching:nQmatch = 5'",
+        "'JetMatching:nJetMax = 4'"
+    ],
+    "fragment_vars": {},
     "model_params": "massZ.dat",
     "model_params_user": [
         "set run_card htjmin 50"
