@@ -10,5 +10,6 @@
     },
     "tune": "CP5",
     "beam": 6800,
-    "gridpack_directory": "/eos/cms/store/group/phys_generator/cvmfs/gridpacks/RunIII/13p6TeV/el8_amd64_gcc10/"
+    "gridpack_directory": "/eos/cms/store/group/phys_generator/cvmfs/gridpacks/PdmV/Run3Summer22"
 }
+
