@@ -1,0 +1,28 @@
+{
+    "template": "hvq.input",
+    "template_user": [
+        "topdecaymode 22200",
+        "semileptonic 0",
+        "hdamp 250"
+    ],
+    "template_vars": {
+        "pdf1": 325300,
+        "pdf2": 325300
+    },
+    
+    "model_params": "hvq.input",
+    "model_params_user": [
+        "qmass 178.5",
+        "tdec/twidth 1.311"
+    ],
+    "model_params_vars": {},
+    
+    "fragment": ["Generator/ExternalLHEProducer.dat","PartonShower/PowhegEmissionVetoPythia8.dat"],
+    "fragment_user": [],
+    "fragment_vars": {
+        "processParameters": [
+            "'POWHEG:nFinal = 2'",
+            "'TimeShower:mMaxGamma = 1.0'"
+        ]
+    }
+}
