@@ -1,0 +1,10 @@
+import model sm-no_b_mass
+
+define ell+ = e+ mu+ ta+
+define ell- = e- mu- ta-
+define vl = ve vm vt
+define vl~ = ve~ vm~ vt~
+
+generate p p > ell+ ell- j j j j $$ t t~ h @0
+
+output DYto2L_4J_madgraphMLM-pythia8 -nojpeg
