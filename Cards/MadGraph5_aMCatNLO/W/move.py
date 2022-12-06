@@ -13,7 +13,7 @@ for sample in samples:
 
     files = os.listdir("./")
     for file in files:
-        os.system(f"mv {file} {file.replace('DYto2L', 'WtoLNu')}")
-        os.system(f"sed -i '' 's|{file.replace('DYto2L', 'WtoLNu')}|{file.replace('DYto2L', 'WtoLNu')}|g' *.dat")
+#        os.system(f"mv {file} {file.replace('DYto2L', 'WtoLNu')}")
+        os.system(f"sed -i '' 's|DYto2L|WtoLNu|g' *.dat")
     os.chdir(cwd)
-    os.system(f"mv {sample} {sample.replace('DYto2L', 'WtoLNu')}")
+#    os.system(f"mv {sample} {sample.replace('DYto2L', 'WtoLNu')}")
