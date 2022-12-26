@@ -18,5 +18,5 @@ set param_card DECAY 24 2.085
 
 # top quark
 set param_card mass 6 172.5
-set param_card DECAY 6 0.48
+set param_card DECAY 6 1.311
 set param_card yukawa 6 172.5
