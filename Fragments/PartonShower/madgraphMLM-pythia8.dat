@@ -16,12 +16,13 @@ generator = cms.EDFilter("Pythia8$concurrentHadronizerFilter",
             'JetMatching:coneRadius = 1.',
             'JetMatching:slowJetPower = 1',
             'JetMatching:doShowerKt = off', 
-$processParameters
+            $processParameters
         ),
         parameterSets = cms.vstring(
             'pythia8CommonSettings',
             'pythia8$tuneNameSettings',
-            'pythia8PSweightsSettings',
+            'processParameters',
+            'pythia8PSweightsSettings'
         )
     ),
     comEnergy = cms.double($comEnergy),
