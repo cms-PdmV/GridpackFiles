@@ -5,10 +5,7 @@
         "semileptonic 0",
         "hdamp 158"
     ],
-    "template_vars": {
-        "pdf1": 325300,
-        "pdf2": 325300
-    },
+    "template_vars": {},
     
     "model_params": "hvq.input",
     "model_params_user": [
