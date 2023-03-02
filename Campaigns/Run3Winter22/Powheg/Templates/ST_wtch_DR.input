@@ -4,8 +4,8 @@ ih1 1
 ih2 1         
 ebeam1 $ebeam1
 ebeam2 $ebeam2
-lhans1 $pdf1
-lhans2 $pdf2 
+lhans1 325300
+lhans2 325300 
 facscfact 1  
 renscfact 1   
 withnegweights 1  
