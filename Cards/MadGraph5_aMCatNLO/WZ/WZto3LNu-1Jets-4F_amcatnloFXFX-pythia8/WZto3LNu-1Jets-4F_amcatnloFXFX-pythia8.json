@@ -8,7 +8,8 @@
     },
     "model_params": "massW.dat",
     "model_params_user": [
-        "set run_card ptj 15"
+        "set run_card ptj 15",
+        "set run_card mll_sf 10"
     ],
     "model_params_vars": {},
     "fragment": ["Generator/ExternalLHEProducer.dat", "PartonShower/amcatnloFXFX-pythia8.dat"],
