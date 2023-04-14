@@ -1,8 +1,8 @@
 import os
 import sys
 
-generator = sys.argv[1] #MadGraph5_aMCatNLO #Powheg
-path = sys.argv[2] #Cards/MadGraph5_aMCatNLO/DYJets/DYJets_0J_amcatnloFXFX-pythia8
+generator = 'MadGraph5_aMCatNLO' #Powheg
+path = sys.argv[1] #Cards/MadGraph5_aMCatNLO/DYJets/DYJets_0J_amcatnloFXFX-pythia8
 
 if not os.path.exists(path):
     os.system("mkdir -p " + path)
