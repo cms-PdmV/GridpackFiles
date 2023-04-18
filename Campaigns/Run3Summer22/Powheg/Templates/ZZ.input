@@ -1,0 +1,23 @@
+numevts NEVENTS
+iseed SEED 
+ih1   1           
+ih2   1           
+ebeam1 $ebeam1 
+ebeam2 $ebeam2 
+lhans1   325300 
+lhans2   325300 
+facscfact  1d0   
+renscfact  1d0   
+withnegweights 1 
+use-old-grid    1 
+use-old-ubound  1 
+ncall1   1000000   
+itmx1    4        
+ncall2   1000000  
+itmx2    5        
+foldcsi   2       
+foldy     5       
+foldphi   2       
+nubound  1000000  
+
+
