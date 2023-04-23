@@ -1,0 +1,9 @@
+LHE_Gamma_Pt100to200_filter = cms.EDFilter("LHEPtFilter",
+                           selectedPdgIds = cms.vint32(22),
+                           ptMax = cms.double(200.0),
+                           ptMin = cms.double(100.0),
+                           src = cms.InputTag("externalLHEProducer")
+)
+
+ProductionFilterSequence = cms.Sequence(generator*LHE_Gamma_Pt100to200_filter)
+
