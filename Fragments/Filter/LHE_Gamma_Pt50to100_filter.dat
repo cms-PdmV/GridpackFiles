@@ -1,4 +1,4 @@
-LHE_Gamma_Pt50to100_filter = cms.EDFilter("LHE_Gamma_Pt50to100_filter",
+LHE_Gamma_Pt50to100_filter = cms.EDFilter("LHEPtFilter",
                            selectedPdgIds = cms.vint32(22),
                            ptMax = cms.double(100.0),
                            ptMin = cms.double(50.0),
