@@ -1,0 +1,21 @@
+{
+    "template": "ZZ.input",
+    "template_user": [
+        "leptons-nu 1",
+        "mllmin 4d0"
+    ],
+    "template_vars": {},
+    
+    "model_params": "ZZ.input",
+    "model_params_user": [],
+    "model_params_vars": {},
+    
+    "fragment": ["Generator/ExternalLHEProducer.dat","PartonShower/PowhegEmissionVetoPythia8.dat"],
+    "fragment_user": [],
+    "fragment_vars": {
+        "processParameters": [
+            "'POWHEG:nFinal = 2'",
+            "'TimeShower:mMaxGamma = 4.0'"
+        ]
+    }
+}
