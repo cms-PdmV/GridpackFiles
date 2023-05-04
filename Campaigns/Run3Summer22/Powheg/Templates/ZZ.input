@@ -18,6 +18,7 @@ itmx2 5
 foldcsi 2
 foldy 5
 foldphi 2
-nubound 1000000
+icsimax 1
 iymax 1
+nubound 1000000
 xupbound 2
