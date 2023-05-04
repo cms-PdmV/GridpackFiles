@@ -1,4 +1,5 @@
 c *This file contains cuts on the pt of gamma (<230GeV): line320-323*
+c *This file contains cuts on the mass of ll (<50GeV): line149-153*
 c This file contains the default cuts (as defined in the run_card.dat)
 c and can easily be extended by the user to include other.  This
 c function should return true if event passes cuts
