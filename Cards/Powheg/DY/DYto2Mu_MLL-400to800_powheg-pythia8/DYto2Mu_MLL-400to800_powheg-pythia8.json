@@ -2,8 +2,8 @@
     "template": "Z.input",
     "template_user": [
         "vdecaymode 2",
-        "mass_low 10",
-        "mass_high 50"    
+        "mass_low 400",
+        "mass_high 800"    
     ],
     "template_vars": {},
     
