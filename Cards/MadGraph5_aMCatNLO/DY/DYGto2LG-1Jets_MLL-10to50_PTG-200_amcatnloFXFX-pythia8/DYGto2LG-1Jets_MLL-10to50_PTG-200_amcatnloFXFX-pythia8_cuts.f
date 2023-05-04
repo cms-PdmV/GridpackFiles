@@ -140,14 +140,12 @@ c DeltaR and invariant mass cuts
                            endif
                         endif
                         if (mll_sf.gt.0d0) then
-                           if (invm2_04(p(0,i),p(0,j),1d0).gt.50**2)
+                           if (invm2_04(p(0,i),p(0,j),1d0).lt.mll_sf**2)
      $                          then
                               passcuts_user=.false.
                               return
                            endif
-                        endif
-                        if (mll_sf.gt.0d0) then
-                           if (invm2_04(p(0,i),p(0,j),1d0).lt.mll_sf**2)
+                           if (invm2_04(p(0,i),p(0,j),1d0).gt.50**2)
      $                          then
                               passcuts_user=.false.
                               return
