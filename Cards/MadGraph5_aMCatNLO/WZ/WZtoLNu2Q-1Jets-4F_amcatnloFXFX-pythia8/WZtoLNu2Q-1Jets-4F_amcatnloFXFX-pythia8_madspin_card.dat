@@ -7,6 +7,8 @@ set max_weight_ps_point 400  # number of PS to estimate the maximum for each eve
 
 set max_running_process 1
 
-decay z > j j
+define q = j b b~
+
+decay z > q q
 
 launch
