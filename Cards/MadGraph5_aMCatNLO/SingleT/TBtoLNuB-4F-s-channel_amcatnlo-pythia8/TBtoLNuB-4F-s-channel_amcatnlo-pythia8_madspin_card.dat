@@ -1,0 +1,8 @@
+set ms_dir ./madspingrid
+
+set max_running_process 1
+
+decay t > w+ b, w+ > ell+ vl
+decay t~ > w- b~, w- > ell- vl~
+
+launch
