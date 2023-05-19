@@ -6,6 +6,5 @@ define vl = ve vm vt
 define vl~ = ve~ vm~ vt~
 
 generate p p > w+ > t b~ [QCD] @0
-add process p p > w- > t~ b [QCD] @1
 
-output TBtoLNuB-s-channel-4F_amcatnlo-pythia8 -nojpeg
+output TBbartoLplusNuBbar-4FS-s-channel_TuneCP5_13p6TeV_amcatnlo-pythia8 -nojpeg
