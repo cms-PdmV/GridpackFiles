@@ -1,4 +1,4 @@
-import model loop_sm-ckm
+import model loop_sm
 
 define ell+ = e+ mu+ ta+
 define ell- = e- mu- ta-
@@ -10,4 +10,4 @@ add process p p > ell+ vl vl vl~ j [QCD] @1
 add process p p > ell- vl vl~ vl~ [QCD] @2
 add process p p > ell- vl vl~ vl~ j [QCD] @3
 
-output WZtoL3Nu-1Jets-4F_amcatnloFXFX-pythia8 -nojpeg
+output WZtoL3Nu-1Jets-4FS_amcatnloFXFX-pythia8 -nojpeg
