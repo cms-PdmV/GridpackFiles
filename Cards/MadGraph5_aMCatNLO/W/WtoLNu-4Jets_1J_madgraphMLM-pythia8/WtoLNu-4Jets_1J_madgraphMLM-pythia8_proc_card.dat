@@ -5,7 +5,7 @@ define ell- = e- mu- ta-
 define vl = ve vm vt
 define vl~ = ve~ vm~ vt~
 
-generate p p > ell+ vl j $$ t t~ h @0
-add process p p > ell- vl~ j $$ t t~ h @1
+generate p p > ell+ vl j $ t t~ h @0
+add process p p > ell- vl~ j $ t t~ h @1
 
 output WtoLNu-4Jets_1J_madgraphMLM-pythia8 -nojpeg
