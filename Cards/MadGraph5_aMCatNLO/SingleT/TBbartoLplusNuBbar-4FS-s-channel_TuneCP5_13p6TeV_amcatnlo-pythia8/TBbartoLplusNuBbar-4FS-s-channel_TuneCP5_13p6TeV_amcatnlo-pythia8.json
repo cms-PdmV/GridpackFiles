@@ -8,10 +8,6 @@
     },
     "model_params": "massW.dat",
     "model_params_user": [
-        "set run_card fixed_ren_scale True",
-        "set run_card fixed_fac_scale True",
-        "set run_card mur_ref_fixed 172.5",
-        "set run_card muf_ref_fixed 172.5"
     ],
     "model_params_vars": {},
     "fragment": ["Generator/ExternalLHEProducer.dat", "PartonShower/amcatnlo-pythia8.dat"],
