@@ -1,0 +1,46 @@
+000 (337342.000.000) 2023-06-03 17:02:18 Job submitted from host: <155.230.20.251:9618?addrs=155.230.20.251-9618+[2407-c000-c024-0-22cb-b653-2fd3-3109]-9618&alias=cms.knu.ac.kr&noUDP&sock=schedd_4841_1a10>
+...
+040 (337342.000.000) 2023-06-03 17:02:27 Started transferring input files
+	Transferring to host: <155.230.21.38:9618?addrs=155.230.21.38-9618+[2407-c000-c024-0-226-18ff-fe94-3c0b]-9618&alias=cluster238.knu.ac.kr&noUDP&sock=slot1_6_1571_a959_779>
+...
+040 (337342.000.000) 2023-06-03 17:02:27 Finished transferring input files
+...
+001 (337342.000.000) 2023-06-03 17:02:28 Job executing on host: <155.230.21.38:9618?addrs=155.230.21.38-9618+[2407-c000-c024-0-226-18ff-fe94-3c0b]-9618&alias=cluster238.knu.ac.kr&noUDP&sock=startd_1478_5d11>
+...
+006 (337342.000.000) 2023-06-03 17:02:39 Image size of job updated: 42396
+	37  -  MemoryUsage of job (MB)
+	37624  -  ResidentSetSize of job (KB)
+...
+006 (337342.000.000) 2023-06-03 17:07:39 Image size of job updated: 3463844
+	396  -  MemoryUsage of job (MB)
+	405448  -  ResidentSetSize of job (KB)
+...
+006 (337342.000.000) 2023-06-03 17:12:40 Image size of job updated: 5230152
+	2374  -  MemoryUsage of job (MB)
+	2430836  -  ResidentSetSize of job (KB)
+...
+006 (337342.000.000) 2023-06-03 17:17:40 Image size of job updated: 6995608
+	2377  -  MemoryUsage of job (MB)
+	2433740  -  ResidentSetSize of job (KB)
+...
+040 (337342.000.000) 2023-06-03 17:27:20 Started transferring output files
+...
+040 (337342.000.000) 2023-06-03 17:27:20 Finished transferring output files
+...
+005 (337342.000.000) 2023-06-03 17:27:20 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:17:14, Sys 0 00:01:06  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:17:14, Sys 0 00:01:06  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	320930  -  Run Bytes Sent By Job
+	917  -  Run Bytes Received By Job
+	320930  -  Total Bytes Sent By Job
+	917  -  Total Bytes Received By Job
+	Partitionable Resources :     Usage  Request Allocated 
+	   Cpus                 :      0.98        1         1 
+	   Disk (KB)            : 155025           1   1891788 
+	   Memory (MB)          :   2377        4192      4200 
+
+	Job terminated of its own accord at 2023-06-03T08:27:20Z.
+...

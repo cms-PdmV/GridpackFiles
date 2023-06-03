@@ -1,0 +1,12 @@
+executable = GEN-Run3Summer22wmLHEGS-00212.sh
+getenv = True
+when_to_transfer_output = on_exit
++JobFlavour = "workday"
++JobBatchName = "GEN-Run3Summer22wmLHEGS-00212"
+output = GEN-Run3Summer22wmLHEGS-00212.stdout
+error = GEN-Run3Summer22wmLHEGS-00212.stderr
+log = GEN-Run3Summer22wmLHEGS-00212.stdlog
+request_memory = 8192
++SingularityImage = "/cvmfs/singularity.opensciencegrid.org/cmssw/cms:rhel8-m-m20230425"
+queue
+

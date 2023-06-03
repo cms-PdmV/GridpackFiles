@@ -1,0 +1,508 @@
+>> Local Products Rules ..... started
+>> Local Products Rules ..... done
+>> Entering Package Configuration/GenProduction
+>> Leaving Package Configuration/GenProduction
+>> Package Configuration/GenProduction built
+>> Subsystem Configuration built
+>> Subsystem BigProducts built
+>> Building CMSSW version CMSSW_12_4_11_patch3 ----
+gmake[1]: Entering directory '/srv/CMSSW_12_4_11_patch3'
+>> Local Products Rules ..... started
+>> Local Products Rules ..... done
+>> Creating project symlinks
+>> Done python_symlink
+>> Compiling python3 modules cfipython/el8_amd64_gcc10
+>> Compiling python3 modules python
+>> Compiling python3 modules src/Configuration/GenProduction/python
+>> All python modules compiled
+>> Plugins of all types refreshed.
+>> Done generating edm plugin poisoned information
+gmake[1]: Leaving directory '/srv/CMSSW_12_4_11_patch3'
+LHE,GEN,SIM,ENDJOB
+with DB:
+Step: LHE Spec: 
+Loading lhe fragment from Configuration.GenProduction.GEN-Run3Summer22wmLHEGS-00212
+Step: GEN Spec: 
+Loading generator fragment from Configuration.GenProduction.GEN-Run3Summer22wmLHEGS-00212
+Step: SIM Spec: 
+Step: ENDJOB Spec: 
+customising the process with addMonitoring from Configuration/DataProcessing/Utils
+Config file run.py created
+
+**************************************************************
+ Geant4 version Name: geant4-10-07-patch-02 [MT]   (11-June-2021)
+  << in Multi-threaded mode >> 
+                       Copyright : Geant4 Collaboration
+                      References : NIM A 506 (2003), 250-303
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : NIM A 835 (2016), 186-225
+                             WWW : http://geant4.org/
+**************************************************************
+
+PersistencyIO    INFO  +++ Set Streamer to dd4hep::OpaqueDataBlock
+DD4hep           WARN  ++ Using globally Geant4 unit system (mm,ns,MeV)
+DD4CMS           INFO  +++ Processing the CMS detector description xml-memory-buffer
+Detector         INFO  *********** Created World volume with size: 101000 101000 450000
+Detector         INFO  +++ Patching names of anonymous shapes....
+DDDefinition     INFO  +++ Finished processing xml-memory-buffer
+DD4hep           WARN  ++ Using globally Geant4 unit system (mm,ns,MeV)
+DD4CMS           INFO  +++ Processing the CMS detector description xml-memory-buffer
+Detector         INFO  *********** Created World volume with size: 101000 101000 450000
+PlacedVolume     INFO  REFLECTION: (x.Cross(y)).Dot(z):       -1 Parent: eregalgo:EFAW [TGeoVolume] Daughter: eregalgo:EHAWR [TGeoVolumeAssembly]
+Detector         INFO  +++ Patching names of anonymous shapes....
+DDDefinition     INFO  +++ Finished processing xml-memory-buffer
+   ______________________________________     
+         Running Generic Tarball/Gridpack     
+   ______________________________________     
+gridpack tarball path = /cvmfs/cms.cern.ch/phys_generator/gridpacks/PdmV/Run3Summer22/QCDB-4Jets_HT-1500to2000_madgraphMLM-pythia8_slc7_amd64_gcc10_CMSSW_12_4_8_tarball.tar.xz
+%MSG-MG5 number of events requested = 1
+%MSG-MG5 random seed used for the run = 234567
+%MSG-MG5 thread count requested = 1
+%MSG-MG5 residual/optional arguments = 
+%MSG-MG5 number of events requested = 1
+%MSG-MG5 random seed used for the run = 234567
+%MSG-MG5 number of cpus = 1
+%MSG-MG5 SCRAM_ARCH version = slc7_amd64_gcc10
+%MSG-MG5 CMSSW version = CMSSW_12_4_8
+Running MG5_aMC for the 1 time
+produced_lhe  0 nevt  1 submitting_event  1  remaining_event  1
+run.sh 1 2345670
+Now generating 1 events with random seed 2345670 and granularity 1
+************************************************************
+*                                                          *
+*                      W E L C O M E to                    *
+*             M A D G R A P H 5 _ a M C @ N L O            *
+*                      M A D E V E N T                     *
+*                                                          *
+*                 *                       *                *
+*                   *        * *        *                  *
+*                     * * * * 5 * * * *                    *
+*                   *        * *        *                  *
+*                 *                       *                *
+*                                                          *
+*         VERSION 2.9.13                20xx-xx-xx         *
+*                                                          *
+*    The MadGraph5_aMC@NLO Development Team - Find us at   *
+*    https://server06.fynu.ucl.ac.be/projects/madgraph     *
+*                                                          *
+*               Type 'help' for in-line help.              *
+*                                                          *
+************************************************************
+INFO: load configuration from /srv/CMSSW_12_4_11_patch3/src/thread0/lheevent/process/madevent/Cards/me5_configuration.txt  
+INFO: load configuration from /srv/CMSSW_12_4_11_patch3/src/thread0/lheevent/mgbasedir/input/mg5_configuration.txt  
+INFO: load configuration from /srv/CMSSW_12_4_11_patch3/src/thread0/lheevent/process/madevent/Cards/me5_configuration.txt  
+No valid eps viewer found. Please set in ./input/mg5_configuration.txt
+No valid web browser found. Please set in ./input/mg5_configuration.txt
+WRITE GRIDCARD /srv/CMSSW_12_4_11_patch3/src/thread0/lheevent/process/madevent
+generate 1 events
+P2_gg_qggq
+P2_gq_qggg
+P2_gg_qqqq
+P2_gq_qgqq
+P2_qq_qggq
+P2_qq_qqqq
+P1_gg_qgq
+P1_gq_qgg
+P1_gq_qqq
+P1_qq_qgq
+P0_gg_qq
+P0_gq_qg
+P0_qq_qq
+Using random number seed offset = 2345670
+INFO: Generating 1.0 unweighted events. 
+sum of cpu time of last step: 2h06m27s
+INFO: need to improve 2 channels 
+combine_events
+store_events
+  === Results Summary for run: GridRun_2345670 tag: tag_1 ===
+
+     Cross-section :   0 +- 0 pb
+     Nb of events :  1
+ 
+decay_events -from_cards
+DONE
+write ./events.lhe.gz
+run 1 finished, total number of produced events: 1/1
+
+-rw-r--r--. 1 shjeon zh 5597 Jun  3 10:14 events_1.lhe.gz
+run finished, produced number of events:
+1
+/srv/CMSSW_12_4_11_patch3/src/thread0/lheevent/process/madevent /srv/CMSSW_12_4_11_patch3/src/thread0/lheevent
+************************************************************
+*                                                          *
+*                      W E L C O M E to                    *
+*             M A D G R A P H 5 _ a M C @ N L O            *
+*                      M A D E V E N T                     *
+*                                                          *
+*                 *                       *                *
+*                   *        * *        *                  *
+*                     * * * * 5 * * * *                    *
+*                   *        * *        *                  *
+*                 *                       *                *
+*                                                          *
+*         VERSION 2.9.13                20xx-xx-xx         *
+*                                                          *
+*    The MadGraph5_aMC@NLO Development Team - Find us at   *
+*    https://server06.fynu.ucl.ac.be/projects/madgraph     *
+*                                                          *
+*               Type 'help' for in-line help.              *
+*                                                          *
+************************************************************
+INFO: load configuration from /srv/CMSSW_12_4_11_patch3/src/thread0/lheevent/process/madevent/Cards/me5_configuration.txt  
+INFO: load configuration from /srv/CMSSW_12_4_11_patch3/src/thread0/lheevent/mgbasedir/input/mg5_configuration.txt  
+INFO: load configuration from /srv/CMSSW_12_4_11_patch3/src/thread0/lheevent/process/madevent/Cards/me5_configuration.txt  
+No valid eps viewer found. Please set in ./input/mg5_configuration.txt
+No valid web browser found. Please set in ./input/mg5_configuration.txt
+madevent>INFO: Running Systematics computation 
+INFO: # events generated with PDF: NNPDF31_nnlo_as_0118_mc_hessian_pdfas (325300) 
+INFO: #Will Compute 926 weights per event. 
+INFO: # currently at event 0 [elapsed time: 0.08 s] 
+INFO: #***************************************************************************
+#
+# original cross-section: 103.17291
+#     scale variation: +29.6% -20.1%
+#     emission scale variation: +29.6% -20.1%
+#     central scheme variation: +0.00159% -10%
+# PDF variation: +7.4% -7.4%
+#
+#PDF NNPDF31_nnlo_as_0118_mc: 103.162 +1.83% -1.83%
+#PDF NNPDF31_nlo_hessian_pdfas: 100.318 +6.73% -6.73%
+#PDF NNPDF40_nnlo_pdfas: 100.727 +3.73% -3.73%
+#PDF NNPDF40_nnlo_hessian_pdfas: 100.487 +3.74% -3.74%
+#PDF NNPDF40_nnlo_pch_as_01180: 102.199 +1.07% -1.07%
+#PDF CT18NNLO: 111.765 +5.5% -3.58%
+#PDF CT18ZNNLO: 109.462 +4.2% -4.34%
+#PDF MSHT20nnlo_as118: 108.772 +3.22% -1.84%
+#PDF PDF4LHC21_40_pdfas: 107.95 +6.15% -6.15%
+#PDF HERAPDF20_NNLO_EIG: 114.819 +3.81% -4.23%
+#PDF ABMP16als118_5_nnlo: 110.692 +3.79% -3.79%
+# dynamical scheme # 1 : 94.4707 +9.21% -8.46% # \sum ET
+# dynamical scheme # 2 : 94.4707 +9.21% -8.46% # \sum\sqrt{m^2+pt^2}
+# dynamical scheme # 3 : 103.175 +9.07% -8.44% # 0.5 \sum\sqrt{m^2+pt^2}
+# dynamical scheme # 4 : 92.8418 +9.23% -8.45% # \sqrt{\hat s}
+# PDF 263000 : 136.2912712285069
+#***************************************************************************
+ 
+INFO: End of systematics computation 
+madevent>INFO:  
+launch in debug mode
+/srv/CMSSW_12_4_11_patch3/src/thread0/lheevent
+
+Run xml check
+Number of weights that are NaN:
+0
+All checks passed 
+
+total 340
+drwxr-xr-x.  2 shjeon zh    224 Jun  3 00:34 InputCards
+-rw-r--r--.  1 shjeon zh 144286 Jun  3 10:14 cmsgrid_final.lhe
+-rw-r--r--.  1 shjeon zh 175480 Jun  3 00:34 gridpack_generation.log
+-rwxr-xr-x.  1 shjeon zh  11617 Jun  3 00:34 merge.pl
+drwxr-xr-x. 14 shjeon zh   4096 Jun  3 00:34 mgbasedir
+drwxr-xr-x.  3 shjeon zh     48 Jun  3 10:14 process
+-rwxr-xr-x.  1 shjeon zh   7866 Jun  3 00:34 runcmsgrid.sh
+Geant4Converter  INFO  +++  Successfully converted geometry to Geant4.
+
+ *------------------------------------------------------------------------------------* 
+ |                                                                                    | 
+ |  *------------------------------------------------------------------------------*  | 
+ |  |                                                                              |  | 
+ |  |                                                                              |  | 
+ |  |   PPP   Y   Y  TTTTT  H   H  III    A      Welcome to the Lund Monte Carlo!  |  | 
+ |  |   P  P   Y Y     T    H   H   I    A A     This is PYTHIA version 8.306      |  | 
+ |  |   PPP     Y      T    HHHHH   I   AAAAA    Last date of change: 28 Jun 2021  |  | 
+ |  |   P       Y      T    H   H   I   A   A                                      |  | 
+ |  |   P       Y      T    H   H  III  A   A    Now is 03 Jun 2023 at 10:14:44    |  | 
+ |  |                                                                              |  | 
+ |  |   Program documentation and an archive of historic versions is found on:     |  | 
+ |  |                                                                              |  | 
+ |  |                               https://pythia.org/                            |  | 
+ |  |                                                                              |  | 
+ |  |   PYTHIA is authored by a collaboration consisting of:                       |  | 
+ |  |                                                                              |  | 
+ |  |   Christian Bierlich, Nishita Desai, Leif Gellersen, Ilkka Helenius, Philip  |  | 
+ |  |   Ilten, Leif Lönnblad, Stephen Mrenna, Stefan Prestel, Christian Preuss,    |  | 
+ |  |   Torbjörn Sjöstrand, Peter Skands, Marius Utheim and Rob Verheyen.          |  | 
+ |  |                                                                              |  | 
+ |  |   The complete list of authors, including contact information and            |  | 
+ |  |   affiliations, can be found on https://pythia.org/.                         |  | 
+ |  |   Problems or bugs should be reported on email at authors@pythia.org.        |  | 
+ |  |                                                                              |  | 
+ |  |   The main program reference is 'An Introduction to PYTHIA 8.2',             |  | 
+ |  |   T. Sjöstrand et al, Comput. Phys. Commun. 191 (2015) 159                   |  | 
+ |  |   [arXiv:1410.3012 [hep-ph]]                                                 |  | 
+ |  |                                                                              |  | 
+ |  |   The main physics reference is the 'PYTHIA 6.4 Physics and Manual',         |  | 
+ |  |   T. Sjöstrand, S. Mrenna and P. Skands, JHEP05 (2006) 026 [hep-ph/0603175]  |  | 
+ |  |                                                                              |  | 
+ |  |   PYTHIA is released under the GNU General Public Licence version 2 or later.|  | 
+ |  |   Please respect the MCnet Guidelines for Event Generator Authors and Users. |  | 
+ |  |                                                                              |  | 
+ |  |   Disclaimer: this program comes without any guarantees.                     |  | 
+ |  |   Beware of errors and use common sense when interpreting results.           |  | 
+ |  |                                                                              |  | 
+ |  |   Copyright (C) 2021 Torbjörn Sjöstrand                                      |  | 
+ |  |                                                                              |  | 
+ |  |                                                                              |  | 
+ |  *------------------------------------------------------------------------------*  | 
+ |                                                                                    | 
+ *------------------------------------------------------------------------------------* 
+
+
+ *------------------------------------------------------------------------------------* 
+ |                                                                                    | 
+ |  *------------------------------------------------------------------------------*  | 
+ |  |                                                                              |  | 
+ |  |                                                                              |  | 
+ |  |   PPP   Y   Y  TTTTT  H   H  III    A      Welcome to the Lund Monte Carlo!  |  | 
+ |  |   P  P   Y Y     T    H   H   I    A A     This is PYTHIA version 8.306      |  | 
+ |  |   PPP     Y      T    HHHHH   I   AAAAA    Last date of change: 28 Jun 2021  |  | 
+ |  |   P       Y      T    H   H   I   A   A                                      |  | 
+ |  |   P       Y      T    H   H  III  A   A    Now is 03 Jun 2023 at 10:14:44    |  | 
+ |  |                                                                              |  | 
+ |  |   Program documentation and an archive of historic versions is found on:     |  | 
+ |  |                                                                              |  | 
+ |  |                               https://pythia.org/                            |  | 
+ |  |                                                                              |  | 
+ |  |   PYTHIA is authored by a collaboration consisting of:                       |  | 
+ |  |                                                                              |  | 
+ |  |   Christian Bierlich, Nishita Desai, Leif Gellersen, Ilkka Helenius, Philip  |  | 
+ |  |   Ilten, Leif Lönnblad, Stephen Mrenna, Stefan Prestel, Christian Preuss,    |  | 
+ |  |   Torbjörn Sjöstrand, Peter Skands, Marius Utheim and Rob Verheyen.          |  | 
+ |  |                                                                              |  | 
+ |  |   The complete list of authors, including contact information and            |  | 
+ |  |   affiliations, can be found on https://pythia.org/.                         |  | 
+ |  |   Problems or bugs should be reported on email at authors@pythia.org.        |  | 
+ |  |                                                                              |  | 
+ |  |   The main program reference is 'An Introduction to PYTHIA 8.2',             |  | 
+ |  |   T. Sjöstrand et al, Comput. Phys. Commun. 191 (2015) 159                   |  | 
+ |  |   [arXiv:1410.3012 [hep-ph]]                                                 |  | 
+ |  |                                                                              |  | 
+ |  |   The main physics reference is the 'PYTHIA 6.4 Physics and Manual',         |  | 
+ |  |   T. Sjöstrand, S. Mrenna and P. Skands, JHEP05 (2006) 026 [hep-ph/0603175]  |  | 
+ |  |                                                                              |  | 
+ |  |   PYTHIA is released under the GNU General Public Licence version 2 or later.|  | 
+ |  |   Please respect the MCnet Guidelines for Event Generator Authors and Users. |  | 
+ |  |                                                                              |  | 
+ |  |   Disclaimer: this program comes without any guarantees.                     |  | 
+ |  |   Beware of errors and use common sense when interpreting results.           |  | 
+ |  |                                                                              |  | 
+ |  |   Copyright (C) 2021 Torbjörn Sjöstrand                                      |  | 
+ |  |                                                                              |  | 
+ |  |                                                                              |  | 
+ |  *------------------------------------------------------------------------------*  | 
+ |                                                                                    | 
+ *------------------------------------------------------------------------------------* 
+
+
+ *-----  Madgraph matching parameters  -----*
+ |  qCut                |          14.000  |
+ |  nQmatch             |               5  |
+ |  clFact              |           1.000  |
+ |  Jet algorithm       |              kT  |
+ |  eTjetMin            |          20.000  |
+ |  etaJetMax           |           5.000  |
+ |  jetAllow            |               1  |
+ |  Mode                |       exclusive  |
+ *-----------------------------------------*
+ *-----------------------  SusyLesHouches SUSY/BSM Interface  ------------------------*
+ | Last Change 12 Apr 2017 - P. Skands
+ | (SLHA::readFile) line 37 - storing non-SLHA(2) block: wolfenstein
+ | (SLHA::readFile) line 45 - storing non-SLHA(2) block: yukawa
+ *------------------------------------------------------------------------------------*
+ PYTHIA Info from SLHAinterface::initSLHA: No MODSEL found, keeping internal SUSY switched off  
+ PYTHIA Warning in SLHAinterface::initSLHA: ignoring MASS entries for id = {1,2,3,4,5,6,11,12,13,14,15,16,21,22,23,24,25} (m0 < SLHA:minMassSM)
+ PYTHIA Warning in SLHAinterface::initSLHA: ignoring DECAY tables for id = {6,15,23,24,25,1,2,3,4,5,11,12,13,14,16,21,22} (m0 < SLHA:minMassSM)
+LHAPDF 6.4.0 loading /cvmfs/cms.cern.ch/el8_amd64_gcc10/external/lhapdf/6.4.0-68defff11ffd434c73727d03802bfb85/share/LHAPDF/NNPDF31_nnlo_as_0118/NNPDF31_nnlo_as_0118_0000.dat
+NNPDF31_nnlo_as_0118 PDF set, member #0, version 1; LHAPDF ID = 303600
+LHAPDF 6.4.0 loading /cvmfs/cms.cern.ch/el8_amd64_gcc10/external/lhapdf/6.4.0-68defff11ffd434c73727d03802bfb85/share/LHAPDF/NNPDF31_nnlo_as_0118/NNPDF31_nnlo_as_0118_0000.dat
+NNPDF31_nnlo_as_0118 PDF set, member #0, version 1; LHAPDF ID = 303600
+
+ *-------  PYTHIA Process Initialization  --------------------------*
+ |                                                                  |
+ | We collide p+ with p+ at a CM energy of 1.360e+04 GeV            |
+ |                                                                  |
+ |------------------------------------------------------------------|
+ |                                                    |             |
+ | Subprocess                                    Code |   Estimated |
+ |                                                    |    max (mb) |
+ |                                                    |             |
+ |------------------------------------------------------------------|
+ |                                                    |             |
+ | Les Houches User Process(es)                  9999 |   2.000e-09 |
+ |                                                                  |
+ *-------  End PYTHIA Process Initialization -----------------------*
+
+ *-------  PYTHIA Multiparton Interactions Initialization  ---------* 
+ |                                                                  | 
+ |                   sigmaNonDiffractive =    55.96 mb              | 
+ |                                                                  | 
+ |    pT0 =  1.44 gives sigmaInteraction =   479.45 mb: accepted    | 
+ |                                                                  | 
+ *-------  End PYTHIA Multiparton Interactions Initialization  -----* 
+ PYTHIA Warning in MultipartonInteractions::init: maximum increased by factor 1.087
+
+ *-------  PYTHIA Flag + Mode + Parm + Word + FVec + MVec + PVec + WVec Settings (changes only)  ------------------* 
+ |                                                                                                                 | 
+ | Name                                          |                      Now |      Default         Min         Max | 
+ |                                               |                          |                                      | 
+ | Beams:frameType                               |                        5 |            1           1           5 | 
+ | Check:epTolErr                                |                0.0100000 |   1.0000e-04                         | 
+ | ColourReconnection:range                      |                  5.17600 |      1.80000         0.0    10.00000 | 
+ | JetMatching:coneRadius                        |                  1.00000 |      0.70000     0.10000             | 
+ | JetMatching:etaJetMax                         |                  5.00000 |      2.50000     0.10000             | 
+ | JetMatching:jetAlgorithm                      |                        2 |            1           1           2 | 
+ | JetMatching:merge                             |                       on |          off                         | 
+ | JetMatching:nJetMax                           |                        4 |           -1          -1             | 
+ | JetMatching:qCut                              |                 14.00000 |     10.00000         0.0             | 
+ | JetMatching:setMad                            |                      off |           on                         | 
+ | JetMatching:slowJetPower                      |                        1 |           -1          -1           1 | 
+ | Main:timesAllowErrors                         |                    10000 |           10           0             | 
+ | MultipartonInteractions:alphaSorder           |                        2 |            1           0           2 | 
+ | MultipartonInteractions:alphaSvalue           |                  0.11800 |      0.13000   0.0600000     0.25000 | 
+ | MultipartonInteractions:bProfile              |                        2 |            3           0           4 | 
+ | MultipartonInteractions:coreFraction          |                  0.63000 |      0.50000         0.0     1.00000 | 
+ | MultipartonInteractions:coreRadius            |                  0.76340 |      0.40000     0.10000     1.00000 | 
+ | MultipartonInteractions:ecmPow                |                0.0334400 |      0.21500         0.0     0.50000 | 
+ | MultipartonInteractions:pT0Ref                |                  1.41000 |      2.28000     0.50000    10.00000 | 
+ | Next:numberShowEvent                          |                        0 |            1           0             | 
+ | ParticleDecays:allowPhotonRadiation           |                       on |          off                         | 
+ | ParticleDecays:limitTau0                      |                       on |          off                         | 
+ | PDF:pSet                                      | LHAPDF6:NNPDF31_nnlo_as_0118 |           13                     | 
+ | SigmaProcess:alphaSorder                      |                        2 |            1           0           2 | 
+ | SigmaProcess:alphaSvalue                      |                  0.11800 |      0.13000   0.0600000     0.25000 | 
+ | SigmaTotal:mode                               |                        0 |            1           0           4 | 
+ | SigmaTotal:sigmaEl                            |                 22.08000 |     25.00000         0.0             | 
+ | SigmaTotal:sigmaTot                           |                101.03700 |    100.00000         0.0             | 
+ | SigmaTotal:zeroAXB                            |                      off |           on                         | 
+ | SLHA:minMassSM                                |                 1000.000 |    100.00000                         | 
+ | SpaceShower:alphaSorder                       |                        2 |            1           0           2 | 
+ | SpaceShower:alphaSvalue                       |                  0.11800 |      0.13650   0.0600000     0.25000 | 
+ | TimeShower:alphaSorder                        |                        2 |            1           0           2 | 
+ | TimeShower:alphaSvalue                        |                  0.11800 |      0.13650   0.0600000     0.25000 | 
+ | TimeShower:mMaxGamma                          |                  4.00000 |     10.00000   0.0010000    5000.000 | 
+ | Tune:preferLHAPDF                             |                        2 |            1           0           2 | 
+ | UncertaintyBands:doVariations                 |                       on |          off                         | 
+ | UncertaintyBands:FSRpTmin2Fac                 |                 20.00000 |      4.00000         0.0   100.00000 | 
+ | UncertaintyBands:ISRpTmin2Fac                 |                 20.00000 |      4.00000         0.0   100.00000 | 
+ | UncertaintyBands:List                         | isrRedHi isr:muRfac=0.707 | alphaShi fsr:muRfac=0.5 isr:muRfac=0.5 | 
+ |                                               | fsrRedHi fsr:muRfac=0.707 |   alphaSlo fsr:muRfac=2.0 isr:muRfac=2.0 | 
+ |                                               | isrRedLo isr:muRfac=1.414 |   hardHi fsr:cNS=2.0 isr:cNS=2.0    | 
+ |                                               | fsrRedLo fsr:muRfac=1.414 |  hardLo fsr:cNS=-2.0 isr:cNS=-2.0   | 
+ |                                               |  isrDefHi isr:muRfac=0.5 |                                      | 
+ |                                               |  fsrDefHi fsr:muRfac=0.5 |                                      | 
+ |                                               |  isrDefLo isr:muRfac=2.0 |                                      | 
+ |                                               |  fsrDefLo fsr:muRfac=2.0 |                                      | 
+ |                                               | isrConHi isr:muRfac=0.25 |                                      | 
+ |                                               | fsrConHi fsr:muRfac=0.25 |                                      | 
+ |                                               |  isrConLo isr:muRfac=4.0 |                                      | 
+ |                                               |  fsrConLo fsr:muRfac=4.0 |                                      | 
+ |                                               | fsr_G2GG_muR_dn fsr:G2GG:muRfac=0.5 |                           | 
+ |                                               | fsr_G2GG_muR_up fsr:G2GG:muRfac=2.0 |                           | 
+ |                                               | fsr_G2QQ_muR_dn fsr:G2QQ:muRfac=0.5 |                           | 
+ |                                               | fsr_G2QQ_muR_up fsr:G2QQ:muRfac=2.0 |                           | 
+ |                                               | fsr_Q2QG_muR_dn fsr:Q2QG:muRfac=0.5 |                           | 
+ |                                               | fsr_Q2QG_muR_up fsr:Q2QG:muRfac=2.0 |                           | 
+ |                                               | fsr_X2XG_muR_dn fsr:X2XG:muRfac=0.5 |                           | 
+ |                                               | fsr_X2XG_muR_up fsr:X2XG:muRfac=2.0 |                           | 
+ |                                               | fsr_G2GG_cNS_dn fsr:G2GG:cNS=-2.0 |                             | 
+ |                                               | fsr_G2GG_cNS_up fsr:G2GG:cNS=2.0 |                              | 
+ |                                               | fsr_G2QQ_cNS_dn fsr:G2QQ:cNS=-2.0 |                             | 
+ |                                               | fsr_G2QQ_cNS_up fsr:G2QQ:cNS=2.0 |                              | 
+ |                                               | fsr_Q2QG_cNS_dn fsr:Q2QG:cNS=-2.0 |                             | 
+ |                                               | fsr_Q2QG_cNS_up fsr:Q2QG:cNS=2.0 |                              | 
+ |                                               | fsr_X2XG_cNS_dn fsr:X2XG:cNS=-2.0 |                             | 
+ |                                               | fsr_X2XG_cNS_up fsr:X2XG:cNS=2.0 |                              | 
+ |                                               | isr_G2GG_muR_dn isr:G2GG:muRfac=0.5 |                           | 
+ |                                               | isr_G2GG_muR_up isr:G2GG:muRfac=2.0 |                           | 
+ |                                               | isr_G2QQ_muR_dn isr:G2QQ:muRfac=0.5 |                           | 
+ |                                               | isr_G2QQ_muR_up isr:G2QQ:muRfac=2.0 |                           | 
+ |                                               | isr_Q2QG_muR_dn isr:Q2QG:muRfac=0.5 |                           | 
+ |                                               | isr_Q2QG_muR_up isr:Q2QG:muRfac=2.0 |                           | 
+ |                                               | isr_X2XG_muR_dn isr:X2XG:muRfac=0.5 |                           | 
+ |                                               | isr_X2XG_muR_up isr:X2XG:muRfac=2.0 |                           | 
+ |                                               | isr_G2GG_cNS_dn isr:G2GG:cNS=-2.0 |                             | 
+ |                                               | isr_G2GG_cNS_up isr:G2GG:cNS=2.0 |                              | 
+ |                                               | isr_G2QQ_cNS_dn isr:G2QQ:cNS=-2.0 |                             | 
+ |                                               | isr_G2QQ_cNS_up isr:G2QQ:cNS=2.0 |                              | 
+ |                                               | isr_Q2QG_cNS_dn isr:Q2QG:cNS=-2.0 |                             | 
+ |                                               | isr_Q2QG_cNS_up isr:Q2QG:cNS=2.0 |                              | 
+ |                                               | isr_X2XG_cNS_dn isr:X2XG:cNS=-2.0 |                             | 
+ |                                               | isr_X2XG_cNS_up isr:X2XG:cNS=2.0 |                              | 
+ | UncertaintyBands:MPIshowers                   |                       on |          off                         | 
+ | UncertaintyBands:nFlavQ                       |                        4 |            6           2           6 | 
+ | UncertaintyBands:overSampleFSR                |                 10.00000 |      3.00000     1.00000    10.00000 | 
+ | UncertaintyBands:overSampleISR                |                 10.00000 |      2.00000     1.00000    10.00000 | 
+ |                                                                                                                 | 
+ *-------  End PYTHIA Flag + Mode + Parm + Word + FVec + MVec + PVec + WVec Settings  -----------------------------* 
+
+ --------  PYTHIA Particle Data Table (changed only)  ------------------------------------------------------------------------------
+ 
+      id   name            antiName         spn chg col      m0        mWidth      mMin       mMax       tau0    res dec ext vis wid
+             no onMode   bRatio   meMode     products 
+
+ no particle data has been changed from its default value 
+
+ --------  End PYTHIA Particle Data Table  -----------------------------------------------------------------------------------------
+
+
+ *-------  PYTHIA Flag + Mode + Parm + Word + FVec + MVec + PVec + WVec Settings (changes only)  ------------------* 
+ |                                                                                                                 | 
+ | Name                                          |                      Now |      Default         Min         Max | 
+ |                                               |                          |                                      | 
+ | Next:numberShowEvent                          |                        0 |            1           0             | 
+ | ParticleDecays:allowPhotonRadiation           |                       on |          off                         | 
+ | ParticleDecays:limitTau0                      |                       on |          off                         | 
+ | ProcessLevel:all                              |                      off |           on                         | 
+ |                                                                                                                 | 
+ *-------  End PYTHIA Flag + Mode + Parm + Word + FVec + MVec + PVec + WVec Settings  -----------------------------* 
+
+ --------  PYTHIA Particle Data Table (changed only)  ------------------------------------------------------------------------------
+ 
+      id   name            antiName         spn chg col      m0        mWidth      mMin       mMax       tau0    res dec ext vis wid
+             no onMode   bRatio   meMode     products 
+
+ no particle data has been changed from its default value 
+
+ --------  End PYTHIA Particle Data Table  -----------------------------------------------------------------------------------------
+
+ PYTHIA Abort from Pythia::next: reached end of Les Houches Events File  
+
+ *-------  PYTHIA Event and Cross Section Statistics  -------------------------------------------------------------*
+ |                                                                                                                 |
+ | Subprocess                                    Code |            Number of events       |      sigma +- delta    |
+ |                                                    |       Tried   Selected   Accepted |     (estimated) (mb)   |
+ |                                                    |                                   |                        |
+ |-----------------------------------------------------------------------------------------------------------------|
+ |                                                    |                                   |                        |
+ | Les Houches User Process(es)                  9999 |           1          1          0 |   0.000e+00  0.000e+00 |
+ |    ... whereof user classification code          1 |           1          1          0 |                        | 
+ |                                                    |                                   |                        |
+ | sum                                                |           1          1          0 |   0.000e+00  0.000e+00 |
+ |                                                                                                                 |
+ *-------  End PYTHIA Event and Cross Section Statistics ----------------------------------------------------------*
+
+ *-------  PYTHIA Error and Warning Messages Statistics  ----------------------------------------------------------* 
+ |                                                                                                                 | 
+ |  times   message                                                                                                | 
+ |                                                                                                                 | 
+ |      1   Abort from Pythia::next: reached end of Les Houches Events File                                        | 
+ |      1   Info from SLHAinterface::initSLHA: No MODSEL found, keeping internal SUSY switched off                 | 
+ |      1   Warning in MultipartonInteractions::init: maximum increased                                            | 
+ |      1   Warning in SLHAinterface::initSLHA: ignoring DECAY tables                                              | 
+ |      1   Warning in SLHAinterface::initSLHA: ignoring MASS entries                                              | 
+ |                                                                                                                 | 
+ *-------  End PYTHIA Error and Warning Messages Statistics  ------------------------------------------------------* 
+        50.758         3.824       103.173             1
+        52.415         3.958       103.173             2
+ 
+
+ *-------  JetMatching Error and Warning Messages Statistics  -----------------------------------------------------* 
+ |                                                                                                                 | 
+ |  times   message                                                                                                | 
+ |                                                                                                                 | 
+ |      0   no errors or warnings to report                                                                        | 
+ |                                                                                                                 | 
+ *-------  End JetMatching Error and Warning Messages Statistics  -------------------------------------------------* 
+Thanks for using LHAPDF 6.4.0. Please make sure to cite the paper:
+  Eur.Phys.J. C75 (2015) 3, 132  (http://arxiv.org/abs/1412.7420)
