@@ -1,0 +1,207 @@
+WARNING: Overriding HOME environment variable with APPTAINERENV_HOME is not permitted
+WARNING: In non-interactive mode release checks e.g. deprecated releases, production architectures are disabled.
+WARNING: In non-interactive mode release checks e.g. deprecated releases, production architectures are disabled.
+--2023-06-03 17:03:16--  https://cms-pdmv.cern.ch/mcm/public/restapi/requests/get_fragment/GEN-Run3Summer22wmLHEGS-00217/0
+Resolving cms-pdmv.cern.ch (cms-pdmv.cern.ch)... 188.185.84.85
+Connecting to cms-pdmv.cern.ch (cms-pdmv.cern.ch)|188.185.84.85|:443... connected.
+WARNING: The certificate of 'cms-pdmv.cern.ch' is not trusted.
+WARNING: The certificate of 'cms-pdmv.cern.ch' hasn't got a known issuer.
+HTTP request sent, awaiting response... 200 OK
+Length: 1933 (1.9K) [text/plain]
+Saving to: 'GEN-Run3Summer22wmLHEGS-00217.py'
+
+     0K .                                                     100% 12.9M=0s
+
+2023-06-03 17:03:17 (12.9 MB/s) - 'GEN-Run3Summer22wmLHEGS-00217.py' saved [1933/1933]
+
+WARNING: In non-interactive mode release checks e.g. deprecated releases, production architectures are disabled.
+ERROR: Can not setup your current working area for SCRAM_ARCH: $ENV{SCRAM_ARCH}
+Your current development area ${location}/${areaname}
+is using a different ${areaname}/config then the one used for
+/cvmfs/cms.cern.ch/slc7_amd64_gcc10/cms/cmssw/CMSSW_12_4_8
+./runcmsgrid.sh: line 41: cd: CMSSW_12_4_8/src: No such file or directory
+03-Jun-2023 17:12:49 KST  Initiating request to open LHE file thread0/cmsgrid_final.lhe
+03-Jun-2023 17:12:49 KST  Successfully opened LHE file thread0/cmsgrid_final.lhe
+03-Jun-2023 17:12:49 KST  Initiating request to open LHE file thread0/cmsgrid_final.lhe
+03-Jun-2023 17:12:49 KST  Successfully opened LHE file thread0/cmsgrid_final.lhe
+%MSG-w LogicError:  Pythia8ConcurrentHadronizerFilter:generator@streamBeginRun  03-Jun-2023 17:12:54 KST Run: 1 Stream: 0
+::getByLabel: An attempt was made to read a Run product before endRun() was called.
+The product is of type 'LHERunInfoProduct'.
+The specified ModuleLabel was 'externalLHEProducer'.
+The specified productInstanceName was ''.
+
+%MSG
+Begin processing the 1st record. Run 1, Event 1, LumiSection 1 on stream 0 at 03-Jun-2023 17:13:00.717 KST
+Begin processing the 2nd record. Run 1, Event 2, LumiSection 1 on stream 0 at 03-Jun-2023 17:13:01.522 KST
+Begin processing the 3rd record. Run 1, Event 3, LumiSection 1 on stream 0 at 03-Jun-2023 17:13:01.718 KST
+Begin processing the 4th record. Run 1, Event 4, LumiSection 1 on stream 0 at 03-Jun-2023 17:13:02.684 KST
+Begin processing the 5th record. Run 1, Event 5, LumiSection 1 on stream 0 at 03-Jun-2023 17:13:02.892 KST
+Begin processing the 6th record. Run 1, Event 6, LumiSection 1 on stream 0 at 03-Jun-2023 17:13:03.431 KST
+Begin processing the 7th record. Run 1, Event 7, LumiSection 1 on stream 0 at 03-Jun-2023 17:13:03.621 KST
+Begin processing the 8th record. Run 1, Event 8, LumiSection 1 on stream 0 at 03-Jun-2023 17:13:06.501 KST
+Begin processing the 9th record. Run 1, Event 9, LumiSection 1 on stream 0 at 03-Jun-2023 17:13:07.431 KST
+Begin processing the 10th record. Run 1, Event 10, LumiSection 1 on stream 0 at 03-Jun-2023 17:13:07.817 KST
+Begin processing the 11th record. Run 1, Event 11, LumiSection 1 on stream 0 at 03-Jun-2023 17:13:08.555 KST
+Begin processing the 12th record. Run 1, Event 12, LumiSection 1 on stream 0 at 03-Jun-2023 17:13:10.239 KST
+Begin processing the 13th record. Run 1, Event 13, LumiSection 1 on stream 0 at 03-Jun-2023 17:13:13.884 KST
+Begin processing the 14th record. Run 1, Event 14, LumiSection 1 on stream 0 at 03-Jun-2023 17:13:14.629 KST
+Begin processing the 15th record. Run 1, Event 15, LumiSection 1 on stream 0 at 03-Jun-2023 17:13:15.435 KST
+Begin processing the 16th record. Run 1, Event 16, LumiSection 1 on stream 0 at 03-Jun-2023 17:14:26.931 KST
+Begin processing the 17th record. Run 1, Event 17, LumiSection 1 on stream 0 at 03-Jun-2023 17:14:28.270 KST
+Begin processing the 18th record. Run 1, Event 18, LumiSection 1 on stream 0 at 03-Jun-2023 17:14:28.872 KST
+Begin processing the 19th record. Run 1, Event 19, LumiSection 1 on stream 0 at 03-Jun-2023 17:14:28.948 KST
+Begin processing the 20th record. Run 1, Event 20, LumiSection 1 on stream 0 at 03-Jun-2023 17:14:29.298 KST
+Begin processing the 21st record. Run 1, Event 21, LumiSection 1 on stream 0 at 03-Jun-2023 17:14:29.370 KST
+Begin processing the 22nd record. Run 1, Event 22, LumiSection 1 on stream 0 at 03-Jun-2023 17:14:30.366 KST
+Begin processing the 23rd record. Run 1, Event 23, LumiSection 1 on stream 0 at 03-Jun-2023 17:14:32.309 KST
+Begin processing the 24th record. Run 1, Event 24, LumiSection 1 on stream 0 at 03-Jun-2023 17:14:35.728 KST
+Begin processing the 25th record. Run 1, Event 25, LumiSection 1 on stream 0 at 03-Jun-2023 17:14:36.264 KST
+Begin processing the 26th record. Run 1, Event 26, LumiSection 1 on stream 0 at 03-Jun-2023 17:14:36.730 KST
+Begin processing the 27th record. Run 1, Event 27, LumiSection 1 on stream 0 at 03-Jun-2023 17:14:38.756 KST
+Begin processing the 28th record. Run 1, Event 28, LumiSection 1 on stream 0 at 03-Jun-2023 17:14:39.538 KST
+Begin processing the 29th record. Run 1, Event 29, LumiSection 1 on stream 0 at 03-Jun-2023 17:14:41.883 KST
+Begin processing the 30th record. Run 1, Event 30, LumiSection 1 on stream 0 at 03-Jun-2023 17:14:41.944 KST
+Begin processing the 31st record. Run 1, Event 31, LumiSection 1 on stream 0 at 03-Jun-2023 17:14:43.421 KST
+Begin processing the 32nd record. Run 1, Event 32, LumiSection 1 on stream 0 at 03-Jun-2023 17:15:31.736 KST
+Begin processing the 33rd record. Run 1, Event 33, LumiSection 1 on stream 0 at 03-Jun-2023 17:15:32.054 KST
+Begin processing the 34th record. Run 1, Event 34, LumiSection 1 on stream 0 at 03-Jun-2023 17:15:32.624 KST
+Begin processing the 35th record. Run 1, Event 35, LumiSection 1 on stream 0 at 03-Jun-2023 17:15:33.276 KST
+Begin processing the 36th record. Run 1, Event 36, LumiSection 1 on stream 0 at 03-Jun-2023 17:15:34.322 KST
+Begin processing the 37th record. Run 1, Event 37, LumiSection 1 on stream 0 at 03-Jun-2023 17:15:34.688 KST
+Begin processing the 38th record. Run 1, Event 38, LumiSection 1 on stream 0 at 03-Jun-2023 17:15:34.897 KST
+Begin processing the 39th record. Run 1, Event 39, LumiSection 1 on stream 0 at 03-Jun-2023 17:16:37.865 KST
+Begin processing the 40th record. Run 1, Event 40, LumiSection 1 on stream 0 at 03-Jun-2023 17:16:38.929 KST
+Begin processing the 41st record. Run 1, Event 41, LumiSection 1 on stream 0 at 03-Jun-2023 17:16:42.897 KST
+Begin processing the 42nd record. Run 1, Event 42, LumiSection 1 on stream 0 at 03-Jun-2023 17:16:44.891 KST
+Begin processing the 43rd record. Run 1, Event 43, LumiSection 1 on stream 0 at 03-Jun-2023 17:16:45.729 KST
+Begin processing the 44th record. Run 1, Event 44, LumiSection 1 on stream 0 at 03-Jun-2023 17:16:45.939 KST
+Begin processing the 45th record. Run 1, Event 45, LumiSection 1 on stream 0 at 03-Jun-2023 17:16:46.013 KST
+Begin processing the 46th record. Run 1, Event 46, LumiSection 1 on stream 0 at 03-Jun-2023 17:16:47.498 KST
+Begin processing the 47th record. Run 1, Event 47, LumiSection 1 on stream 0 at 03-Jun-2023 17:18:08.536 KST
+Begin processing the 48th record. Run 1, Event 48, LumiSection 1 on stream 0 at 03-Jun-2023 17:18:09.845 KST
+Begin processing the 49th record. Run 1, Event 49, LumiSection 1 on stream 0 at 03-Jun-2023 17:18:10.640 KST
+Begin processing the 50th record. Run 1, Event 50, LumiSection 1 on stream 0 at 03-Jun-2023 17:18:11.929 KST
+Begin processing the 51st record. Run 1, Event 51, LumiSection 1 on stream 0 at 03-Jun-2023 17:18:12.517 KST
+Begin processing the 52nd record. Run 1, Event 52, LumiSection 1 on stream 0 at 03-Jun-2023 17:18:12.850 KST
+Begin processing the 53rd record. Run 1, Event 53, LumiSection 1 on stream 0 at 03-Jun-2023 17:18:13.959 KST
+Begin processing the 54th record. Run 1, Event 54, LumiSection 1 on stream 0 at 03-Jun-2023 17:18:15.263 KST
+Begin processing the 55th record. Run 1, Event 55, LumiSection 1 on stream 0 at 03-Jun-2023 17:18:16.479 KST
+Begin processing the 56th record. Run 1, Event 56, LumiSection 1 on stream 0 at 03-Jun-2023 17:18:16.762 KST
+Begin processing the 57th record. Run 1, Event 57, LumiSection 1 on stream 0 at 03-Jun-2023 17:18:17.988 KST
+Begin processing the 58th record. Run 1, Event 58, LumiSection 1 on stream 0 at 03-Jun-2023 17:19:25.996 KST
+Begin processing the 59th record. Run 1, Event 59, LumiSection 1 on stream 0 at 03-Jun-2023 17:19:27.726 KST
+Begin processing the 60th record. Run 1, Event 60, LumiSection 1 on stream 0 at 03-Jun-2023 17:19:28.362 KST
+Begin processing the 61st record. Run 1, Event 61, LumiSection 1 on stream 0 at 03-Jun-2023 17:20:45.206 KST
+Begin processing the 62nd record. Run 1, Event 62, LumiSection 1 on stream 0 at 03-Jun-2023 17:20:47.469 KST
+Begin processing the 63rd record. Run 1, Event 63, LumiSection 1 on stream 0 at 03-Jun-2023 17:20:48.034 KST
+Begin processing the 64th record. Run 1, Event 64, LumiSection 1 on stream 0 at 03-Jun-2023 17:21:39.355 KST
+Begin processing the 65th record. Run 1, Event 65, LumiSection 1 on stream 0 at 03-Jun-2023 17:21:40.494 KST
+Begin processing the 66th record. Run 1, Event 66, LumiSection 1 on stream 0 at 03-Jun-2023 17:21:40.795 KST
+Begin processing the 67th record. Run 1, Event 67, LumiSection 1 on stream 0 at 03-Jun-2023 17:21:42.086 KST
+Begin processing the 68th record. Run 1, Event 68, LumiSection 1 on stream 0 at 03-Jun-2023 17:21:45.797 KST
+Begin processing the 69th record. Run 1, Event 69, LumiSection 1 on stream 0 at 03-Jun-2023 17:23:32.213 KST
+Begin processing the 70th record. Run 1, Event 70, LumiSection 1 on stream 0 at 03-Jun-2023 17:23:32.414 KST
+Begin processing the 71st record. Run 1, Event 71, LumiSection 1 on stream 0 at 03-Jun-2023 17:23:33.578 KST
+Begin processing the 72nd record. Run 1, Event 72, LumiSection 1 on stream 0 at 03-Jun-2023 17:23:33.763 KST
+Begin processing the 73rd record. Run 1, Event 73, LumiSection 1 on stream 0 at 03-Jun-2023 17:23:34.425 KST
+Begin processing the 74th record. Run 1, Event 74, LumiSection 1 on stream 0 at 03-Jun-2023 17:23:35.358 KST
+Begin processing the 75th record. Run 1, Event 75, LumiSection 1 on stream 0 at 03-Jun-2023 17:23:36.127 KST
+Begin processing the 76th record. Run 1, Event 76, LumiSection 1 on stream 0 at 03-Jun-2023 17:23:38.170 KST
+Begin processing the 77th record. Run 1, Event 77, LumiSection 1 on stream 0 at 03-Jun-2023 17:23:39.092 KST
+Begin processing the 78th record. Run 1, Event 78, LumiSection 1 on stream 0 at 03-Jun-2023 17:23:39.377 KST
+Begin processing the 79th record. Run 1, Event 79, LumiSection 1 on stream 0 at 03-Jun-2023 17:23:39.602 KST
+Begin processing the 80th record. Run 1, Event 80, LumiSection 1 on stream 0 at 03-Jun-2023 17:23:41.641 KST
+Begin processing the 81st record. Run 1, Event 81, LumiSection 1 on stream 0 at 03-Jun-2023 17:23:43.201 KST
+Begin processing the 82nd record. Run 1, Event 82, LumiSection 1 on stream 0 at 03-Jun-2023 17:23:43.468 KST
+Begin processing the 83rd record. Run 1, Event 83, LumiSection 1 on stream 0 at 03-Jun-2023 17:23:43.975 KST
+Begin processing the 84th record. Run 1, Event 84, LumiSection 1 on stream 0 at 03-Jun-2023 17:23:44.718 KST
+Begin processing the 85th record. Run 1, Event 85, LumiSection 1 on stream 0 at 03-Jun-2023 17:23:45.431 KST
+Begin processing the 86th record. Run 1, Event 86, LumiSection 1 on stream 0 at 03-Jun-2023 17:24:45.673 KST
+Begin processing the 87th record. Run 1, Event 87, LumiSection 1 on stream 0 at 03-Jun-2023 17:24:46.327 KST
+Begin processing the 88th record. Run 1, Event 88, LumiSection 1 on stream 0 at 03-Jun-2023 17:24:47.220 KST
+Begin processing the 89th record. Run 1, Event 89, LumiSection 1 on stream 0 at 03-Jun-2023 17:24:48.533 KST
+Begin processing the 90th record. Run 1, Event 90, LumiSection 1 on stream 0 at 03-Jun-2023 17:24:50.108 KST
+Begin processing the 91st record. Run 1, Event 91, LumiSection 1 on stream 0 at 03-Jun-2023 17:24:50.583 KST
+Begin processing the 92nd record. Run 1, Event 92, LumiSection 1 on stream 0 at 03-Jun-2023 17:25:45.187 KST
+Begin processing the 93rd record. Run 1, Event 93, LumiSection 1 on stream 0 at 03-Jun-2023 17:25:47.046 KST
+Begin processing the 94th record. Run 1, Event 94, LumiSection 1 on stream 0 at 03-Jun-2023 17:25:47.665 KST
+Begin processing the 95th record. Run 1, Event 95, LumiSection 1 on stream 0 at 03-Jun-2023 17:25:48.494 KST
+Begin processing the 96th record. Run 1, Event 96, LumiSection 1 on stream 0 at 03-Jun-2023 17:25:49.225 KST
+Begin processing the 97th record. Run 1, Event 97, LumiSection 1 on stream 0 at 03-Jun-2023 17:25:50.880 KST
+Begin processing the 98th record. Run 1, Event 98, LumiSection 1 on stream 0 at 03-Jun-2023 17:25:54.864 KST
+Begin processing the 99th record. Run 1, Event 99, LumiSection 1 on stream 0 at 03-Jun-2023 17:25:55.913 KST
+Begin processing the 100th record. Run 1, Event 100, LumiSection 1 on stream 0 at 03-Jun-2023 17:25:57.729 KST
+03-Jun-2023 17:25:59 KST  Closed LHE file thread0/cmsgrid_final.lhe
+
+------------------------------------
+GenXsecAnalyzer:
+------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+Overall cross-section summary 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Process		xsec_before [pb]		passed	nposw	nnegw	tried	nposw	nnegw 	xsec_match [pb]			accepted [%]	 event_eff [%]
+0		3.325e+01 +/- 9.616e-01		0	0	0	0	0	0	0.000e+00 +/- 0.000e+00		-100.0 +/- -100.0	-100.0 +/- -100.0
+1		3.075e+02 +/- 4.825e+00		0	0	0	27	27	0	0.000e+00 +/- 0.000e+00		0.0 +/- 0.0	0.0 +/- 0.0
+2		9.459e+02 +/- 1.397e+01		10	10	0	73	73	0	1.296e+02 +/- 3.811e+01		13.7 +/- 4.0	13.7 +/- 4.0
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+Total		1.287e+03 +/- 1.481e+01		10	10	0	100	100	0	1.287e+02 +/- 3.863e+01		10.0 +/- 3.0	10.0 +/- 3.0
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Before matching: total cross section = 1.287e+03 +- 1.481e+01 pb
+After matching: total cross section = 1.287e+02 +- 3.863e+01 pb
+Matching efficiency = 0.1 +/- 0.0   [TO BE USED IN MCM]
+Filter efficiency (taking into account weights)= (12866.1) / (12866.1) = 1.000e+00 +- 0.000e+00
+Filter efficiency (event-level)= (10) / (10) = 1.000e+00 +- 0.000e+00    [TO BE USED IN MCM]
+
+After filter: final cross section = 1.287e+02 +- 3.863e+01 pb
+After filter: final fraction of events with negative weights = 0.000e+00 +- 0.000e+00
+After filter: final equivalent lumi for 1M events (1/fb) = 7.772e+00 +- 2.333e+00
+TimeReport> Time report complete in 1316.53 seconds
+ Time Summary: 
+ - Min event:   0.0605609
+ - Max event:   106.41
+ - Avg event:   7.78776
+ - Total loop:  1166.69
+ - Total init:  149.742
+ - Total job:   1316.53
+ - EventSetup Lock: 0
+ - EventSetup Get:  0
+ Event Throughput: 0.0857122 ev/s
+ CPU Summary: 
+ - Total loop:     1024.82
+ - Total init:     19.0445
+ - Total extra:    0
+ - Total children: 105.648
+ - Total job:      1043.89
+ Processing Summary: 
+ - Number of Events:  100
+ - Number of Global Begin Lumi Calls:  1
+ - Number of Global Begin Run Calls: 1
+
+
+=============================================
+
+MessageLogger Summary
+
+ type     category        sev    module        subroutine        count    total
+ ---- -------------------- -- ---------------- ----------------  -----    -----
+    1 GenXSecAnalyzer      -w GenXSecAnalyzer:                      17       17
+    2 LogicError           -w Pythia8Concurren                       1        1
+    3 TimeReport           -e AfterModEndJob                         1        1
+    4 fileAction           -s ExternalLHEProdu                       4        4
+    5 fileAction           -s ExternalLHEProdu                       1        1
+
+ type    category    Examples: run/evt        run/evt          run/evt
+ ---- -------------------- ---------------- ---------------- ----------------
+    1 GenXSecAnalyzer      EndJob           EndJob           EndJob
+    2 LogicError           Run: 1 Stream: 0                  
+    3 TimeReport           EndJob                            
+    4 fileAction           Run: 1           Run: 1           Run: 1
+    5 fileAction           End Run: 1                        
+
+Severity    # Occurrences   Total Occurrences
+--------    -------------   -----------------
+Warning                18                  18
+Error                   1                   1
+System                  5                   5
+
+dropped waiting message count 0
