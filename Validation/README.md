@@ -2,22 +2,18 @@
 
 ## Submitting jobs locally
 
-``
-./submit_jobs.py -D <DIRNAME> -i <PREPIDSTART>-<PREPIDEND> -n <NEVENTS>``
+``./submit_jobs.py -D <DIRNAME> -i <PREPIDSTART>-<PREPIDEND> -n <NEVENTS>``
 
-``
-\#./submit_jobs.py -D QCDB -i 00210-00217 -n 1000``
+``#./submit_jobs.py -D QCDB -i 00210-00217 -n 1000``
 
 `PREPID_HEADER` is defined in the python script which is set to "GEN-Run3Summer22wmLHEGS" by default.
 This will collect the corresponding `PREPID` generator fragment files from McM and submit jobs from the `DIRNAME` directory, running `NEVENTS` to validate the samples locally.
 
 ## Parsing the job logs
 
-``
-./parse_jobs.py <DIRNAME> # --maxnevents MAXNEVENTS --minnevents MINNEVENTS --fixnevents FIXNEVENTS``
+``./parse_jobs.py <DIRNAME> # --maxnevents MAXNEVENTS --minnevents MINNEVENTS --fixnevents FIXNEVENTS``
 
-``
-\#./parse_jobs.py QCDB --fixnevents 100000``
+``# ./parse\_jobs.py QCDB --fixnevents 100000``
 
 - `--maxnevents MAXNEVENTS` will set upper boundary for number of events.
 - `--minnevents MINNEVENTS` will set lower boundary for number of events.
@@ -27,11 +23,9 @@ If above arguments are not given, `NEVENTS` will be set to `(CROSS_SECTION) X 50
 
 ## Forging PREPIDs (and cloning PREPIDs)
 
-``
-./forge_prepids.py <PICKLEFILE> -g GENERATOR``
+``./forge_prepids.py <PICKLEFILE> -g GENERATOR``
 
-``
-\#./forge_prepids.py QCDB/prepids.pickle -g MadGraph5_aMCatNLO``
+``#./forge_prepids.py QCDB/prepids.pickle -g MadGraph5_aMCatNLO``
 
 This script will collect the parsed `PREPID` inputs and modify, clone requests for "Run3Summer22wmLHEGS" and "Run3Summer22EEwmLHEGS". `NEVENTS` will be multipled by "3.5" for "Run3Summer22EEwmLHEGS".
 
