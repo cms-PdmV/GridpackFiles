@@ -1,0 +1,25 @@
+{
+    "template": "ST_wtch_DR.input",
+    "template_user": [
+        "ttype 1",
+        "topdecaymode 11111",
+        "wdecaymode 11111",
+        "hdamp 158"
+    ],
+    "template_vars": {},
+    
+    "model_params": "ST_wtch_DR.input",
+    "model_params_user": [
+        "topmass 172.5",
+        "topwidth 1.311"
+    ],
+    "model_params_vars": {},
+    
+    "fragment": ["Generator/ExternalLHEProducer.dat","PartonShower/PowhegEmissionVetoPythia8.dat","Filter/OneLepton.dat"],
+    "fragment_user": [],
+    "fragment_vars": {
+        "processParameters": [
+            "'POWHEG:nFinal = 2'"
+        ]
+    }
+}
