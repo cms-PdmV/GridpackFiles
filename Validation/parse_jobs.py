@@ -67,7 +67,7 @@ def parse_logfile(dirname, prepid) :
             print (f"{prepid} very small in filtereff {filtereff} <====== WARNING")
 
         crosssection = after
-        nevents = truncate(crosssection * 50 * 1./4.5 * FUDGE_FACTOR)
+        nevents = truncate(crosssection * 50 * 1000 * 1./4.5 * FUDGE_FACTOR)
 
         if FIXNEVENTS < 0 :
             if nevents < MINNEVENTS :

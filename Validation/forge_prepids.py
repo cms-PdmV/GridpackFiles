@@ -50,6 +50,7 @@ def edit_prepid(data) :
     request['time_event'][0] = time
     request['generators'].append(GENERATOR)
 
+    print (f"updating {prepid}")
     update=mcm.update('requests', request)
 
 def clone_prepid(prepid) :
@@ -57,7 +58,10 @@ def clone_prepid(prepid) :
     request = mcm.get('requests', prepid)
     request["member_of_campaign"] = CLONE_TARGET
     request["total_events"] = request["total_events"] * 3.5
+
+    print (f"cloning {prepid}")
     clone_request = mcm.clone_request(request)
+    print (f"\t{clone_request}")
 
 def main() :
 
