@@ -6,20 +6,21 @@
         "ickkw": "3",
         "maxjetflavor": "5"
     },
-    "model_params": "massZ.dat",
+    "model_params": "massW.dat",
     "model_params_user": [
-        "set run_card ptj 15"
+        "set run_card ptj 20",
+        "set run_card mll_sf 50.0"
     ],
     "model_params_vars": {},
     "fragment": ["Generator/ExternalLHEProducer.dat", "PartonShower/amcatnloFXFX-pythia8.dat"],
     "fragment_user": [],
     "fragment_vars": {
         "processParameters": [
-            "'JetMatching:qCut = 25.'",
-            "'JetMatching:qCutME = 15.'",
+            "'JetMatching:qCut = 42.'",
+            "'JetMatching:qCutME = 20.'",
             "'JetMatching:nQmatch = 5'",
             "'JetMatching:nJetMax = 1'",
-            "'TimeShower:mMaxGamma = 4.0'"
+            "'TimeShower:mMaxGamma = 1.0'"
         ]
     }
 }

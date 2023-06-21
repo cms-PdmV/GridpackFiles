@@ -1,0 +1,9 @@
+import model loop_sm-ckm_no_b_mass
+
+define vl = ve vm vt
+define vl~ = ve~ vm~ vt~
+
+generate p p > vl vl~ j j QCD=0 QED=4 @0
+
+output VBFto2Nu_madgraph-pythia8 -nojpeg
+
