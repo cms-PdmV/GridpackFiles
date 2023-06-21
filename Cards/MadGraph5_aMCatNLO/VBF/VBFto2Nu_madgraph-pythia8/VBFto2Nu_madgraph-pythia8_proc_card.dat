@@ -5,5 +5,5 @@ define vl~ = ve~ vm~ vt~
 
 generate p p > vl vl~ j j QCD=0 QED=4 @0
 
-output Zto2Nu-VBF_madgraph-pythia8 -nojpeg
+output VBFto2Nu_madgraph-pythia8 -nojpeg
 
