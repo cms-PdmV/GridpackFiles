@@ -12,7 +12,7 @@
         "set run_card ptgmin 170"
     ],
     "model_params_vars": {},
-    "fragment": ["Generator/ExternalLHEProducer.dat", "PartonShower/amcatnlo-pythia8.dat", ""Filter/LHE_Gamma_Pt200to400_filter.dat"],
+    "fragment": ["Generator/ExternalLHEProducer.dat", "PartonShower/amcatnlo-pythia8.dat", "Filter/LHE_Gamma_Pt200to400_filter.dat"],
     "fragment_user": [],
     "fragment_vars": {
         "processParameters": [
