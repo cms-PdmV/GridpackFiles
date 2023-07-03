@@ -7,6 +7,9 @@ generator = cms.EDFilter("Pythia8$concurrentHadronizerFilter",
         pythia8CommonSettingsBlock,
         pythia8$tuneNameSettingsBlock,
         pythia8PSweightsSettingsBlock,
+        processParameters = cms.vstring(
+            $processParameters
+        ),
         parameterSets = cms.vstring(
             'pythia8CommonSettings',
             'pythia8$tuneNameSettings',
