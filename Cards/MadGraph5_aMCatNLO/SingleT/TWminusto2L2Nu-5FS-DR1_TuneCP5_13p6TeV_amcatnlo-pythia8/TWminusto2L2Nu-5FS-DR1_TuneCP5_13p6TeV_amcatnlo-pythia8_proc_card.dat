@@ -4,4 +4,4 @@ define p = p b b~
 generate p p > t W- [QCD]
 add process p p > t~ W+ [QCD]
 
-output TWminusto2L2Nu-5FS-DR_TuneCP5_13p6TeV_amcatnlo-pythia8 -nojpeg
+output TWminusto2L2Nu-5FS-DR1_TuneCP5_13p6TeV_amcatnlo-pythia8 -nojpeg
