@@ -1,0 +1,6 @@
+import model loop_sm-no_b_mass 
+
+generate p p > t w- [QCD] @0
+add process p p > t~ w+ [QCD] @1
+
+output TWto2L2Nu-nonCKM-DR1_amcatnlo-pythia8 -nojpeg
