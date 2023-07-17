@@ -1,0 +1,22 @@
+--- a/Template/NLO/SubProcesses/cuts.f	2023-07-17 23:26:41.364713050 +0200
++++ b/Template/NLO/SubProcesses/cuts.f	2023-07-16 22:56:40.939525610 +0200
+@@ -1,4 +1,4 @@
+-c
++c ADDED: veto on invariant masses above 50 GeV in line 142-148
+ c This file contains the default cuts (as defined in the run_card.dat)
+ c and can easily be extended by the user to include other.  This
+ c function should return true if event passes cuts
+@@ -138,6 +138,13 @@
+                               passcuts_user=.false.
+                               return
+                            endif
++                        endif
++                        if (mll_sf.gt.0d0) then
++                           if (invm2_04(p(0,i),p(0,j),1d0).gt.4**2)
++     $                          then
++                              passcuts_user=.false.
++                              return
++                           endif
+                         endif
+                         if (mll_sf.gt.0d0) then
+                            if (invm2_04(p(0,i),p(0,j),1d0).lt.mll_sf**2)
