@@ -1,5 +1,5 @@
---- cuts.f	2023-07-17 23:26:41.364713050 +0200
-+++ cuts_modified.f	2023-07-16 22:56:40.939525610 +0200
+--- Template/NLO/SubProcesses/cuts.f	2023-07-17 23:26:41.364713050 +0200
++++ Template/NLO/SubProcesses/cuts.f	2023-07-16 22:56:40.939525610 +0200
 @@ -1,4 +1,4 @@
 -c
 +c ADDED: veto on invariant masses above 50 GeV in line 142-148
