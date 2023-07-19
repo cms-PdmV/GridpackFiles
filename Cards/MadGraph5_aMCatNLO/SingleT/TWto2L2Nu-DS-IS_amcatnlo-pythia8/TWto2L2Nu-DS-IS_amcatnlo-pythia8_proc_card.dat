@@ -3,4 +3,4 @@ import model loop_sm-ckm_no_b_mass
 generate p p > t w- [QCD] @0
 add process p p > t~ w+ [QCD] @1
 
-output TWto2L2Nu-DS_IS_runningBW_amcatnlo-pythia8 -nojpeg
+output TWto2L2Nu-DS-IS_amcatnlo-pythia8 -nojpeg
