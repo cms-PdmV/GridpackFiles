@@ -5,7 +5,7 @@
         "parton_shower": "pythia8",
         "ickkw": "0",
         "maxjetflavor": "5",
-        "istr" : "1"
+        "istr" : "2"
     },
     "model_params": "massW.dat",
     "model_params_user": [
