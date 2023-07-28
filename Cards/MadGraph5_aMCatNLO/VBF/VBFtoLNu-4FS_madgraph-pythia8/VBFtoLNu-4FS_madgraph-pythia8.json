@@ -3,7 +3,7 @@
     "template_user": [],
     "template_vars":{
         "ickkw": "0",
-        "maxjetflavor": "5",
+        "maxjetflavor": "4",
         "xqcut" : "0"
     },
     "model_params": "massW.dat",
