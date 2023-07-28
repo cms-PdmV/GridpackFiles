@@ -10,4 +10,4 @@ add process p p > ell+ vl w- j [QCD] @1
 add process p p > ell- vl~ w+ [QCD] @2
 add process p p > ell- vl~ w+ j [QCD] @3
 
-output WWtoLNu2Q-1Jets-4F_amcatnloFXFX-pythia8 -nojpeg
+output WWtoLNu2Q-1Jets-4FS_amcatnloFXFX-pythia8 -nojpeg
