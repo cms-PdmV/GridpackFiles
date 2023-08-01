@@ -16,6 +16,7 @@
     "fragment": ["Generator/ExternalLHEProducer.dat", "PartonShower/amcatnloFXFX-pythia8.dat", "Filter/LHE_Gamma_Pt50to100_filter.dat"],
     "fragment_user": [],
     "fragment_vars": {
+        "generateConcurrently": "generateConcurrently = cms.untracked.bool(False),",
         "processParameters": [
             "'JetMatching:qCut = 30.'",
             "'JetMatching:qCutME = 10.'",
