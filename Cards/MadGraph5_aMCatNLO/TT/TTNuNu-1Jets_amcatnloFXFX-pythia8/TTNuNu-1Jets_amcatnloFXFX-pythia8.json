@@ -3,7 +3,7 @@
     "template_user": [],
     "template_vars":{
         "parton_shower": "pythia8",
-        "ickkw": "0",
+        "ickkw": "3",
         "maxjetflavor": "5"
     },
     "model_params": "massW.dat",
@@ -11,11 +11,14 @@
         "set run_card ptj 20",
     ],
     "model_params_vars": {},
-    "fragment": ["Generator/ExternalLHEProducer.dat", "PartonShower/amcatnlo-pythia8.dat"],
+    "fragment": ["Generator/ExternalLHEProducer.dat", "PartonShower/amcatnloFXFX-pythia8.dat"],
     "fragment_user": [],
     "fragment_vars": {
         "processParameters": [
-            "'TimeShower:nPartonsInBorn = 4'",
+            "'JetMatching:qCut = 42.'",
+            "'JetMatching:qCutME = 20.'",
+            "'JetMatching:nQmatch = 5'",
+            "'JetMatching:nJetMax = 1'",
             "'TimeShower:mMaxGamma = 4.0'"
         ]
     }
