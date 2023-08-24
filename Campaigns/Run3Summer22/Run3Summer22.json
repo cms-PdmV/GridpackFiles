@@ -5,8 +5,9 @@
 
     },
     "fragment_vars": {
-        "generateConcurrently": "generateConcurrently = cms.untracked.bool(True),",
-        "concurrent": "Concurrent"
+        "concurrentLHEforMadGraph5_aMCatNLO": "False",
+        "concurrentLHEforPowheg": "True",
+        "concurrentPS": "Concurrent"
     },
     "tune": "CP5",
     "beam": 6800,

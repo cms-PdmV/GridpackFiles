@@ -3,7 +3,7 @@ from $tuneImport import *
 from Configuration.Generator.Pythia8PowhegEmissionVetoSettings_cfi import *
 from Configuration.Generator.PSweightsPythia.PythiaPSweightsSettings_cfi import *
 
-generator = cms.EDFilter("Pythia8$concurrentHadronizerFilter",
+generator = cms.EDFilter("Pythia8$concurrentPSHadronizerFilter",
     PythiaParameters = cms.PSet(
         pythia8CommonSettingsBlock,
         pythia8$tuneNameSettingsBlock,
