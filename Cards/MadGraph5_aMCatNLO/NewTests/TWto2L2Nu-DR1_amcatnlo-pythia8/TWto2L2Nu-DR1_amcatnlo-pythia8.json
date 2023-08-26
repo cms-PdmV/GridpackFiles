@@ -11,7 +11,7 @@
         "set run_card istr 1"
     ],
     "model_params_vars": {},
-    "fragment": ["Generator/ExternalLHEProducer.dat", "PartonShower/amcatnlo-pythia8.dat"],
+    "fragment": ["Generator/ExternalLHEProducer_MadGraph5_aMCatNLO.dat", "PartonShower/amcatnlo-pythia8.dat"],
     "fragment_user": [],
     "fragment_vars": {
         "processParameters": [

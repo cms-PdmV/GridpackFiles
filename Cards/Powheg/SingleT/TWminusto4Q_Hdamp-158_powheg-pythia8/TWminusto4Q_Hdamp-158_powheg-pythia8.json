@@ -15,7 +15,7 @@
     ],
     "model_params_vars": {},
     
-    "fragment": ["Generator/ExternalLHEProducer.dat","PartonShower/PowhegEmissionVetoPythia8.dat"],
+    "fragment": ["Generator/ExternalLHEProducer_Powheg.dat","PartonShower/PowhegEmissionVetoPythia8.dat"],
     "fragment_user": [],
     "fragment_vars": {
         "processParameters": [
