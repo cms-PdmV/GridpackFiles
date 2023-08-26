@@ -6,4 +6,4 @@ define ell- = e- mu- ta-
 generate p p > t b~ j l+ l- $$ w+ w- [QCD]
 add process p p > t~ b j l+ l- $$ w+ w- [QCD]
 
-output TBQ2L_amcatnlo-pythia8 -nojpeg
+output TZQB_Zto2L_amcatnlo-pythia8 -nojpeg
