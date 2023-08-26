@@ -32,4 +32,3 @@ This script will collect the parsed `PREPID` inputs and modify, clone requests f
 ## Long term fixes to be done
 
 - `parse_jobs.py` : NEVENTS should be computed with various campaigns and luminosities rather than the fixed value "50000 /pb".
-- `forge_prepids.py` : GENERATOR should be given at the stage where from the extravaganza machinery, not here.
