@@ -22,11 +22,6 @@ def parse_arguments() :
                         action="store",\
                         help = "pickle file to submit to mcm")
 
-    # should ask geovanny to add this automatically #FIXME
-    parser.add_argument("-g", "--generator", required=True,\
-                        action="store",\
-                        help = "generator used for the sample")
-
     return parser.parse_args()
 
 def edit_prepid(data) :

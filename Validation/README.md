@@ -23,13 +23,12 @@ If above arguments are not given, `NEVENTS` will be set to `(CROSS_SECTION) X 50
 
 ## Forging PREPIDs (and cloning PREPIDs)
 
-``./forge_prepids.py <PICKLEFILE> -g GENERATOR``
+``./forge_prepids.py <PICKLEFILE> ``
 
-``#./forge_prepids.py QCDB/prepids.pickle -g MadGraph5_aMCatNLO``
+``#./forge_prepids.py QCDB/prepids.pickle ``
 
 This script will collect the parsed `PREPID` inputs and modify, clone requests for "Run3Summer22wmLHEGS" and "Run3Summer22EEwmLHEGS". `NEVENTS` will be multipled by "3.5" for "Run3Summer22EEwmLHEGS".
 
 ## Long term fixes to be done
 
 - `parse_jobs.py` : NEVENTS should be computed with various campaigns and luminosities rather than the fixed value "50000 /pb".
-- `forge_prepids.py` : GENERATOR should be given at the stage where from the extravaganza machinery, not here.

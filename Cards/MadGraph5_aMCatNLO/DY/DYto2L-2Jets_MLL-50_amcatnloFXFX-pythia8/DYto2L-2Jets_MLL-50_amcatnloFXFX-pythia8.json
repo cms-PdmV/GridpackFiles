@@ -12,7 +12,7 @@
         "set run_card mll_sf 50.0"
     ],
     "model_params_vars": {},
-    "fragment": ["Generator/ExternalLHEProducer.dat", "PartonShower/amcatnloFXFX-pythia8.dat"],
+    "fragment": ["Generator/ExternalLHEProducer_MadGraph5_aMCatNLO.dat", "PartonShower/amcatnloFXFX-pythia8.dat"],
     "fragment_user": [],
     "fragment_vars": {
         "processParameters": [
