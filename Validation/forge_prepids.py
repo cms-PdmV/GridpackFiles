@@ -12,8 +12,6 @@ from rest import *
 mcm = McM(dev=False)
 
 CLONE_TARGET = "Run3Summer22EEwmLHEGS"
-GENERATOR = None
-
 def parse_arguments() :
 
     parser = argparse.ArgumentParser()
@@ -43,7 +41,6 @@ def edit_prepid(data) :
     request['generator_parameters'][0]['negative_weights_fraction'] = 0.0
     request['size_event'][0] = 800.0
     request['time_event'][0] = time
-    request['generators'].append(GENERATOR)
 
     print (f"updating {prepid}")
     update=mcm.update('requests', request)
@@ -62,9 +59,6 @@ def main() :
 
     args = parse_arguments()
     pickle_file = args.pickle_file
-
-    global GENERATOR #FIXME
-    GENERATOR = args.generator
 
     data_to_submit = pickle.load(open(pickle_file, 'rb'))
     for data in data_to_submit :
