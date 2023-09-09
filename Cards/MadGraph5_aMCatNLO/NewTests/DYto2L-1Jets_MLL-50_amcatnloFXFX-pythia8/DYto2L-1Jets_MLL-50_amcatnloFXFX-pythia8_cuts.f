@@ -139,7 +139,7 @@ c DeltaR and invariant mass cuts
                               return
                            endif
                         endif
-                        if ( ((p(1,i)+p(1,j))**2+(p(2,i)+p(2,j))**2).le.150d0**2) then
+                        if ( (p(1,i)+p(1,j))**2+(p(2,i)+p(2,j))**2.le.150d0**2) then
                            passcuts_user=.false.
                            return
                         endif
