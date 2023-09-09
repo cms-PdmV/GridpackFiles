@@ -2,6 +2,6 @@ import model sm-ckm_no_b_mass
 
 define ws = w+ w-
 
-add process p p > ws j @0
+generate p p > ws j @0
 
 output WtoLNu-1Jets_PTJ-200_madgraph-pythia8 -nojpeg
