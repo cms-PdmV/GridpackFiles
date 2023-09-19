@@ -1,0 +1,12 @@
+import model sm-ckm_no_b_mass
+
+define vl = ve vm vt
+define vl~ = ve~ vm~ vt~
+
+generate p p > vl vl~ j  @0
+add process p p > vl vl~ j j  @1
+add process p p > vl vl~ j j j  @2
+add process p p > vl vl~ j j j j  @3
+
+
+output Zto2Nu-4Jets_HT-400to800_madgraphMLM-pythia8 -nojpeg
