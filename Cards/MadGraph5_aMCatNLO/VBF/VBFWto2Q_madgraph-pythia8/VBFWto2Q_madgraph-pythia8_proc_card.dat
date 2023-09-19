@@ -1,0 +1,7 @@
+import model loop_sm-ckm_no_b_mass
+
+generate p p > w+ j j QCD=0 QED=3, w+ > j j @0
+add process p p > w- j j QCD=0 QED=3, w- > j j @1
+
+output VBFWto2Q_madgraph-pythia8 -nojpeg
+

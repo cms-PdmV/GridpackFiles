@@ -12,7 +12,7 @@
         "set run_card htjmax 200"
     ],
     "model_params_vars": {},
-    "fragment": ["Generator/ExternalLHEProducer.dat", "PartonShower/madgraphMLM-pythia8.dat"],
+    "fragment": ["Generator/ExternalLHEProducer_MadGraph5_aMCatNLO.dat", "PartonShower/madgraphMLM-pythia8.dat"],
     "fragment_user": [],
     "fragment_vars": {
         "processParameters": [

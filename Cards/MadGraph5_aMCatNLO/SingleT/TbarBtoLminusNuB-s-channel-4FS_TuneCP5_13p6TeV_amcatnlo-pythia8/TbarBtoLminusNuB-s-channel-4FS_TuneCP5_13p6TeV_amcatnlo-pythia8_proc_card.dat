@@ -1,0 +1,10 @@
+import model loop_sm-ckm
+
+define ell+ = e+ mu+ ta+
+define ell- = e- mu- ta-
+define vl = ve vm vt
+define vl~ = ve~ vm~ vt~
+
+generate p p > w- > t~ b [QCD] @0
+
+output TbarBtoLminusNuB-s-channel-4FS_TuneCP5_13p6TeV_amcatnlo-pythia8 -nojpeg

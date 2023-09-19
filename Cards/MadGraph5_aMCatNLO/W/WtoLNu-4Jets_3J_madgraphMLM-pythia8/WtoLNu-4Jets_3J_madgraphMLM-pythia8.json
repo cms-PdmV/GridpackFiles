@@ -9,7 +9,7 @@
     "model_params": "massW.dat",
     "model_params_user": [],
     "model_params_vars": {},
-    "fragment": ["Generator/ExternalLHEProducer.dat", "PartonShower/madgraphMLM-pythia8.dat"],
+    "fragment": ["Generator/ExternalLHEProducer_MadGraph5_aMCatNLO.dat", "PartonShower/madgraphMLM-pythia8.dat"],
     "fragment_user": [],
     "fragment_vars": {
         "processParameters": [

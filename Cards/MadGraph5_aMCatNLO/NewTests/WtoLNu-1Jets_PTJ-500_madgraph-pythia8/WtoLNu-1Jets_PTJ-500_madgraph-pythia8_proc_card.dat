@@ -1,0 +1,7 @@
+import model sm-ckm_no_b_mass
+
+define ws = w+ w-
+
+generate p p > ws j @0
+
+output WtoLNu-1Jets_PTJ-500_madgraph-pythia8 -nojpeg
