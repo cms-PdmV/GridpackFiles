@@ -9,7 +9,7 @@
     "model_params": "massZ.dat",
     "model_params_user": [
         "set run_card ihtmin 100",
-        "set run_card ihtmax 400"
+        "set run_card ihtmax 200"
     ],
     "model_params_vars": {},
     "fragment": ["Generator/ExternalLHEProducer_MadGraph5_aMCatNLO.dat", "PartonShower/madgraphMLM-pythia8.dat"],
