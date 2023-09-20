@@ -30,7 +30,7 @@ CLONE_TARGETS = {
 # This dictionary defines regexpressions to match with McM queries
 regexps = {
     "TT_powheg" : "TT*powheg*",
-    "TW" : "TW*"
+    "TW_powheg" : "TW*powheg*"
 }
 
 def parse_arguments() :
@@ -101,7 +101,8 @@ def main() :
     prepids = [r["prepid"] for r in mcm.get("requests", query="pwg=GEN&member_of_campaign=Run3Summer22wm*&dataset_name={}*&status=done".format(regexp))] 
 
     print(" >> Going to clone %d prepids"%len(prepids)) 
-    clone_prepid(prepids[0], submit)
+    for prepid in prepids:
+        clone_prepid(prepids, submit)
 
 if __name__ == "__main__" :
 
