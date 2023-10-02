@@ -32,3 +32,7 @@ This script will collect the parsed `PREPID` inputs and modify, clone requests f
 ## Long term fixes to be done
 
 - `parse_jobs.py` : NEVENTS should be computed with various campaigns and luminosities rather than the fixed value "50000 /pb".
+
+# Directory making script
+
+- Execute `makeDirs.py` with `python3 makeDirs.py doit` command from time to time (or whenever we need new directories in EOS area). Automatically parses all generator, process, and campaign directories and creates them in EOS area.
