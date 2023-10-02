@@ -1,9 +1,12 @@
 import os
 import sys
 
-if (sys.argv[1] == "doit"):
-    doit=True
-else:
+try:
+    if (sys.argv[1] == "doit"):
+        doit=True
+    else:
+        doit=False
+except:
     doit=False
 
 path = "/eos/cms/store/group/phys_generator/cvmfs/gridpacks/PdmV/"
@@ -15,6 +18,7 @@ for g in generators:
     for p in processes:
         for c in campaigns:
             fullpath = os.path.join(path, c, g, p)
-            print (fullpath)
-            if doit:
-                os.system(f"mkdir -p {fullpath}")
+            if not os.path.exists(fullpath):
+                print (fullpath)
+                if doit:
+                    os.system(f"mkdir -p {fullpath}")
