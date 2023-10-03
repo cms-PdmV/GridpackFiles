@@ -1,0 +1,6 @@
+LHEVptFilter = cms.EDFilter("LHEVpTFilter",
+    src = cms.InputTag("externalLHEProducer"),
+    VpTMin = cms.double(400),
+    VpTMax = cms.double(600),
+)
+ProductionFilterSequence = cms.Sequence(generator*LHEVptFilter)
