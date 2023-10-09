@@ -139,7 +139,13 @@ c DeltaR and invariant mass cuts
                               return
                            endif
                         endif
-                        if ( (p(1,i)+p(1,j))**2+(p(2,i)+p(2,j))**2.le.150d0**2) then
+c$$$            if ( p(1,i)**2+p(2,i)**2 .lt. 200d0**2 ) then
+c$$$C momenta do not pass cuts. Set passcuts_user to false and return
+c$$$               passcuts_user=.false.
+c$$$               return
+c$$$            endif
+
+                        if ( (p(1,i)+p(1,j))**2+(p(2,i)+p(2,j))**2 .lt. 150d0**2) then
                            passcuts_user=.false.
                            return
                         endif

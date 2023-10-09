@@ -1,4 +1,6 @@
 {
+    "gridpack_submit": true,
+
     "template": "LO_run_card.dat",
     "template_user": [],
     "template_vars":{
