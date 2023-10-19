@@ -415,7 +415,7 @@ C
                passcuts_user=.false.
                return
             endif
-         enddo
+         endif
       enddo
 
 
