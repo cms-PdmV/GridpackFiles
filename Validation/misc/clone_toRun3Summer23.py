@@ -19,18 +19,18 @@ mcm = McM(dev=False)
 CLONE_TARGETS = {
     "Run3Summer23wmLHEGS" : {
         "lumi_sf" : 2.0,
-        "tags" : ["CloneTT23"] 
     },
     "Run3Summer23BPixwmLHEGS" : {
         "lumi_sf" : 1.0,
-        "tags" : ["CloneTT23Bpix"] 
     },
 }
 
 # This dictionary defines regexpressions to match with McM queries
 regexps = {
     "TT_powheg" : "TT*powheg*",
-    "TW_powheg" : "TW*powheg*"
+    "TW" : "TW*",
+    "DY" : "DY*powheg",
+    "QCD" : "QCD*"
 }
 
 def parse_arguments() :
@@ -83,7 +83,8 @@ def clone_prepid(prepid, submit):
         # Modify parameters
         request["member_of_campaign"] = target
         request["total_events"] = request["total_events"] * metadata["lumi_sf"]
-        check_fragment_mmaxgamma(request)
+        
+        #check_fragment_mmaxgamma(request) 
 
         if submit:
             clone_request = mcm.clone_request(request)
@@ -102,7 +103,7 @@ def main() :
 
     print(" >> Going to clone %d prepids"%len(prepids)) 
     for prepid in prepids:
-        clone_prepid(prepids, submit)
+        clone_prepid(prepid, submit)
 
 if __name__ == "__main__" :
 

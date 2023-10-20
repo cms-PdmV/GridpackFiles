@@ -54,10 +54,10 @@ def parse_logfile(dirname, prepid) :
     with open(f"{dirname}/{prepid}.stderr") as f :
         for l in reversed(f.readlines()) :
             l = l.strip()
-            if "total cross section" in l :
+            if "cross section" in l :
                 if "Before matching:" in l :
                     before = float(l.split("=")[1].split("+-")[0])
-                if "After matching:" in l :
+                if "After filter:" in l :
                     after = float(l.split("=")[1].split("+-")[0])
             if "Avg event:" in l :
                 time = float(l.split(":")[1])
