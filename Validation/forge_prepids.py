@@ -11,12 +11,7 @@ from rest import *
 
 mcm = McM(dev=False)
 
-CLONE_TARGETS = {
-"Run3Summer22EEwmLHEGS" : 3.5,
-"Run3Summer23wmLHEGS" : 2.,
-"Run3Summer23BPixwmLHEGS" : 1.
-}
-
+CLONE_TARGET = "Run3Summer22EEwmLHEGS"
 def parse_arguments() :
 
     parser = argparse.ArgumentParser()
@@ -52,14 +47,13 @@ def edit_prepid(data) :
 
 def clone_prepid(prepid) :
 
-    print (f"cloning {prepid} ==========================")
-    for CLONE_TARGET, SCALE in CLONE_TARGETS.items():
-        request = mcm.get('requests', prepid)
-        request["member_of_campaign"] = CLONE_TARGET
-        request["total_events"] = request["total_events"] * SCALE
+    request = mcm.get('requests', prepid)
+    request["member_of_campaign"] = CLONE_TARGET
+    request["total_events"] = request["total_events"] * 3.5
 
-        clone_request = mcm.clone_request(request)
-        print (f"\t{clone_request}")
+    print (f"cloning {prepid}")
+    clone_request = mcm.clone_request(request)
+    print (f"\t{clone_request}")
 
 def main() :
 
