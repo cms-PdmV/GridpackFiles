@@ -14,4 +14,4 @@ add process p p > ell- vl~ j j j $ t t~ h @7
 add process p p > ell+ vl j j j j $ t t~ h @8
 add process p p > ell- vl~ j j j j $ t t~ h @9
 
-output WtoLNu-4Jets_MLNu-0to120_HT-40to100_madgraphMLM-pythia8 -nojpeg
+output WtoLNu-4Jets_MLNu-120_HT-70to100_madgraphMLM-pythia8 -nojpeg
