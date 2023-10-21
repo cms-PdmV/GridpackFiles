@@ -10,4 +10,4 @@ add process p p > a j j @1
 add process p p > a j j j  @2
 add process p p > a j j j j  @3
 
-output G-4Jets_dRGJ-0p2_HT-600_madgraphMLM-pythia8 -nojpeg
+output GJets-4Jets_dRGJ-0p2_HT-400to600_madgraphMLM-pythia8 -nojpeg
