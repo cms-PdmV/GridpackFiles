@@ -29,28 +29,49 @@ def parse_arguments() :
 def set_prepids(prepids) :
 
     prepids_to_submit = []
-
-    if "-" in prepids :
-
-        start = prepids.split("-")[0]
-        end = prepids.split("-")[1]
-        if int(start) > int(end) :
-            sys.exit(f"arrange prepids properly : smaller to larger number")
-
-        for prepid in range(int(start), int(end)+1) :
-            prepid = str(prepid).zfill(5)
+    for prepid_ in prepids.split(","):
+        if "-" in prepid_ :
+            start = prepid_.split("-")[0]
+            end = prepid_.split("-")[1]
+            if int(start) > int(end) :
+                sys.exit(f"ERROR :: Arrange prepids properly : smaller to larger number")
+            for prepid in range(int(start), int(end)+1) :
+                prepid = str(prepid).zfill(5)
+                prepids_to_submit.append(f"{PREPID_HEADER}-{prepid}")
+        else :
+            prepid = str(prepid_).zfill(5)
             prepids_to_submit.append(f"{PREPID_HEADER}-{prepid}")
-    else :
-        prepids_to_submit.append(f"{PREPID_HEADER}-{prepids}")
+
+    print (f"LOG :: Parsing prepids {prepids}")
+    for prepid in prepids_to_submit:
+        print (f"LOG :: {prepid}")
 
     return prepids_to_submit
 
+def set_nevents(nevents):
+
+    nevents = int(nevents)
+
+    nevents_gensim = min(max(nevents, 300), 1000)
+    nevents_gen    = min(max(nevents*10, 5000), 10000)
+
+    print (f"LOG :: Setting number of events")
+    print (f"LOG :: Given nevents {nevents} with option")
+    print (f"LOG :: Set nevents_gen {nevents_gen}")
+    print (f"LOG :: Set nevents_gensim {nevents_gensim}")
+
+    return nevents_gen, nevents_gensim
+
 def submit_jobs(dirname, prepid, nevents) :
 
+    nevents_gen, nevents_gensim = set_nevents(nevents)
+ 
     os.system(f"cp template/condor.jds {dirname}/{prepid}.jds")
     os.system(f"cp template/run.sh {dirname}/{prepid}.sh")
 
-    os.system(f"sed -i 's|__nevents__|{nevents}|g' {dirname}/{prepid}.sh")
+    os.system(f"sed -i 's|__nevents_gensim__|{nevents_gensim}|g' {dirname}/{prepid}.sh")
+    os.system(f"sed -i 's|__nevents_gen__|{nevents_gen}|g' {dirname}/{prepid}.sh")
+
     os.system(f"sed -i 's|__prepid__|{prepid}|g' {dirname}/{prepid}.sh")
     os.system(f"sed -i 's|__prepid__|{prepid}|g' {dirname}/{prepid}.jds")
 
@@ -66,7 +87,7 @@ def main() :
     dirname = args.dirname
 
     if os.path.exists(dirname) : 
-        sys.exit(f"{dirname} exists, try different name")
+        sys.exit(f"ERROR :: dirname {dirname} exists, try different name")
     os.system(f"mkdir {dirname}")
 
     prepids_to_submit = set_prepids(prepids)
