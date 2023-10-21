@@ -23,9 +23,23 @@ If above arguments are not given, `NEVENTS` will be set to `(CROSS_SECTION) X 50
 
 ## Forging PREPIDs (and cloning PREPIDs)
 
-``./forge_prepids.py <PICKLEFILE> ``
+To edit the prepids in McM with given validation results.
 
-``#./forge_prepids.py QCDB/prepids.pickle ``
+``./forge_prepids.py <PICKLEFILE> --edit``
+
+``#./forge_prepids.py QCDB/prepids.pickle --edit``
+
+To clone the prepids in McM to different campaigns.
+
+``./forge_prepids.py <PICKLEFILE> --clone``
+
+``#./forge_prepids.py QCDB/prepids.pickle --clone``
+
+To do both altogether.
+
+``./forge_prepids.py <PICKLEFILE> --edit --clone``
+
+``#./forge_prepids.py QCDB/prepids.pickle --edit --clone``
 
 This script will collect the parsed `PREPID` inputs and modify, clone requests for "Run3Summer22wmLHEGS" and "Run3Summer22EEwmLHEGS". `NEVENTS` will be multipled by "3.5" for "Run3Summer22EEwmLHEGS".
 
