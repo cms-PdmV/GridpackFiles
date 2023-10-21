@@ -2,9 +2,9 @@
 
 ## Submitting jobs locally
 
-``./submit_jobs.py -D <DIRNAME> -i <PREPIDSTART>-<PREPIDEND> -n <NEVENTS>``
+``./submit_jobs.py -D <DIRNAME> -i <PREPIDSTART>-<PREPIDEND>,<PREPID>,<PREPID> -n <NEVENTS>``
 
-``#./submit_jobs.py -D QCDB -i 00210-00217 -n 1000``
+``#./submit_jobs.py -D QCDB -i 210-217,220,224-228,250 -n 1000``
 
 `PREPID_HEADER` is defined in the python script which is set to "GEN-Run3Summer22wmLHEGS" by default.
 This will collect the corresponding `PREPID` generator fragment files from McM and submit jobs from the `DIRNAME` directory, running `NEVENTS` to validate the samples locally.
