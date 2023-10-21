@@ -6,7 +6,7 @@ import time
 import pickle
 import argparse
 
-FUDGE_FACTOR = 30
+FUDGEFACTOR = 20
 PREPID_HEADER = "GEN-Run3Summer22wmLHEGS"
 MAXNEVENTS = 150000000
 MINNEVENTS =    500000
@@ -20,16 +20,20 @@ def parse_arguments() :
                         action="store",\
                         help = "name of job submission directory")
 
+    parser.add_argument("--fudgefactor",\
+                        action="store", dest="fudgefactor", default=FUDGEFACTOR,\
+                        help = "fudge factor")
+
     parser.add_argument("--maxnevents",\
-                        action="store", dest="maxnevents", default=150000000,\
+                        action="store", dest="maxnevents", default=MAXNEVENTS,\
                         help = "max number of events to request")
 
     parser.add_argument("--minnevents",\
-                        action="store", dest="minnevents", default=   200000,\
+                        action="store", dest="minnevents", default=MINNEVENTS,\
                         help = "min number of events to request")
 
     parser.add_argument("--fixnevents",\
-                        action="store", dest="fixnevents", default=       -1,\
+                        action="store", dest="fixnevents", default=FIXNEVENTS,\
                         help = "fix number of events to request")
 
     return parser.parse_args()
@@ -46,6 +50,27 @@ def set_prepids(dirname) :
             prepids_to_parse.append(prepid)
 
     return prepids_to_parse
+
+def get_nevents(prepid, cross_section):
+
+    def formula(cross_section):
+        return (cross_section * 50 * 1000 * 1./4.5)
+
+    nevents = truncate( formula(cross_section) * FUDGEFACTOR)
+
+    if FIXNEVENTS < 0 :
+        if nevents < MINNEVENTS :
+            print (f"{prepid} very small in nevents {nevents}, setting {MINNEVENTS}")
+            nevents = MINNEVENTS
+        if nevents > MAXNEVENTS :
+            print (f"{prepid} very large in nevents {nevents}, setting {MAXNEVENTS} <====== WARNING")
+            nevents = MAXNEVENTS
+    else :
+        print (f"{prepid} fixed to nevents {nevents}, setting {FIXNEVENTS}")
+        nevents = FIXNEVENTS
+
+    fudge_factor = nevents / formula(cross_section)
+    return nevents, fudge_factor
 
 def parse_logfile(dirname, prepid) :
 
@@ -81,23 +106,14 @@ def parse_logfile(dirname, prepid) :
     if filter_eff < 0.1 :
         print (f"{prepid} very small in filter_eff {filter_eff} <====== WARNING")
 
-    nevents = truncate(cross_section * 50 * 1000 * 1./4.5 * FUDGE_FACTOR)
-
-    if FIXNEVENTS < 0 :
-        if nevents < MINNEVENTS :
-            print (f"{prepid} very small in nevents {nevents}, setting {MINNEVENTS}")
-            nevents = MINNEVENTS
-        if nevents > MAXNEVENTS :
-            print (f"{prepid} very large in nevents {nevents}, setting {MAXNEVENTS} <====== WARNING")
-            nevents = MAXNEVENTS
-    else :
-        print (f"{prepid} fixed to nevents {nevents}, setting {FIXNEVENTS}")
-        nevents = FIXNEVENTS
+    nevents, fudge_factor = get_nevents(prepid, cross_section)
 
     pickle['prepid'] = prepid
     pickle['filter_eff'] = filter_eff
     pickle['nevents'] = nevents
     pickle['time_event'] = time_event
+    pickle['cross_section'] = cross_section
+    pickle['fudge_factor'] = fudge_factor
 
     return pickle
 
@@ -106,6 +122,8 @@ def main() :
     args = parse_arguments()
     dirname = args.dirname
 
+    global FUDGEFACTOR
+    FUDGEFACTOR = int(args.fudgefactor)
     global MAXNEVENTS
     MAXNEVENTS = int(args.maxnevents)
     global MINNEVENTS
