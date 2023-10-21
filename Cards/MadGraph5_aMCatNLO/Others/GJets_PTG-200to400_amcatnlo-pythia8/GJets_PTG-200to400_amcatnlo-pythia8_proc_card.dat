@@ -1,0 +1,5 @@
+import model loop_sm-ckm_no_b_mass
+
+generate p p > a j [QCD] @0
+
+output GJets_PTG-200to400_amcatnlo-pythia8 -nojpeg
