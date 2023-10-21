@@ -64,19 +64,19 @@ def parse_logfile(dirname, prepid) :
                     cross_section = after
         filter_eff = round(after/before, 2)
 
-    time_per_event = -1
+    time_event = -1
     with open(f"{dirname}/{prepid}.run_gensim.log", encoding='utf-8') as f :
         for l in reversed(f.readlines()) :
             l = l.strip()
             if "Avg event:" in l :
-                time_per_event = float(l.split(":")[1])
+                time_event = float(l.split(":")[1])
 
     if filter_eff < 0:
         sys.exit(f"ERROR :: filter_eff {filter_eff} < 0")
     if cross_section < 0:
         sys.exit(f"ERROR :: cross_section {cross_section} < 0")
-    if time_per_event < 0:
-        sys.exit(f"ERROR :: time_per_event {time_per_event} < 0")
+    if time_event < 0:
+        sys.exit(f"ERROR :: time_event {time_event} < 0")
 
     if filter_eff < 0.1 :
         print (f"{prepid} very small in filter_eff {filter_eff} <====== WARNING")
@@ -97,7 +97,7 @@ def parse_logfile(dirname, prepid) :
     pickle['prepid'] = prepid
     pickle['filter_eff'] = filter_eff
     pickle['nevents'] = nevents
-    pickle['time_per_event'] = time_per_event
+    pickle['time_event'] = time_event
 
     return pickle
 
