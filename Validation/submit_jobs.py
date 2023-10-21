@@ -24,6 +24,10 @@ def parse_arguments() :
                         action="store", dest="prepids", required = True,\
                         help = "prepids to submit")
 
+    parser.add_argument("--dryrun",\
+                        action="store_true", dest="dryrun",\
+                        help = "do not submit jobs")
+
     return parser.parse_args()
 
 def set_prepids(prepids) :
@@ -62,7 +66,7 @@ def set_nevents(nevents):
 
     return nevents_gen, nevents_gensim
 
-def submit_jobs(dirname, prepid, nevents) :
+def submit_jobs(dirname, prepid, nevents, dryrun) :
 
     nevents_gen, nevents_gensim = set_nevents(nevents)
  
@@ -75,9 +79,10 @@ def submit_jobs(dirname, prepid, nevents) :
     os.system(f"sed -i 's|__prepid__|{prepid}|g' {dirname}/{prepid}.sh")
     os.system(f"sed -i 's|__prepid__|{prepid}|g' {dirname}/{prepid}.jds")
 
-    os.chdir(dirname)
-    os.system(f"condor_submit {prepid}.jds")
-    os.chdir(CWD)
+    if not dryrun:
+        os.chdir(dirname)
+        os.system(f"condor_submit {prepid}.jds")
+        os.chdir(CWD)
 
 def main() :
 
@@ -85,6 +90,7 @@ def main() :
     prepids = args.prepids
     nevents = args.nevents
     dirname = args.dirname
+    dryrun = args.dryrun
 
     if os.path.exists(dirname) : 
         sys.exit(f"ERROR :: dirname {dirname} exists, try different name")
@@ -92,7 +98,7 @@ def main() :
 
     prepids_to_submit = set_prepids(prepids)
     for prepid in prepids_to_submit :
-        submit_jobs(dirname, prepid, nevents)
+        submit_jobs(dirname, prepid, nevents, dryrun)
 
 if __name__ == "__main__" :
 
