@@ -64,25 +64,19 @@ def set_nevents(nevents):
     print (f"LOG :: Set nevents_gen {nevents_gen}")
     print (f"LOG :: Set nevents_gensim {nevents_gensim}")
 
-    return nevents_gen, nevents_gensim
+    return [nevents_gen, nevents_gensim]
 
-def submit_jobs(dirname, prepid, nevents, dryrun) :
+def prepare_jobs(dirname, prepid, nevents_to_submit):
 
-    nevents_gen, nevents_gensim = set_nevents(nevents)
+    nevents_gen = nevents_to_submit[0]
+    nevents_gensim = nevents_to_submit[1]
  
-    os.system(f"cp template/condor.jds {dirname}/{prepid}.jds")
     os.system(f"cp template/run.sh {dirname}/{prepid}.sh")
 
     os.system(f"sed -i 's|__nevents_gensim__|{nevents_gensim}|g' {dirname}/{prepid}.sh")
     os.system(f"sed -i 's|__nevents_gen__|{nevents_gen}|g' {dirname}/{prepid}.sh")
 
     os.system(f"sed -i 's|__prepid__|{prepid}|g' {dirname}/{prepid}.sh")
-    os.system(f"sed -i 's|__prepid__|{prepid}|g' {dirname}/{prepid}.jds")
-
-    if not dryrun:
-        os.chdir(dirname)
-        os.system(f"condor_submit {prepid}.jds")
-        os.chdir(CWD)
 
 def main() :
 
@@ -97,8 +91,18 @@ def main() :
     os.system(f"mkdir {dirname}")
 
     prepids_to_submit = set_prepids(prepids)
+    nevents_to_submit = set_nevents(nevents)
+
+    os.system(f"cp template/condor.jds {dirname}/condor.jds")
+    os.system(f"sed -i 's|__dirname__|{dirname}|g' {dirname}/condor.jds")
+
     for prepid in prepids_to_submit :
-        submit_jobs(dirname, prepid, nevents, dryrun)
+        prepare_jobs(dirname, prepid, nevents_to_submit)
+
+    if not dryrun:
+        os.chdir(dirname)
+        os.system(f"condor_submit condor.jds")
+        os.chdir(CWD)
 
 if __name__ == "__main__" :
 
