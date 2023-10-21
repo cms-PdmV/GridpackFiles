@@ -6,10 +6,10 @@ import time
 import pickle
 import argparse
 
-FUDGE_FACTOR = 50
+FUDGE_FACTOR = 30
 PREPID_HEADER = "GEN-Run3Summer22wmLHEGS"
 MAXNEVENTS = 150000000
-MINNEVENTS =    200000
+MINNEVENTS =    500000
 FIXNEVENTS =        -1
 
 def parse_arguments() :
@@ -41,8 +41,8 @@ def set_prepids(dirname) :
     prepids_to_parse = []
 
     for dirname_file in dirname_files :
-        if dirname_file.endswith(".stderr") :
-            prepid = dirname_file.replace(".stderr", "")
+        if dirname_file.endswith(".sh") :
+            prepid = dirname_file.replace(".sh", "")
             prepids_to_parse.append(prepid)
 
     return prepids_to_parse
@@ -51,7 +51,9 @@ def parse_logfile(dirname, prepid) :
 
     pickle = {}
 
-    with open(f"{dirname}/{prepid}.stderr") as f :
+    filter_eff = -1
+    cross_section = -1
+    with open(f"{dirname}/{prepid}.run_gen.log", encoding='utf-8') as f :
         for l in reversed(f.readlines()) :
             l = l.strip()
             if "cross section" in l :
@@ -59,31 +61,44 @@ def parse_logfile(dirname, prepid) :
                     before = float(l.split("=")[1].split("+-")[0])
                 if "After filter:" in l :
                     after = float(l.split("=")[1].split("+-")[0])
+                    cross_section = after
+        filter_eff = round(after/before, 2)
+
+    time_per_event = -1
+    with open(f"{dirname}/{prepid}.run_gensim.log", encoding='utf-8') as f :
+        for l in reversed(f.readlines()) :
+            l = l.strip()
             if "Avg event:" in l :
-                time = float(l.split(":")[1])
+                time_per_event = float(l.split(":")[1])
 
-        filtereff = round(after/before, 2)
-        if filtereff < 0.1 :
-            print (f"{prepid} very small in filtereff {filtereff} <====== WARNING")
+    if filter_eff < 0:
+        sys.exit(f"ERROR :: filter_eff {filter_eff} < 0")
+    if cross_section < 0:
+        sys.exit(f"ERROR :: cross_section {cross_section} < 0")
+    if time_per_event < 0:
+        sys.exit(f"ERROR :: time_per_event {time_per_event} < 0")
 
-        crosssection = after
-        nevents = truncate(crosssection * 50 * 1000 * 1./4.5 * FUDGE_FACTOR)
+    if filter_eff < 0.1 :
+        print (f"{prepid} very small in filter_eff {filter_eff} <====== WARNING")
 
-        if FIXNEVENTS < 0 :
-            if nevents < MINNEVENTS :
-                print (f"{prepid} very small in nevents {nevents}, setting {MINNEVENTS}")
-                nevents = MINNEVENTS
-            if nevents > MAXNEVENTS :
-                print (f"{prepid} very large in nevents {nevents}, setting {MAXNEVENTS} <====== WARNING")
-                nevents = MAXNEVENTS
-        else :
-            print (f"{prepid} fixed to nevents {nevents}, setting {FIXNEVENTS}")
-            nevents = FIXNEVENTS
+    nevents = truncate(cross_section * 50 * 1000 * 1./4.5 * FUDGE_FACTOR)
 
-        pickle['prepid'] = prepid
-        pickle['filtereff'] = filtereff
-        pickle['nevents'] = nevents
-        pickle['time'] = time
+    if FIXNEVENTS < 0 :
+        if nevents < MINNEVENTS :
+            print (f"{prepid} very small in nevents {nevents}, setting {MINNEVENTS}")
+            nevents = MINNEVENTS
+        if nevents > MAXNEVENTS :
+            print (f"{prepid} very large in nevents {nevents}, setting {MAXNEVENTS} <====== WARNING")
+            nevents = MAXNEVENTS
+    else :
+        print (f"{prepid} fixed to nevents {nevents}, setting {FIXNEVENTS}")
+        nevents = FIXNEVENTS
+
+    pickle['prepid'] = prepid
+    pickle['filter_eff'] = filter_eff
+    pickle['nevents'] = nevents
+    pickle['time_per_event'] = time_per_event
+
     return pickle
 
 def main() :
@@ -106,9 +121,9 @@ def main() :
 
     with open(f'{dirname}/prepids.pickle', 'wb') as f:
         pickle.dump(pickles_parsed, f)
-        print(pickles_parsed)
+        for pickle_parsed in pickles_parsed:
+            print(pickle_parsed)
         print(f"pickle file dumped to {dirname}/prepids.pickle")
-        os.system(f"xrdcp {dirname}/prepids.pickle root://eosuser.cern.ch//eos/cms/store/user/shjeon/Run3Sample/{dirname.replace('/','')}.pickle")
 
 def truncate(nevents):
 

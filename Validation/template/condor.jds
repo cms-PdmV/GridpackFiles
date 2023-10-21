@@ -1,12 +1,12 @@
-executable = __prepid__.sh
+executable = $(filename)
 getenv = True
 when_to_transfer_output = on_exit
 +JobFlavour = "tomorrow"
-+JobBatchName = "__prepid__"
-output = __prepid__.stdout
-error = __prepid__.stderr
-log = __prepid__.stdlog
++JobBatchName = "__dirname__"
+output = __dirname__.$(ProcId).stdout
+error = __dirname__.$(ProcId).stderr
+log = __dirname__.$(ProcId).stdlog
 request_memory = 16000
 +SingularityImage = "/cvmfs/singularity.opensciencegrid.org/cmssw/cms:rhel8-m-m20230425"
-queue
 
+queue filename matching (GEN-*-*.sh)
