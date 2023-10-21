@@ -1,0 +1,13 @@
+import model sm-ckm_no_b_mass
+
+define ell+ = e+ mu+ ta+
+define ell- = e- mu- ta-
+define vl = ve vm vt
+define vl~ = ve~ vm~ vt~
+
+generate p p > a j @0
+add process p p > a j j @1
+add process p p > a j j j  @2
+add process p p > a j j j j  @3
+
+output G-4Jets_dRGJ-0p2_HT-100to200_madgraphMLM-pythia8 -nojpeg
