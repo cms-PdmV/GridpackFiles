@@ -1,0 +1,11 @@
+{
+    "gridpack_submit": false,
+    "gridpack_path": "SingleT/ST_wtch_DR_slc7_amd64_gcc10_CMSSW_12_4_8_TWminustoLNu2Q_powheg-pythia8.tgz",
+
+    "fragment": ["Generator/ExternalLHEProducer_Powheg-herwig7.dat","PartonShower/powheg-herwig7.dat","Filter/OneLepton.dat"],
+    "fragment_user": [],
+    "fragment_vars": {
+        "processParameters": [
+        ]
+    }
+}
