@@ -10,7 +10,7 @@
     "model_params_user": [
         "set run_card draj 0.2",
         "set run_card pta 10.0",
-        "set run_card htjmin 40.0",
+        "set run_card htjmin 70.0",
         "set run_card htjmax 100.0"
     ],
     "model_params_vars": {},
