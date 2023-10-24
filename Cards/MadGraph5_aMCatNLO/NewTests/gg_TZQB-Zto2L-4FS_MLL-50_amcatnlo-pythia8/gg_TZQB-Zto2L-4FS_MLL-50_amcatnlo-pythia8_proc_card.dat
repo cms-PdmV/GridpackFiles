@@ -1,0 +1,9 @@
+import model loop_sm
+
+define ell+ = e+ mu+ ta+
+define ell- = e- mu- ta-
+
+generate g g > t b~ j l+ l- $$ w+ w- [QCD]
+add process g g > t~ b j l+ l- $$ w+ w- [QCD]
+
+output gg_TZQB-Zto2L-4FS_MLL-50_amcatnlo-pythia8 -nojpeg
