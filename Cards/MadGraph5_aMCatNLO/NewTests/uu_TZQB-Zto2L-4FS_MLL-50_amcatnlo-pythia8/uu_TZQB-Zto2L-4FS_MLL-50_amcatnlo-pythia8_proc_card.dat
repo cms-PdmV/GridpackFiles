@@ -3,6 +3,6 @@ import model loop_sm
 define ell+ = e+ mu+ ta+
 define ell- = e- mu- ta-
 
-generate u u > t b~ j z [QCD]
+generate u u~ > t b~ j z [QCD]
 
 output uu_TZQB-Zto2L-4FS_MLL-50_amcatnlo-pythia8 -nojpeg
