@@ -3,6 +3,6 @@ import model loop_sm-ckm
 define ell+ = e+ mu+ ta+
 define ell- = e- mu- ta-
 
-generate d~ g > t b~ d e+ e- $$ w+ w- [QCD]
+generate d~ g > t b~ u~ e+ e- $$ w+ w- [QCD]
 
 output dxg_TZDB-Zto2E-4FS_MLL-50_amcatnlo-pythia8 -nojpeg
