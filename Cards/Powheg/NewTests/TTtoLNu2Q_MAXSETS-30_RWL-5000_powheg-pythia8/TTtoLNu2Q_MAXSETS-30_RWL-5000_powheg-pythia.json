@@ -5,7 +5,7 @@
         "semileptonic 1",
         "hdamp 250",
         "lhapdf6maxsets 30",
-        "rwl_group_events 1000"
+        "rwl_group_events 5000"
     ],
     "template_vars": {},
     
