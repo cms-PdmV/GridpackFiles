@@ -1,0 +1,6 @@
+LHEfilter = cms.EDFilter("LHEGenericFilter",
+    src = cms.InputTag("externalLHEProducer"),
+    NumRequired = cms.int32(0),
+    ParticleID = cms.vint32(5),
+    AcceptLogic = cms.string("EQ") # LT meaning < NumRequired, GT >, EQ =, NE !=
+)
