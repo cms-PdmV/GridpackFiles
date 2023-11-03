@@ -1,5 +1,5 @@
 {
-    "gridpack_submit": True,
+    "gridpack_submit": "True",
     "gridpack_path" : "QCD/QCD-4Jets_HT-1000to1200_madgraphMLM-pythia8",
     "fragment": ["Generator/ExternalLHEProducer_MadGraph5_aMCatNLO.dat", "PartonShower/madgraphMLM-hepmcfilter-pythia8.dat", "Filter/LHE_BGenFilterEQ0_filter.dat"],
     "fragment_user": [],
