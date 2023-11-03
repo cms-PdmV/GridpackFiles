@@ -25,7 +25,10 @@ generator = cms.EDFilter("Pythia8$concurrentPSHadronizerFilter",
             'pythia8PSweightsSettings'
         )
     ),
-    $hepmcFilter
+    nAttempts = cms.uint32($attemptsFilter),
+    HepMCFilter = cms.PSet(
+        $hepmcFilter
+    ),
     comEnergy = cms.double($comEnergy),
     maxEventsToPrint = cms.untracked.int32(1),
     pythiaHepMCVerbosity = cms.untracked.bool(False),
