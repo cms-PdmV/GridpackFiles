@@ -1,0 +1,18 @@
+{
+    "gridpack_submit": true,
+    "gridpack_path" : "QCD/QCD-4Jets_HT-1000to1200_madgraphMLM-pythia8",
+    "fragment": ["Generator/ExternalLHEProducer_MadGraph5_aMCatNLO.dat", "PartonShower/madgraphMLM-hepmcfilter-pythia8.dat", "Filter/LHE_BGenFilterEQ0_filter.dat"],
+    "fragment_user": [],
+    "fragment_vars": {
+        "processParameters": [
+            "'JetMatching:qCut = 14.'",
+            "'JetMatching:nQmatch = 5'",
+            "'JetMatching:nJetMax = 4'",
+            "'TimeShower:mMaxGamma = 4.0'"
+        ]
+        "hepmcFilter" : [
+            "nAttempts = cms.uint32(22),\nHepMCFilter = cms.PSet(\nfilterName = cms.string('PartonShowerBsHepMCFilter'),\nfilterParameters = cms.PSet())" 
+        ]
+    }
+}
+
