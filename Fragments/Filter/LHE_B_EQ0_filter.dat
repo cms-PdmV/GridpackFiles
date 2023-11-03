@@ -1,8 +1,8 @@
-LHE_B_EQ0_filter.dat = cms.EDFilter("LHEGenericFilter",
+LHE_B_EQ0_filter = cms.EDFilter("LHEGenericFilter",
     src = cms.InputTag("externalLHEProducer"),
     NumRequired = cms.int32(0),
     ParticleID = cms.vint32(5),
     AcceptLogic = cms.string("EQ") # LT meaning < NumRequired, GT >, EQ =, NE !=
 )
 
-ProductionFilterSequence = cms.Sequence(generator*LHE_B_EQ0_filter.dat)
+ProductionFilterSequence = cms.Sequence(generator*LHE_B_EQ0_filter)
