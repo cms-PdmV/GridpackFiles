@@ -3,7 +3,7 @@ import model loop_sm
 define ell+ = e+ mu+ ta+
 define ell- = e- mu- ta-
 
-generate p p > t b~ j ell+ $$ h w+ w- [QCD]
-add process p p > t~ b j ell- $$ h w+ w- [QCD]
+generate p p > t b~ j ell+ ell- $$ h w+ w- [QCD]
+add process p p > t~ b j ell+ ell- $$ h w+ w- [QCD]
 
 output TZQB-4FS_PTJ5_amcatnlo-pythia8 -nojpeg
