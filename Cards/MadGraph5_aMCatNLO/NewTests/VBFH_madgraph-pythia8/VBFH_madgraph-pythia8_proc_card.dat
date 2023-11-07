@@ -1,0 +1,6 @@
+import model loop_sm-no_b_mass
+
+generate p p > h j j QCD=0 QED=3 @0
+
+output VBFH_madgraph-pythia8 -nojpeg
+
