@@ -8,7 +8,8 @@
     },
     "model_params": "massW.dat",
     "model_params_user": [
-        "set run_card mmnl 6000"
+        "set run_card mmnl 6000",
+        "set run_card ptj 10"
     ],
     "model_params_vars": {},
     "fragment": ["Generator/ExternalLHEProducer_MadGraph5_aMCatNLO.dat", "PartonShower/madgraph-pythia8.dat"],
