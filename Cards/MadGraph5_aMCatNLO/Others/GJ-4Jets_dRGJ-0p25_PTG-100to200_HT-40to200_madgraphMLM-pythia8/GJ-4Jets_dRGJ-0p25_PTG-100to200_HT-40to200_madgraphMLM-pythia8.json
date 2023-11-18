@@ -11,7 +11,7 @@
         "set run_card draj 0.25",
         "set run_card pta 100",
         "set run_card ptamax 200",
-        "set run_card htjmin 100",
+        "set run_card htjmin 40",
         "set run_card htjmax 200"
     ],
     "model_params_vars": {},

@@ -11,8 +11,8 @@
         "set run_card draj 0.25",
         "set run_card pta 200",
         "set run_card ptamax -1",
-        "set run_card htjmin 100",
-        "set run_card htjmax 200"
+        "set run_card htjmin 40",
+        "set run_card htjmax 400"
     ],
     "model_params_vars": {},
     "fragment": ["Generator/ExternalLHEProducer_MadGraph5_aMCatNLO.dat", "PartonShower/madgraphMLM-pythia8.dat"],
