@@ -12,7 +12,7 @@
         ],
         "nAttemptsFilter"  : ["22"],
         "hepmcFilter" : [
-            "cms.string('PartonShowerBsHepMCFilter')",
+            "filterName = cms.string('PartonShowerBsHepMCFilter')",
             "filterParameters = cms.PSet()" 
         ]
     }
