@@ -1,0 +1,16 @@
+{
+    "chain": "chain_RunIISummer20UL16wmLHEGEN_flowRunIISummer20UL16SIM_flowRunIISummer20UL16DIGIPremix_flowRunIISummer20UL16HLT_flowRunIISummer20UL16RECO_flowRunIISummer20UL16MiniAODv2_flowRunIISummer20UL16NanoAODv9",
+    "model_params_vars": {},
+    "template_vars": {
+
+    },
+    "fragment_vars": {
+        "concurrentLHEforMadGraph5_aMCatNLO": "False",
+        "concurrentLHEforPowheg": "True",
+        "concurrentPS": "Concurrent"
+    },
+    "tune": "CP5",
+    "beam": 6500,
+    "gridpack_directory": "/eos/cms/store/group/phys_generator/cvmfs/gridpacks/PdmV/RunIISummer20UL16"
+}
+
