@@ -1,0 +1,6 @@
+import model loop_sm-no_b_mass
+
+generate p p > z j  [QCD] @0
+
+output ZJ_PTJ-50_amcatnlo-pythia8 -nojpeg
+
