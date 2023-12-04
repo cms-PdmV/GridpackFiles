@@ -1,0 +1,8 @@
+import model loop_sm-no_b_mass
+
+define q = u u~ d d~ c c~ s s~ b b~
+
+generate p p > q q  [QCD] @0
+
+output QCDtoQQ_PTJ-50_amcatnlo-pythia8 -nojpeg
+
