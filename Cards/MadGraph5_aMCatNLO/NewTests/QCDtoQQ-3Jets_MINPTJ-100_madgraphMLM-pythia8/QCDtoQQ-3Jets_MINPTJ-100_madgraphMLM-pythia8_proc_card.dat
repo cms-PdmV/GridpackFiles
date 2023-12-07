@@ -1,0 +1,8 @@
+import model sm-ckm_no_b_mass
+
+define q = u d c s b u~ d~ c~ s~ b~
+
+generate p p > q q @0
+add process p p > q q q @1
+
+output QCDtoQQ-3Jets_MINPTJ-100_madgraphMLM-pythia8 -nojpeg

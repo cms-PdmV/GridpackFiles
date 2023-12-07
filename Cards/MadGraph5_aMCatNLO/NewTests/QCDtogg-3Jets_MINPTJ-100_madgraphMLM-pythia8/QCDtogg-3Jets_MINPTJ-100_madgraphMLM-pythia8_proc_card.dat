@@ -1,0 +1,6 @@
+import model sm-ckm_no_b_mass
+
+generate p p > g g @0
+add process p p > g g g @1
+
+output QCDtogg-3Jets_MINPTJ-100_madgraphMLM-pythia8 -nojpeg
