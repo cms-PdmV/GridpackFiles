@@ -1,0 +1,22 @@
+{
+    "template": "LO_run_card.dat",
+    "template_user": [],
+    "template_vars":{
+        "ickkw": "0",
+        "maxjetflavor": "5",
+        "xqcut" : "0"
+    },
+    "model_params": "massW.dat",
+    "model_params_user": [
+        "set run_card ptj 5.0"
+    ],
+    "model_params_vars": {},
+    "fragment": ["Generator/ExternalLHEProducer_MadGraph5_aMCatNLO.dat", "PartonShower/madgraph-pythia8.dat"],
+    "fragment_user": [],
+    "fragment_vars": {
+        "processParameters": [
+            "'TimeShower:mMaxGamma = 4.0'"
+        ]
+    }
+}
+

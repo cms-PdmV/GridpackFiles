@@ -1,0 +1,13 @@
+import model sm-no_b_mass
+
+define l+ = e+ mu+ ta+
+define l- = e- mu- ta-
+define vl = ve vm vt
+define vl~ = ve~ vm~ vt~
+
+generate p b~ > l+ vl b~ j QCD=0 QED==4 / z a 
+add process b~ p > l+ vl b~ j QCD=0 QED==4 / z a
+add process p b > l- vl~ b j QCD=0 QED==4 / z a
+add process b p > l- vl~ b j QCD=0 QED==4 / z a
+
+output WBQtoLNuBQ-TopMed_madgraph-pythia8
