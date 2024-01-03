@@ -1,0 +1,15 @@
+{
+    "gridpack_submit": false,
+    "gridpack_path" : "TT/TTto2L2Nu-3Jets_genMET-150_madgraphMLM-pythia8",
+    "fragment": ["Generator/ExternalLHEProducer_MadGraph5_aMCatNLO.dat", "PartonShower/madgraphMLM-pythia8-hepmcfilter.dat", "Filter/LHE_genMET150_filter.dat"],
+    "fragment_user": [],
+    "fragment_vars": {
+        "processParameters": [
+            "'JetMatching:qCut = 70.'",
+            "'JetMatching:nQmatch = 5'",
+            "'JetMatching:nJetMax = 3'",
+            "'TimeShower:mMaxGamma = 4.0'"
+        ]
+    }
+}
+
