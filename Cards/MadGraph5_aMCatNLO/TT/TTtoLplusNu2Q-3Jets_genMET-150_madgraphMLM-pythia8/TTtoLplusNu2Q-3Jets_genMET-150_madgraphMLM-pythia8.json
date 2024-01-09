@@ -1,7 +1,7 @@
 {
     "gridpack_submit": false,
     "gridpack_path" : "TTtoLplusNu2Q-3Jets_madgraphMLM-pythia8",
-    "fragment": ["Generator/ExternalLHEProducer_MadGraph5_aMCatNLO.dat", "PartonShower/madgraphMLM-pythia8-hepmcfilter.dat", "Filter/LHE_genMET150_filter.dat"],
+    "fragment": ["Generator/ExternalLHEProducer_MadGraph5_aMCatNLO.dat", "PartonShower/madgraphMLM-pythia8.dat", "Filter/LHE_genMET150_filter.dat"],
     "fragment_user": [],
     "fragment_vars": {
         "processParameters": [
