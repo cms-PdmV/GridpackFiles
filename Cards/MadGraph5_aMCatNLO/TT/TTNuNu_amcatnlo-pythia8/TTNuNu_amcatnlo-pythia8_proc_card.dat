@@ -1,0 +1,8 @@
+import model loop_sm-no_b_mass
+
+define vll = ve vm vt
+define vll~ = ve~ vm~ vt~
+
+generate p p > t t~ vll vll~ [QCD]
+
+output TTNuNu_amcatnlo-pythia8 -nojpeg
