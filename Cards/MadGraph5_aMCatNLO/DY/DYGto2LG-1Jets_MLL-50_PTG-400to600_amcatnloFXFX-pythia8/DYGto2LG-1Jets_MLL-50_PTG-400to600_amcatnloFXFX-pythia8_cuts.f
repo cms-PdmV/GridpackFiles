@@ -1,4 +1,4 @@
-c *This file contains cuts on the pt of gamma (<130GeV): line320-323*
+c *This file contains cuts on the pt of gamma (<230GeV): line320-323*
 c This file contains the default cuts (as defined in the run_card.dat)
 c and can easily be extended by the user to include other.  This
 c function should return true if event passes cuts
@@ -317,7 +317,7 @@ c Loop over all photons
                passcuts_user=.false.
                return
             endif
-            if(ptg.gt.80)then
+            if(ptg.gt.630)then
                passcuts_user=.false.
                return
             endif
