@@ -11,8 +11,7 @@
         "set run_card mmnl 0",
         "set run_card mmnlmax 120",
         "set run_card ihtmin 2500",
-        "set run_card ihtmax -1",
-        "set run_card iseed 101"
+        "set run_card ihtmax -1"
     ],
     "model_params_vars": {},
     "fragment": ["Generator/ExternalLHEProducer_MadGraph5_aMCatNLO.dat", "PartonShower/madgraphMLM-pythia8.dat"],
