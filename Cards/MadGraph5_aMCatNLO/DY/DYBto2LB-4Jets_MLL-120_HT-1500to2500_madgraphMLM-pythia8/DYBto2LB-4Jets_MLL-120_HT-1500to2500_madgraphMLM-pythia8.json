@@ -1,0 +1,28 @@
+{
+    "template": "LO_run_card.dat",
+    "template_user": [],
+    "template_vars":{
+        "ickkw": "1",
+        "maxjetflavor": "5",
+        "xqcut" : "10"
+    },
+    "model_params": "massZ.dat",
+    "model_params_user": [
+        "set run_card mmll 120",
+        "set run_card mmllmax -1",
+        "set run_card ihtmin 1500",
+        "set run_card ihtmax 2500"
+    ],
+    "model_params_vars": {},
+    "fragment": ["Generator/ExternalLHEProducer_MadGraph5_aMCatNLO.dat", "PartonShower/madgraphMLM-pythia8.dat"],
+    "fragment_user": [],
+    "fragment_vars": {
+        "processParameters": [
+            "'JetMatching:qCut = 19.'",
+            "'JetMatching:nQmatch = 5'",
+            "'JetMatching:nJetMax = 4'",
+            "'TimeShower:mMaxGamma = 4.0'"
+        ]
+    }
+}
+
