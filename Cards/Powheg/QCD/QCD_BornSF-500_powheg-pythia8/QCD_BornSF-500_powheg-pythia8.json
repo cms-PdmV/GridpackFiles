@@ -1,0 +1,21 @@
+{
+    "template": "dijet.input",
+    "template_user": [
+        "bornktmin 5",
+        "bornsuppfact 500"
+    ],
+    "template_vars": {},
+    
+    "model_params": "dijet.input",
+    "model_params_user": [],
+    "model_params_vars": {},
+    
+    "fragment": ["Generator/ExternalLHEProducer_Powheg.dat","PartonShower/PowhegEmissionVetoPythia8.dat"],
+    "fragment_user": [],
+    "fragment_vars": {
+        "processParameters": [
+            "'POWHEG:nFinal = 2'",
+            "'TimeShower:mMaxGamma = 4.0'"
+        ]
+    }
+}
