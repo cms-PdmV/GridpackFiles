@@ -1,0 +1,10 @@
+LHE_Dilepton_M4to10_filter = cms.EDFilter("LHEGenericMassFilter",
+                            NumRequired = cms.int32(2),
+                            MinMass = cms.double(4.),
+                            MaxMass = cms.double(10.),
+                            ParticleID = cms.untracked.vint32(11, 13, 15),
+                            src = cms.InputTag("externalLHEProducer")
+)
+
+ProductionFilterSequence = cms.Sequence(generator*LHE_Dilepton_M4to10_filter)
+
