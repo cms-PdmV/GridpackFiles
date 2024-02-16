@@ -16,7 +16,7 @@
     "fragment_vars": {
         "processParameters": [
             "'TimeShower:nPartonsInBorn = 1'",
-            "'TimeShower:mMaxGamma = 10'"
+            "'TimeShower:mMaxGamma = 4'"
         ]
     }
 }
