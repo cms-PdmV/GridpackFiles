@@ -19,7 +19,8 @@
     "fragment_user": [],
     "fragment_vars": {
         "processParameters": [
-            "'POWHEG:nFinal = 2'"
+            "'POWHEG:nFinal = 2'",
+            "'TimeShower:mMaxGamma = 4'" 
         ]
     }
 }
