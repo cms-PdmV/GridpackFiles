@@ -1,0 +1,9 @@
+LHE_Mtt_1500toInf_filter = cms.EDFilter("LHEmttFilter",
+                           ptMin = cms.double(0.0),
+                           MinInvMass = cms.double(1500.0),
+                           MaxInvMass = cms.double(-1),
+                           src = cms.InputTag("externalLHEProducer")
+)
+
+ProductionFilterSequence = cms.Sequence(generator*LHE_Mtt_1500toInf_filter)
+
