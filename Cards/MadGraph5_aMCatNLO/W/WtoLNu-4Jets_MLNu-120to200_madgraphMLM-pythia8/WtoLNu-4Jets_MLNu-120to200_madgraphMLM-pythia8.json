@@ -9,7 +9,8 @@
     "model_params": "massW.dat",
     "model_params_user": [
         "set run_card mmnl 120",
-        "set run_card mmnlmax 200"
+        "set run_card mmnlmax 200",
+        "set run_card hel_recycling False"
     ],
     "model_params_vars": {},
     "fragment": ["Generator/ExternalLHEProducer_MadGraph5_aMCatNLO.dat", "PartonShower/madgraphMLM-pythia8.dat"],
