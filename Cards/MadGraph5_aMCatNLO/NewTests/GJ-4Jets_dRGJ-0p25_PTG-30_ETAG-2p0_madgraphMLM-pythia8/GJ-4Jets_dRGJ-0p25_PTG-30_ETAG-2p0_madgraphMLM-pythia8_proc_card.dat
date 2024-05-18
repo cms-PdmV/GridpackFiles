@@ -1,0 +1,8 @@
+import model sm-ckm_no_b_mass
+
+generate p p > a j @0
+add process p p > a j j @1
+add process p p > a j j j  @2
+add process p p > a j j j j  @3
+
+output GJ-4Jets_dRGJ-0p25_PTG-30_ETAG-2p0_madgraphMLM-pythia8 -nojpeg
