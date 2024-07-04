@@ -10,7 +10,7 @@
     "model_params_user": [
         "set run_card ptj 10",
         "set run_card mll_sf 50.0",
-        "set run_card jetradius 0.6"
+        "set run_card jetradius 1.5"
     ],
     "model_params_vars": {},
     "fragment": ["Generator/ExternalLHEProducer_MadGraph5_aMCatNLO.dat", "PartonShower/amcatnloFXFX-pythia8.dat"],
@@ -23,7 +23,7 @@
             "'JetMatching:nJetMax = 2'",
             "'TimeShower:mMaxGamma = 4.0'",
             "'BeamRemnants:primordialKThard=2.48'",
-            "'JetMatching:coneRadius = 0.6'"
+            "'JetMatching:coneRadius = 1.5'"
         ]
     }
 }
