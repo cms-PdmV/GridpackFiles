@@ -1,9 +1,0 @@
-import model sm-ckm_no_b_mass
-
-generate p p > a j @0
-add process p p > a j j @1
-add process p p > a j j j  @2
-add process p p > a j j j j  @3
-
-output __newname__ -nojpeg
-
