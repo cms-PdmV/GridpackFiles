@@ -2,6 +2,8 @@
   "tune": {
     "CUEP": "Configuration.Generator.Pythia8CUEP8M1Settings_cfi",
     "CP2": "Configuration.Generator.MCTunes2017.PythiaCP2Settings_cfi",
-    "CP5": "Configuration.Generator.MCTunesRun3ECM13p6TeV.PythiaCP5Settings_cfi"
+    "CP5": "Configuration.Generator.MCTunesRun3ECM13p6TeV.PythiaCP5Settings_cfi",
+    "CP5TuneUp": "Configuration.Generator.MCTunesRun3ECM13p6TeV.PythiaCP5TuneUpSettings_cfi",
+    "CP5TuneDown": "Configuration.Generator.MCTunesRun3ECM13p6TeV.PythiaCP5TuneDownSettings_cfi"
   }
 }
