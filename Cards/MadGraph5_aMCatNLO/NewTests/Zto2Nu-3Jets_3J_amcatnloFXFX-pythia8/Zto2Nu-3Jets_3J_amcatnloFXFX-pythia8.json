@@ -1,0 +1,25 @@
+{
+    "template": "NLO_run_card.dat",
+    "template_user": [],
+    "template_vars":{
+        "parton_shower": "pythia8",
+        "ickkw": "3",
+        "maxjetflavor": "5"
+    },
+    "model_params": "massZ.dat",
+    "model_params_user": [
+        "set run_card ptj 10"
+    ],
+    "model_params_vars": {},
+    "fragment": ["Generator/ExternalLHEProducer_MadGraph5_aMCatNLO.dat", "PartonShower/amcatnloFXFX-pythia8.dat"],
+    "fragment_user": [],
+    "fragment_vars": {
+        "processParameters": [
+            "'JetMatching:qCut = 30.'",
+            "'JetMatching:qCutME = 10.'",
+            "'JetMatching:nQmatch = 5'",
+            "'JetMatching:nJetMax = 3'",
+            "'TimeShower:mMaxGamma = 4.0'"
+        ]
+    }
+}
