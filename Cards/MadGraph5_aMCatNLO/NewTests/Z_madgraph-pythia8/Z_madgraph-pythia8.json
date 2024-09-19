@@ -1,0 +1,24 @@
+{
+    "template": "LO_run_card.dat",
+    "template_user": [],
+    "template_vars":{
+        "ickkw": "0",
+        "maxjetflavor": "5",
+        "xqcut" : "0"
+    },
+    "model_params": "massZ.dat",
+    "model_params_user": [
+    ],
+    "model_params_vars": {},
+    "fragment": ["Generator/ExternalLHEProducer_MadGraph5_aMCatNLO.dat", "PartonShower/madgraph-pythia8.dat"],
+    "fragment_user": [],
+    "fragment_vars": {
+        "processParameters": [
+            "'23:onMode = off'",
+            "'23:onIfAny = 1 2 3 4 5'",
+            "'24:onMode = off'",
+            "'24:onIfAny = 1 2 3 4 5'"
+        ]
+    }
+}
+
