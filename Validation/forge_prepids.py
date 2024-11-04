@@ -9,7 +9,7 @@ import argparse
 sys.path.append('/afs/cern.ch/cms/PPD/PdmV/tools/McM/')
 from rest import *
 
-mcm = McM(dev=False)
+mcm = McM(dev=False,id=McM.OIDC)
 
 CLONE_TARGETS = {
     "Run3Summer22EEwmLHEGS" : 3.5,
