@@ -5,5 +5,5 @@ add process p p > a j j @1
 add process p p > a j j j  @2
 add process p p > a j j j j  @3
 
-output GJ-4Jets_dRGJ-0p25_PTG-200_HT-600to1000_madgraphMLM-pythia8 -nojpeg
+output GJ-4Jets_Bin-HT-400to600-PTG-100to200_Par-dRGJ-0p25_madgraphMLM-pythia8 -nojpeg
 
