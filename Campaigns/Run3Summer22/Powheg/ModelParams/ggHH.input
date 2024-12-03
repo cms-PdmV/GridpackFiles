@@ -1,0 +1,5 @@
+mtdep 3
+hmass 125
+topmass 173
+hdecaymode -1
+hdamp     250
