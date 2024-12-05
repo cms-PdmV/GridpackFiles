@@ -1,6 +1,6 @@
 {
     "gridpack_submit": false,
-    "gridpack_path" : "DYto2L-2Jets_Bin-MLL-50_amcatnloFXFX-pythia8",
+    "gridpack_path" : "DY/DYto2L-2Jets_Bin-MLL-50_amcatnloFXFX-pythia8",
     "fragment": ["Filter/AtLeastOneMu.dat", "Generator/ExternalLHEProducer_MadGraph5_aMCatNLO.dat", "PartonShower/amcatnloFXFX-pythia8.dat"],
     "fragment_user": [],
     "fragment_vars": {
