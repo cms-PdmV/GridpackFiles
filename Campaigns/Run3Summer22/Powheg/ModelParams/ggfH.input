@@ -1,0 +1,8 @@
+hmass 125
+hwidth 0.004221d0
+hdecaywidth 0
+bwcutoff 15
+topmass 172.5d0
+quarkmasseffects 1
+bottommass 3.38d0
+bmass_in_minlo 1

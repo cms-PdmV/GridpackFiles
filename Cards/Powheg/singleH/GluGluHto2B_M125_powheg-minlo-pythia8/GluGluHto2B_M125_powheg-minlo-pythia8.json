@@ -1,0 +1,23 @@
+{
+    "template": "ggfH.input",
+    "template_user": [            
+	    "bornktmin 0.26"
+    ],
+    "template_vars": {},
+    
+    "model_params": "ggfH.input",
+    "model_params_user": [],
+    "model_params_vars": {},
+    
+    "fragment": ["Generator/ExternalLHEProducer_Powheg.dat","PartonShower/PowhegEmissionVetoPythia8.dat"],
+    "fragment_user": [],
+    "fragment_vars": {
+        "processParameters": [
+	    "'POWHEG:nFinal = 2'",
+            "'25:m0 = 125.0'",
+            "'25:onMode = off'",
+            "'25:onIfMatch = 5 -5'"
+
+        ]
+    }
+}
