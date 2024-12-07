@@ -1,7 +1,7 @@
 {
     "gridpack_submit": false,
     "gridpack_path" : "W/WtoLNu-2Jets_amcatnloFXFX-pythia8",
-    "fragment": ["Filter/AtLeastOneE.dat", "Generator/ExternalLHEProducer_MadGraph5_aMCatNLO.dat", "PartonShower/amcatnloFXFX-pythia8.dat"],
+    "fragment": ["Generator/ExternalLHEProducer_MadGraph5_aMCatNLO.dat", "PartonShower/amcatnloFXFX-pythia8.dat", "Filter/AtLeastOneE.dat"],
     "fragment_user": [],
     "fragment_vars": {
         "processParameters": [
