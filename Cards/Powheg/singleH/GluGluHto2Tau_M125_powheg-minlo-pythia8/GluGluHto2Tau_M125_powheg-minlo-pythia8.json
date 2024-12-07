@@ -1,11 +1,11 @@
 {
-    "template": "ggfH.input",
+    "template": "HJ.input",
     "template_user": [            
 	    "bornktmin 0.26"
     ],
     "template_vars": {},
     
-    "model_params": "ggfH.input",
+    "model_params": "HJ.input",
     "model_params_user": [],
     "model_params_vars": {},
     
