@@ -22,7 +22,6 @@ testplots  1
 withnegweights 1
 renscfact  1d0
 facscfact  1d0
-pdfreweight 0
 minlo 1
 factsc2min 2
 sudscalevar 1

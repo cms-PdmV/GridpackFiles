@@ -5,6 +5,9 @@
     
     "model_params": "VBF_H.input",
     "model_params_user": [
+	"hmass 125d0",
+        "hwidth 0.00407d0",
+        "hdecaymode -1"
     ],
     "model_params_vars": {},
     
