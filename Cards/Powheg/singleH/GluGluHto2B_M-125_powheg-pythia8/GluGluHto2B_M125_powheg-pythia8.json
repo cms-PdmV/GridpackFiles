@@ -1,14 +1,11 @@
 {
-    "template": "HJ.input",
-    "template_user": [            
-	"bornktmin 0.26"
-    ],
+    "template": "gg_H_quark-mass-effects.input",
+    "template_user": [],
     "template_vars": {},
-    
-    "model_params": "HJ.input",
+    "model_params": "gg_H_quark-mass-effects.input",
     "model_params_user": [
         "hmass 125",
-        "hwidth 0.004221d0"
+        "hwidth 0.00407d0"
     ],
     "model_params_vars": {},
     
@@ -16,11 +13,10 @@
     "fragment_user": [],
     "fragment_vars": {
         "processParameters": [
-	    "'POWHEG:nFinal = 2'",
+	    "'POWHEG:nFinal = 1'",
             "'25:m0 = 125.0'",
             "'25:onMode = off'",
-            "'25:onIfMatch = 15 -15'"
-
+            "'25:onIfMatch = 5 -5'"
         ]
     }
 }
