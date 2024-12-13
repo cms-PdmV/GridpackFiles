@@ -5,5 +5,5 @@ define ell- = e- mu- ta-
 
 generate p p > ell+ ell- j j QCD=0 QED=4 @0
 
-output VBFto2L_MLL-50_madgraph-pythia8 -nojpeg
+output VBFto2L_Bin-MLL50_madgraph-pythia8 -nojpeg
 
