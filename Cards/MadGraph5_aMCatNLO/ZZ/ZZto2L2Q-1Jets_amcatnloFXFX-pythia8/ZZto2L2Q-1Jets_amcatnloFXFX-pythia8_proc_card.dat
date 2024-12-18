@@ -5,7 +5,7 @@ define ell- = e- mu- ta-
 define vl = ve vm vt
 define vl~ = ve~ vm~ vt~
 
-generate p p > ell+ ell- z [QCD] @0
-add process p p > ell+ ell- z j [QCD] @1
+generate p p > ell+ ell- z $$ h [QCD] @0
+add process p p > ell+ ell- z j $$ h [QCD] @1
 
 output ZZto2L2Q-1Jets_amcatnloFXFX-pythia8 -nojpeg
