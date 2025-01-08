@@ -6,4 +6,4 @@ generate p p > bb j @0
 add process p p > bb j j @1
 add process p p > bb j j j @2
 
-output QCDB-4Jets_HT-100to200_madgraphMLM-pythia8 -nojpeg
+output QCDB-4Jets_Bin-HT-100to200_madgraphMLM-pythia8 -nojpeg

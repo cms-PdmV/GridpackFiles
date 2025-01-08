@@ -9,4 +9,4 @@ generate p p > j j @0
 add process p p > j j j @1
 add process p p > j j j j @2
 
-output QCD-4Jets_HT-400to600_madgraphMLM-pythia8 -nojpeg
+output QCD-4Jets_Bin-HT-1000to1200_madgraphMLM-pythia8 -nojpeg
