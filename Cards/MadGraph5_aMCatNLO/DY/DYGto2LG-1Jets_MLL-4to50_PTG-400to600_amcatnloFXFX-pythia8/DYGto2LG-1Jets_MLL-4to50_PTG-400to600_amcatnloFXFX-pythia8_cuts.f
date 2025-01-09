@@ -325,7 +325,7 @@ c Loop over all photons
                passcuts_user=.false.
                return
             endif
-            if(ptg.gt.630)then
+            if(ptg.gt.680)then
                passcuts_user=.false.
                return
             endif
