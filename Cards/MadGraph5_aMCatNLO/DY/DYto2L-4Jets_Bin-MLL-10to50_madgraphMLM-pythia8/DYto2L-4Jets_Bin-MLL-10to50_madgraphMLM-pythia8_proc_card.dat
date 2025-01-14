@@ -11,4 +11,4 @@ add process p p > ell+ ell- j j  @2
 add process p p > ell+ ell- j j j  @3
 add process p p > ell+ ell- j j j j  @4
 
-output DYto2L-4Jets_MLL-10to50_madgraphMLM-pythia8 -nojpeg
+output DYto2L-4Jets_Bin-MLL-10to50_madgraphMLM-pythia8 -nojpeg
