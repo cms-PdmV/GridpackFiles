@@ -8,6 +8,7 @@
     },
     "model_params": "massZ.dat",
     "model_params_user": [
+        "set run_card pta 10.0",
         "set run_card mmjj 100.0"
     ],
     "model_params_vars": {},
