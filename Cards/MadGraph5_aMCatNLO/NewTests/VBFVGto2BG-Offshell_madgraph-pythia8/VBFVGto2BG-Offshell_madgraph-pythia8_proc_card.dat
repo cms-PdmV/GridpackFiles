@@ -1,0 +1,6 @@
+import model loop_sm
+
+generate p p > b b~ a j j QCD=0 QED=5 @0
+
+output VBFVGto2BG-Offshell_madgraph-pythia8 -nojpeg
+
