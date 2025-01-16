@@ -8,4 +8,4 @@ define vl~ = ve~ vm~ vt~
 generate p p > ell+ vl j [QCD] @0
 add process p p > ell- vl~ j [QCD] @1
 
-output WtoLNu-2Jets_PTLNu-400to600_1J_amcatnloFXFX-pythia8 -nojpeg
+output WtoLNu-2Jets_Bin-1J-PTLNu-40to100_amcatnloFXFX-pythia8 -nojpeg
