@@ -5,4 +5,4 @@ define ell- = e- mu- ta-
 
 generate p p > ell+ ell- j [QCD] @0
 
-output DYto2L-2Jets_MLL-50_PTLL-100to200_1J_amcatnloFXFX-pythia8 -nojpeg
+output DYto2L-2Jets_Bin-1J-MLL-50-PTLL-200to400_amcatnloFXFX-pythia8 -nojpeg
