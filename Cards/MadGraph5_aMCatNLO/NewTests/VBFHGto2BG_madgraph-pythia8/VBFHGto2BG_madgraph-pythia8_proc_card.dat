@@ -1,0 +1,6 @@
+import model loop_sm
+
+generate p p > h a j j QCD=0 QED=4, h > b b~ @0
+
+output VBFHGto2BG_madgraph-pythia8 -nojpeg
+
