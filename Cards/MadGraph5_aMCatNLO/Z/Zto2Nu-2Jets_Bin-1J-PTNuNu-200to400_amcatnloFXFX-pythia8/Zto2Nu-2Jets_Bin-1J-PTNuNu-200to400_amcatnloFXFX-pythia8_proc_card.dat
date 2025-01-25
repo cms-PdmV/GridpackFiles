@@ -5,4 +5,4 @@ define vl~ = ve~ vm~ vt~
 
 generate p p > vl vl~ j [QCD] @0
 
-output Zto2Nu-2Jets_1J_PTNuNu-40to100_amcatnloFXFX-pythia8 -nojpeg
+output Zto2Nu-2Jets_Bin-1J-PTNuNu-200to400_amcatnloFXFX-pythia8 -nojpeg
