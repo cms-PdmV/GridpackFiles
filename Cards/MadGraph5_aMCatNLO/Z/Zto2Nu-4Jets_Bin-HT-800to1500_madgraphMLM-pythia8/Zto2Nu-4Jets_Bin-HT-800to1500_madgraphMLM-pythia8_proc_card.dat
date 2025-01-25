@@ -9,4 +9,4 @@ add process p p > vl vl~ j j j  @2
 add process p p > vl vl~ j j j j  @3
 
 
-output Zto2Nu-4Jets_HT-2500_madgraphMLM-pythia8 -nojpeg
+output Zto2Nu-4Jets_Bin-HT-800to1500_madgraphMLM-pythia8 -nojpeg
