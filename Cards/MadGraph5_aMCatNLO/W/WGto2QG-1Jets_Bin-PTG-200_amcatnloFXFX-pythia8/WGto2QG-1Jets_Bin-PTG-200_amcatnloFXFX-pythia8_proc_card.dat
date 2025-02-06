@@ -5,4 +5,4 @@ define ww = w+ w-
 generate p p > ww a [QCD] @0
 add process p p > ww a j [QCD] @1
 
-output WGto2QG-1Jets_PTG-10_amcatnloFXFX-pythia8 -nojpeg
+output WGto2QG-1Jets_Bin-PTG-200_amcatnloFXFX-pythia8 -nojpeg
