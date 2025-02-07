@@ -5,7 +5,7 @@ define ell- = e- mu- ta-
 
 generate p p > ell+ ell- w+ [QCD] @0
 add process p p > ell+ ell- w+ j [QCD] @1
-add process p p > ell- ell- w- [QCD] @2
-add process p p > ell- ell- w- j [QCD] @3
+add process p p > ell+ ell- w- [QCD] @2
+add process p p > ell+ ell- w- j [QCD] @3
 
 output WZto2L2Q-1Jets-4FS_amcatnloFXFX-pythia8 -nojpeg
