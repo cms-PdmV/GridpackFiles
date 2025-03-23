@@ -1,0 +1,5 @@
+import model loop_sm-ckm_no_b_mass
+
+generate g g > a a [noborn=QCD] @0
+
+output GG_PTG-100_ETAG-2p0_madgraph-pythia8 -nojpeg
