@@ -1,0 +1,5 @@
+import model loop_sm-ckm_no_b_mass
+
+generate p p > j j a QCD=0 QED=3 [QCD] @0
+
+output VGto2QG_Bin-PTG-100to200_amcatnlo-pythia8 -nojpeg
