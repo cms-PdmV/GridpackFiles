@@ -1,0 +1,5 @@
+import model loop_sm-ckm_no_b_mass
+
+generate p p > a a [QCD] @0
+
+output GG_PTG-100_ETAG-2p0_amcatnlo-pythia8 -nojpeg
