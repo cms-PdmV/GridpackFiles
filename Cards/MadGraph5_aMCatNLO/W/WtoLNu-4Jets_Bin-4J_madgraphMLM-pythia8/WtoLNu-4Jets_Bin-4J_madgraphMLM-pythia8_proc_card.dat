@@ -8,4 +8,4 @@ define vl~ = ve~ vm~ vt~
 generate p p > ell+ vl j j j j $ t t~ h @0
 add process p p > ell- vl~ j j j j $ t t~ h @1
 
-output WtoLNu-4Jets_4J_madgraphMLM-pythia8 -nojpeg
+output WtoLNu-4Jets_Bin-4J_madgraphMLM-pythia8 -nojpeg

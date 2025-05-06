@@ -5,6 +5,6 @@ define ell- = e- mu- ta-
 define vl = ve vm vt
 define vl~ = ve~ vm~ vt~
 
-generate p p > ell+ ell- j j j  @0
+generate p p > ell+ ell- j j j j  @0
 
-output DYto2L-4Jets_MLL-50_3J_madgraphMLM-pythia8 -nojpeg
+output DYto2L-4Jets_Bin-4J-MLL-50_madgraphMLM-pythia8 -nojpeg
