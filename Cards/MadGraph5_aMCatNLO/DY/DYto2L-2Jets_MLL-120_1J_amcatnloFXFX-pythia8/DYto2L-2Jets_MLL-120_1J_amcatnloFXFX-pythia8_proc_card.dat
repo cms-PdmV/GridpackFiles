@@ -7,4 +7,4 @@ define vl~ = ve~ vm~ vt~
 
 generate p p > ell+ ell- j [QCD] @0
 
-output DYto2L-2Jets_MLL-50_1J_amcatnloFXFX-pythia8 -nojpeg
+output DYto2L-2Jets_MLL-120_1J_amcatnloFXFX-pythia8 -nojpeg
