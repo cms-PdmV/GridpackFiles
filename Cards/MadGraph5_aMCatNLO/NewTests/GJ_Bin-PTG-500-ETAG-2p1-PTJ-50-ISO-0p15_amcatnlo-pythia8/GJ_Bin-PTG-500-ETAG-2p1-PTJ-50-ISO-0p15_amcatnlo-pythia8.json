@@ -1,0 +1,24 @@
+{
+    "template": "NLO_run_card.dat",
+    "template_user": [],
+    "template_vars":{
+        "parton_shower": "pythia8",
+        "ickkw": "0",
+        "maxjetflavor": "5"
+    },
+    "model_params": "massZ.dat",
+    "model_params_user": [
+        "set run_card ptj 50",
+        "set run_card ptgmin 500",
+        "set run_card etagamma 2.1",
+        "set run_card R0gamma 0.15"
+    ],
+    "model_params_vars": {},
+    "fragment": ["Generator/ExternalLHEProducer_MadGraph5_aMCatNLO.dat", "PartonShower/amcatnlo-pythia8.dat"],
+    "fragment_user": [],
+    "fragment_vars": {
+        "processParameters": [
+            "'TimeShower:nPartonsInBorn = 1'"
+        ]
+    }
+}
