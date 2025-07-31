@@ -1,8 +1,0 @@
-import model loop_sm-ckm_no_b_mass
-
-define ell+ = e+ mu+ ta+
-define ell- = e- mu- ta-
-
-generate p p > ell+ ell- j j [QCD] @0
-
-output DYto2L-2Jets_Bin-2J-MLL-50-PTLL-600_amcatnloFXFX-pythia8 -nojpeg
