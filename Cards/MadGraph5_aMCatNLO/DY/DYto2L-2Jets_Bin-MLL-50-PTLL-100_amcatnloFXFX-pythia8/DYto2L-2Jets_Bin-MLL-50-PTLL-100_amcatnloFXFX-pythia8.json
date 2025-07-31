@@ -12,7 +12,7 @@
         "set run_card mll_sf 50.0"
     ],
     "model_params_vars": {},
-    "fragment": ["Generator/ExternalLHEProducer_MadGraph5_aMCatNLO.dat", "PartonShower/amcatnloFXFX-pythia8.dat", "Filter/LHE_V_Pt100to200_filter.dat"],
+    "fragment": ["Generator/ExternalLHEProducer_MadGraph5_aMCatNLO.dat", "PartonShower/amcatnloFXFX-pythia8.dat", "Filter/LHE_V_Pt100_filter.dat"],
     "fragment_user": [],
     "fragment_vars": {
         "processParameters": [
@@ -21,7 +21,8 @@
             "'JetMatching:nQmatch = 5'",
             "'JetMatching:nJetMax = 2'",
             "'TimeShower:mMaxGamma = 4.0'",
-            "'BeamRemnants:primordialKThard=2.48'"
+            "'BeamRemnants:primordialKThard=2.48'",
+            "'TauDecays:externalMode = 2'"
         ]
     }
 }
