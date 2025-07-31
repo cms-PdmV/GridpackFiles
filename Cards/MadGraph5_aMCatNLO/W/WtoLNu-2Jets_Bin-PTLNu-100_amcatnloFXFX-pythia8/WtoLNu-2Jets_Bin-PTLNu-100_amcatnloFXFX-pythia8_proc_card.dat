@@ -12,4 +12,4 @@ add process p p > ell- vl~ j [QCD] @3
 add process p p > ell+ vl j j [QCD] @4
 add process p p > ell- vl~ j j [QCD] @5
 
-output WtoLNu-2Jets_Bin-PTLNu-600_amcatnloFXFX-pythia8 -nojpeg
+output WtoLNu-2Jets_Bin-PTLNu-100_amcatnloFXFX-pythia8 -nojpeg
