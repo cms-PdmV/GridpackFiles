@@ -1,8 +1,0 @@
-import model loop_sm-ckm_no_b_mass
-
-define vl = ve vm vt
-define vl~ = ve~ vm~ vt~
-
-generate p p > vl vl~ j j [QCD] @0
-
-output Zto2Nu-2Jets_Bin-2J-PTNuNu-40to100_amcatnloFXFX-pythia8 -nojpeg
