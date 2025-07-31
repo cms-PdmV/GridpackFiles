@@ -411,7 +411,7 @@ C
                if (abs(ipdg(j)).eq.12.or.abs(ipdg(j)).eq.14.or.
      $            abs(ipdg(j)).eq.16) then
                   tmpvar = (p(1,i)+p(1,j))**2+(p(2,i)+p(2,j))**2
-                  if (tmpvar.lt.530**2) then
+                  if (tmpvar.lt.330**2) then
                      passcuts_user=.false.
                      return
                   endif
