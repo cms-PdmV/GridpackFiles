@@ -2,4 +2,4 @@ import model loop_sm-ckm_no_b_mass
 
 generate p p > a j [QCD] @0
 
-output GJ_Bin-PTG-200to400_amcatnlo-pythia8 -nojpeg
+output GJ_Bin-PTG-200_amcatnlo-pythia8 -nojpeg
