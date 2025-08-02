@@ -5,4 +5,4 @@ add process p p > z j j, z > j j @1
 add process p p > z j j j, z > j j @2
 add process p p > z j j j j, z > j j @3
 
-output Zto2Q-4Jets_Bin-HT-1500to2500_madgraphMLM-pythia8 -nojpeg
+output Zto2Q-4Jets_Bin-HT-2500to9999_madgraphMLM-pythia8 -nojpeg
