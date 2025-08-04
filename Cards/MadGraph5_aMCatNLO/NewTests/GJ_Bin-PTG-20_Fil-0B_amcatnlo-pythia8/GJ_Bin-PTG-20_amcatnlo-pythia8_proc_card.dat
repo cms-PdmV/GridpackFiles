@@ -1,0 +1,6 @@
+import model loop_sm-ckm_no_b_mass
+
+define j = u d c s u~ d~ c~ s~ g
+generate p p > a j [QCD] @0
+
+output GJ_Bin-PTG-20_Fil-0B_amcatnlo-pythia8 -nojpeg
