@@ -11,7 +11,7 @@
         "set run_card ptj 10"
     ],
     "model_params_vars": {},
-    "fragment": ["Generator/ExternalLHEProducer_MadGraph5_aMCatNLO.dat", "PartonShower/amcatnloFXFX-pythia8.dat", "Filter/LHE_V_Pt200to400_filter.dat"],
+    "fragment": ["Generator/ExternalLHEProducer_MadGraph5_aMCatNLO.dat", "PartonShower/amcatnloFXFX-pythia8.dat", "Filter/LHE_V_Pt100_filter.dat"],
     "fragment_user": [],
     "fragment_vars": {
         "processParameters": [

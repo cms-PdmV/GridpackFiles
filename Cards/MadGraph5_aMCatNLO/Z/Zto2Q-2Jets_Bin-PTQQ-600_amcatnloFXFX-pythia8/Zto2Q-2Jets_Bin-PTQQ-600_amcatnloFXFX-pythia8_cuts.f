@@ -407,11 +407,7 @@ C
       do i=1,nexternal
          if (abs(ipdg(i)).eq.23) then
             tmpvar = p(1,i)**2+p(2,i)**2
-            if (tmpvar.lt.170**2) then
-               passcuts_user=.false.
-               return
-            endif
-            if (tmpvar.gt.430**2) then
+            if (tmpvar.lt.530**2) then
                passcuts_user=.false.
                return
             endif

@@ -1,5 +1,0 @@
-import model loop_sm-ckm_no_b_mass
-
-generate p p > z j [QCD] @0
-
-output Zto2Q-2Jets_PTQQ-600_1J_amcatnloFXFX-pythia8 -nojpeg
