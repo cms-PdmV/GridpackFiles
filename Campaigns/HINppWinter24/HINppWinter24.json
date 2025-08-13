@@ -1,0 +1,16 @@
+{
+    "chain": "chain_HINppWinter24wmLHEGS_flowHINppWinter24DRPremix_flowHINppWinter24MiniAOD_flowHINppWinter24NanoAOD",
+    "model_params_vars": {},
+    "template_vars": {
+
+    },
+    "fragment_vars": {
+        "concurrentLHEforMadGraph5_aMCatNLO": "False",
+        "concurrentLHEforPowheg": "True",
+        "concurrentPS": "Concurrent"
+    },
+    "tune": "CP5",
+    "beam": 2680,
+    "gridpack_directory": "/eos/cms/store/group/phys_generator/cvmfs/gridpacks/PdmV/HINppWinter24"
+}
+
