@@ -1,0 +1,12 @@
+import model sm-ckm_no_b_mass
+
+define lep+ = mu+ e+
+define lep- = mu- e-
+
+generate p p > lep+ lep-  @0
+add process p p > lep+ lep- j  @1
+add process p p > lep+ lep- j j  @2
+add process p p > lep+ lep- j j j  @3
+add process p p > lep+ lep- j j j j  @4
+
+output DYto2L-4Jets_MLL-50_HT-400to800_PdgRwgt-True_madgraphMLM-pythia8 -nojpeg
