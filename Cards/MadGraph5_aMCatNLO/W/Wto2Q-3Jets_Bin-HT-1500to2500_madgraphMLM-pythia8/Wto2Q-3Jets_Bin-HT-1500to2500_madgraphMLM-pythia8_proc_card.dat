@@ -1,0 +1,10 @@
+import model sm-ckm_no_b_mass
+
+generate p p > w+ j $ t t~ h @0
+add process p p > w+ j j $ t t~ h @1
+add process p p > w+ j j j $ t t~ h @2
+add process p p > w- j $ t t~ h @3
+add process p p > w- j j $ t t~ h @4
+add process p p > w- j j j $ t t~ h @5
+
+output Wto2Q-3Jets_Bin-HT-1500to2500_madgraphMLM-pythia8 -nojpeg
