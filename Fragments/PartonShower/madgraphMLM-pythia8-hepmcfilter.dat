@@ -8,6 +8,7 @@ generator = cms.EDFilter("Pythia8$concurrentPSHadronizerFilter",
         pythia8$tuneNameSettingsBlock,
         pythia8PSweightsSettingsBlock,
         processParameters = cms.vstring(
+            'TauDecays:externalMode = 2.0',
             'JetMatching:setMad = off',
             'JetMatching:scheme = 1',
             'JetMatching:merge = on',

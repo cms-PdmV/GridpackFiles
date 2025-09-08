@@ -18,6 +18,7 @@ generator = cms.EDFilter("Pythia8$concurrentPSHadronizerFilter",
             'JetMatching:coneRadius = 1.',
             'JetMatching:slowJetPower = 1',
             'JetMatching:doFxFx = on',
+            'TauDecays:externalMode = 2.0',
             $processParameters
         ),
         parameterSets = cms.vstring(
