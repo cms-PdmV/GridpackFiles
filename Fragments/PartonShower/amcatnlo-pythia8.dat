@@ -10,6 +10,7 @@ generator = cms.EDFilter("Pythia8$concurrentPSHadronizerFilter",
         pythia8aMCatNLOSettingsBlock,
         pythia8PSweightsSettingsBlock,
         processParameters = cms.vstring(
+            'TauDecays:externalMode = 2.0',
             $processParameters
         ),
         parameterSets = cms.vstring(
