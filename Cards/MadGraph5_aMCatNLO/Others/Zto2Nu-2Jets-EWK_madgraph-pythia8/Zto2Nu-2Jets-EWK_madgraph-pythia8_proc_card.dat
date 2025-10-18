@@ -1,9 +1,0 @@
-import model loop_sm-ckm_no_b_mass
-
-define vv = ve vm vt
-define vv~ = ve~ vm~ vt~
-
-generate p p > vv vv~ j j QCD=0 QED=4 @0
-
-output Zto2Nu-2Jets-EWK_madgraph-pythia8 -nojpeg
-
