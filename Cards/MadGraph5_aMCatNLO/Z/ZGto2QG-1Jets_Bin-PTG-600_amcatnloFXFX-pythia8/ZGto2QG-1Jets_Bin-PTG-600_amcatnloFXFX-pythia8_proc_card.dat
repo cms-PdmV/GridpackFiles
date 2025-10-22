@@ -1,0 +1,6 @@
+import model loop_sm-ckm_no_b_mass
+
+generate p p > z a [QCD] @0
+add process p p > z a j [QCD] @1
+
+output ZGto2QG-1Jets_Bin-PTG-600_amcatnloFXFX-pythia8 -nojpeg
