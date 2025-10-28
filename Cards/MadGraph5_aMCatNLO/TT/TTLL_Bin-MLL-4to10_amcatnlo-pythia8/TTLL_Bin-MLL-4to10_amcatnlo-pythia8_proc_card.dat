@@ -5,4 +5,4 @@ define ell- = e- mu- ta-
 
 generate p p > t t~ ell+ ell- / h [QCD]
 
-output TTLL_MLL-1to4_amcatnlo-pythia8 -nojpeg
+output TTLL_Bin-MLL-4to10_amcatnlo-pythia8 -nojpeg
