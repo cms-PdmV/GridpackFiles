@@ -6,4 +6,4 @@ define ell- = e- mu- ta-
 generate p p > t t~ ell+ ell- / h [QCD] @0
 add process p p > t t~ ell+ ell- j / h [QCD] @1
 
-output TTLL-1Jets_MLL-1to4_amcatnloFXFX-pythia8 -nojpeg
+output TTLL-1Jets_Bin-MLL-10to50_amcatnloFXFX-pythia8 -nojpeg
