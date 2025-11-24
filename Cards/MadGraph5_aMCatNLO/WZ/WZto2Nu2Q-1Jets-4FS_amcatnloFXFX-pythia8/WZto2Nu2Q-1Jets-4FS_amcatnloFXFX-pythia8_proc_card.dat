@@ -11,3 +11,6 @@ add process p p > vl vl~ w- [QCD] @2
 add process p p > vl vl~ w- j [QCD] @3
 
 output WZto2Nu2Q-1Jets-4FS_amcatnloFXFX-pythia8 -nojpeg
+
+ninja noinstall
+collier noinstall
