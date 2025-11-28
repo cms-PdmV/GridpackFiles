@@ -9,4 +9,4 @@ generate p p > ell+ ell- [QCD] @0
 add process p p > ell+ ell- j [QCD] @1
 add process p p > ell+ ell- j j [QCD] @2
 
-output DYto2L-2Jets_MLL-10to50_amcatnloFXFX-pythia8 -nojpeg
+output DYto2L-2Jets_Bin-MLL-10to50_amcatnloFXFX-pythia8 -nojpeg
