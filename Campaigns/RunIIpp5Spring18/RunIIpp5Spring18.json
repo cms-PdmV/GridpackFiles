@@ -1,0 +1,16 @@
+{
+    "chain": "chain_RunIIpp5Spring18wmLHEGS_flowRunIIpp5Spring18DRNewGT_flowRunIIpp5Spring18MiniAOD",
+    "model_params_vars": {},
+    "template_vars": {
+
+    },
+    "fragment_vars": {
+        "concurrentLHEforMadGraph5_aMCatNLO": "False",
+        "concurrentLHEforPowheg": "True",
+        "concurrentPS": "Concurrent"
+    },
+    "tune": "CP5",
+    "beam": 2510,
+    "gridpack_directory": "/eos/cms/store/group/phys_generator/cvmfs/gridpacks/PdmV/RunIIpp5Spring18"
+}
+
