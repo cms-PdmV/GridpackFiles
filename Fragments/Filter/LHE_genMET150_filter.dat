@@ -1,0 +1,35 @@
+tmpGenParticlesForJetsNoNu = cms.EDProducer("InputGenJetsParticleSelector",
+    src = cms.InputTag("tmpGenParticles"),
+    ignoreParticleIDs = cms.vuint32(12,14,16),
+    partonicFinalState = cms.bool(False),
+    excludeResonances = cms.bool(False),
+    excludeFromResonancePids = cms.vuint32(12, 13, 14, 16),
+    tausAsJets = cms.bool(False)
+)
+
+tmpGenMetTrue = cms.EDProducer("GenMETProducer",
+                               src = cms.InputTag("tmpGenParticlesForJetsNoNu"),
+                               alias = cms.string('GenMETAllVisible'), 
+                               onlyFiducialParticles = cms.bool(False),
+                               globalThreshold = cms.double(0.0),
+                               usePt   = cms.bool(True),
+                               applyFiducialThresholdForFractions = cms.bool(False),
+)
+
+genMETfilter1 = cms.EDFilter("CandViewSelector",
+   src = cms.InputTag("tmpGenMetTrue"),
+   cut = cms.string("pt > 150")
+)
+
+genMETfilter2 = cms.EDFilter("CandViewCountFilter",
+    src = cms.InputTag("genMETfilter1"),
+    minNumber = cms.uint32(1),
+)
+
+ProductionFilterSequence = cms.Sequence(generator*
+                                        tmpGenParticles*
+                                        tmpGenParticlesForJetsNoNu *
+                                        tmpGenMetTrue* 
+                                        genMETfilter1* 
+                                        genMETfilter2
+)
