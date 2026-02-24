@@ -1,0 +1,16 @@
+{
+    "gridpack_submit": false,
+    "gridpack_path" : "DY/DYto2L-2Jets_Bin-1J-MLL-50_amcatnloFXFX-pythia8",
+    "fragment": ["Generator/ExternalLHEProducer_MadGraph5_aMCatNLO.dat", "PartonShower/amcatnloFXFX-pythia8.dat", "Filter/AtLeastOneMu.dat"],
+    "fragment_user": [],
+    "fragment_vars": {
+        "processParameters": [
+            "'JetMatching:qCut = 30.'",
+            "'JetMatching:qCutME = 10.'",
+            "'JetMatching:nQmatch = 5'",
+            "'JetMatching:nJetMax = 2'",
+            "'TimeShower:mMaxGamma = 4.0'",
+            "'BeamRemnants:primordialKThard=2.48'"
+        ]
+    }
+}
