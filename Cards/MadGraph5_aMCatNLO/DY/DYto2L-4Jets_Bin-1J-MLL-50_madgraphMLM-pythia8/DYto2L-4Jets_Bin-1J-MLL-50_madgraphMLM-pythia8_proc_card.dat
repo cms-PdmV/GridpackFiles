@@ -7,4 +7,4 @@ define vl~ = ve~ vm~ vt~
 
 generate p p > ell+ ell- j  @0
 
-output DYto2L-4Jets_MLL-50_1J_madgraphMLM-pythia8 -nojpeg
+output DYto2L-4Jets_Bin-1J-MLL-50_madgraphMLM-pythia8 -nojpeg
